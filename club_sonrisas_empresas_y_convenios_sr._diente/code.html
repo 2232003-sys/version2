@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#62df7d", "on-surface-variant": "#3f4850", "surface-container": "#eaedff", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "on-primary-fixed": "#001d31", "secondary-container": "#86f2e4", "primary-fixed-dim": "#93ccff", "on-primary": "#ffffff", "on-secondary-fixed": "#00201d", "background": "#faf8ff", "on-tertiary-fixed-variant": "#005320", "secondary": "#006a61", "on-error-container": "#93000a", "on-error": "#ffffff", "surface": "#faf8ff", "on-surface": "#131b2e", "primary": "#006194", "error-container": "#ffdad6", "primary-fixed": "#cce5ff", "on-secondary": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "inverse-on-surface": "#eef0ff", "error": "#ba1a1a", "on-secondary-container": "#006f66", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002109", "primary-container": "#007bb9", "tertiary": "#006b2c", "on-tertiary-container": "#f7fff2", "surface-tint": "#006398", "inverse-primary": "#93ccff", "on-secondary-fixed-variant": "#005049", "outline": "#707881", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#004b73", "tertiary-fixed": "#7ffc97", "surface-container-high": "#e2e7ff", "on-primary-container": "#fdfcff", "surface-variant": "#dae2fd", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "tertiary-container": "#00873a", "inverse-surface": "#283044", "outline-variant": "#bfc7d2", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin-desktop": "2rem" }, "fontFamily": { "label-sm": ["Manrope"], "label-lg": ["Manrope"], "headline-xl": ["Outfit"], "headline-lg-mobile": ["Outfit"], "headline-lg": ["Outfit"], "headline-xl-mobile": ["Outfit"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-sm": ["Manrope"], "data-mono": ["Manrope"], "headline-sm": ["Outfit"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-headline-sm">dentistry</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Sr. Diente</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-space-xs">Clinical OS MX</span></div></div><nav class="flex flex-col gap-space-xs p-space-sm overflow-y-auto max-h-[calc(100vh-140px)]" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><span class="material-symbols-outlined text-headline-sm">calendar_month</span><span class="font-label-lg text-label-lg">Agenda</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-headline-sm">clinical_notes</span><span class="font-label-lg text-label-lg">Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-headline-sm">stethoscope</span><span class="font-label-lg text-label-lg">Doctores</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-headline-sm">medical_services</span><span class="font-label-lg text-label-lg">Servicios</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-headline-sm">receipt_long</span><span class="font-label-lg text-label-lg">Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-headline-sm">point_of_sale</span><span class="font-label-lg text-label-lg">Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-headline-sm">payments</span><span class="font-label-lg text-label-lg">Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-headline-sm">percent</span><span class="font-label-lg text-label-lg">Comisiones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-headline-sm">inventory_2</span><span class="font-label-lg text-label-lg">Inventario</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-sm" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-headline-sm">loyalty</span><span class="font-label-lg text-label-lg">Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-headline-sm">manage_accounts</span><span class="font-label-lg text-label-lg">Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-surface-container-lowest shadow-sm"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Google Sync CDMX</span></div><span class="material-symbols-outlined text-tertiary text-body-md">cloud_done</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface"><span class="material-symbols-outlined text-primary text-body-lg">location_on</span><span class="font-label-lg text-label-lg font-bold">Polanco CDMX</span><span class="material-symbols-outlined text-on-surface-variant text-body-sm">expand_more</span></div><div class="h-5 w-px bg-outline-variant/40 hidden md:block"></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-body-md">calendar_today</span><span>Jueves, 24 Octubre 2024</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/30 text-on-secondary-container"><span class="material-symbols-outlined text-body-md text-secondary">chair</span><span class="font-label-sm text-label-sm font-semibold">Sillones: 3/4 Activos</span></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Especialista Ortodoncia</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/ALJJyrD3btN9dbEHiJZfCmsyXEnP8U6J-YTDgXnuWOR08_rIaWVNa-j3rBmQgivPsxsKmpW0naRgA_KQNDnzkWSABTa2YXl2dpWex2ZLwb7RQRYw7xkFKRqijhOpRQNsFgUwrew2mTt9qDnDSGti6joMFVCTPS94KSX4_4M18bWm9E-GJ4Gqtnsep45KeSiXZigu0I1uK4LSvKoRIdxL20vveGQV9W4i1n4k9Ipwf3_srkcjvVe_AQpT7DJgUA"/></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background px-gutter-desktop py-space-md"><div class="flex flex-col w-full">
+<!-- Sticky Clinical Context & Alerts Banner -->
+<div class="w-full bg-error-container text-on-error-container px-space-md py-2.5 rounded-xl shadow-sm mb-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-body-lg">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg font-bold">Convenio FEMSA Polanco: Facturación Mensual Pendiente</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm uppercase tracking-wider">Aviso Fiscal</span>
+</div>
+<span class="font-body-sm text-body-sm opacity-90 truncate">3 empresas requieren validación de RFC previo al corte de facturación SAT CFDI 4.0 de fin de mes.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="px-space-sm py-1 rounded-lg bg-surface-container-lowest/80 text-on-surface font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Google Calendar Sync: <strong>Activo (CDMX)</strong></span>
+</div>
+</div>
+</div>
+<!-- Hero Module Header with Mascot & Metric Chips -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm mb-space-lg overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-96 h-96 rounded-full bg-gradient-to-br from-primary-fixed/20 to-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg">
+<div class="relative w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-2xl bg-surface-container-low p-2 shadow-inner flex items-center justify-center group">
+<img alt="Sr. Diente Caballero con Monóculo" class="w-full h-full object-contain filter drop-shadow-md transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ng5bGHlssL-MD3QJ-I5VeN_87x2mCBfiwAzOtFWmTm6JPTKi6YZVYRFkOfp65uoWzc97Pg9Z6UZw7CmurU4ofQx9znNj2X5jzrN6EZoKgtfzxskMjz49g7qAzYV6EKGyrsgy0464JJR8N5HTKI2FY7hVNWy-M52E4dHPfg_9KPbo2CpOQIQ363V1jZ4lxLVJArwmNg172k3O47nOfOGRwvVpnD3T_2KBsLL0dnHpGWvHm0Y8jE8c"/>
+<div class="absolute -bottom-2 -right-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm font-bold">
+            B2B
+          </div>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Módulo Corporativo</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md text-primary">verified_user</span>
+              Programa Club Sonrisas MX
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md text-indigo-600">auto_fix_high</span>
+              Propuesta de Mejora: Reasignación Automática
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1 mb-1">
+            Empresas &amp; Convenios Colectivos
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Gestión de aliados estratégicos, tabuladores con descuento patronal, coberturas familiares y facturación centralizada en Pesos Mexicanos (MXN).
+          </p>
+</div>
+</div>
+<!-- Quick Role Toggle & RBAC Badge -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md self-end lg:self-center">
+<!-- Interactive Role Switcher Demonstration -->
+<div class="bg-surface-container-low p-1.5 rounded-xl flex items-center shadow-inner">
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 uppercase font-bold">Rol:</span>
+<button class="px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1" id="btnRoleDueno" onclick="setRole('dueño')">
+<span class="material-symbols-outlined text-label-md">shield_person</span>
+            Dueño
+          </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1" id="btnRoleAdmin" onclick="setRole('admin')">
+<span class="material-symbols-outlined text-label-md">manage_accounts</span>
+            Admin
+          </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1" id="btnRoleRecepcion" onclick="setRole('recepcion')">
+<span class="material-symbols-outlined text-label-md">support_agent</span>
+            Recepción
+          </button>
+</div>
+<div class="px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm" id="rolePermissionBadge">
+<span class="material-symbols-outlined text-secondary text-body-md">lock_open</span>
+<span>Permisos: <strong class="text-primary" id="roleLabel">Dueño (Control Total)</strong></span>
+</div>
+</div>
+</div>
+<!-- Financial & Impact KPI Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg pt-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold">Empresas Aliadas</span>
+<span class="material-symbols-outlined text-primary text-body-md">domain</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">24</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">+2 este mes</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">19 activas con convenio vigente</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold">Colaboradores Beneficiarios</span>
+<span class="material-symbols-outlined text-secondary text-body-md">groups</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">3,480</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Titulares</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">~11,250 familiares elegibles</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold">Convenios Vigentes</span>
+<span class="material-symbols-outlined text-primary text-body-md">handshake</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 21 totales</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">2 borradores en revisión legal</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold">Facturación Mensual B2B</span>
+<span class="material-symbols-outlined text-tertiary text-body-md">payments</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-tertiary">$342,850.00</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">MXN</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary font-bold mt-1">94.2% cobrado puntualmente</span>
+</div>
+</div>
+</div>
+<!-- Primary Tab Bar Navigation -->
+<div class="flex items-center justify-between mb-space-md">
+<div class="inline-flex p-1.5 bg-surface-container-low rounded-xl shadow-inner gap-1">
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold shadow-sm transition-all flex items-center gap-space-xs" id="tabEmpresasBtn" onclick="switchMainTab('empresas')">
+<span class="material-symbols-outlined text-body-lg">corporate_fare</span>
+<span>Empresas Aliadas</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">24</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-headline-sm text-headline-sm font-semibold transition-all flex items-center gap-space-xs" id="tabConveniosBtn" onclick="switchMainTab('convenios')">
+<span class="material-symbols-outlined text-body-lg">description</span>
+<span>Convenios Corporativos</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">21</span>
+</button>
+</div>
+<!-- Action Toolbar Right -->
+<div class="flex items-center gap-space-sm">
+<div id="companyActionWrapper">
+<button class="px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-sm flex items-center gap-space-xs active:scale-95" onclick="openCompanyModal('new')">
+<span class="material-symbols-outlined text-body-lg">add_business</span>
+<span>Nueva Empresa</span>
+</button>
+</div>
+<div class="hidden" id="convenioActionWrapper">
+<button class="px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-sm flex items-center gap-space-xs active:scale-95" onclick="openConvenioModal('new')">
+<span class="material-symbols-outlined text-body-lg">post_add</span>
+<span>Nuevo Convenio</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION 1: EMPRESAS ALIADAS (Directorio y Gestión) -->
+<section class="flex flex-col w-full space-y-space-md" id="sectionEmpresas">
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="w-full md:w-96 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-lg">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="companySearchInput" placeholder="Buscar por Nombre, Razón Social o RFC..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full md:w-auto justify-end">
+<select class="px-3 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="companyStatusFilter" onchange="filterCompanies()">
+<option value="todos">Todos los Estados</option>
+<option value="Activa">Activa</option>
+<option value="Prospecto">Prospecto</option>
+<option value="Suspendida">Suspendida</option>
+<option value="Vencida">Vencida</option>
+<option value="Cancelada">Cancelada</option>
+</select>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-body-md">tune</span>
+<span>Filtros Avanzados</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all" onclick="exportCompaniesMXN()">
+<span class="material-symbols-outlined text-body-md">download</span>
+<span>Exportar SAT / Excel</span>
+</button>
+</div>
+</div>
+<!-- Companies Table Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-space-md">Empresa / Razón Social</th>
+<th class="py-3.5 px-space-md">RFC (SAT MX)</th>
+<th class="py-3.5 px-space-md">Contacto Principal</th>
+<th class="py-3.5 px-space-md">Teléfono / Email</th>
+<th class="py-3.5 px-space-md text-center">Colaboradores</th>
+<th class="py-3.5 px-space-md text-center">Convenios Activos</th>
+<th class="py-3.5 px-space-md">Estado</th>
+<th class="py-3.5 px-space-md text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y divide-surface-container" id="companyTableBody">
+<!-- Row 1: Grupo Bimbo -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Grupo Bimbo Corporativo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">BIMBO S.A.B. DE C.V.</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">BIM010523TR8</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lic. Rodrigo Albarrán</span>
+<span class="font-body-sm text-body-sm text-secondary">Director de Capital Humano</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-label-md text-primary">call</span>
+                    55 5268 6600
+                  </span>
+<span class="text-on-surface-variant truncate max-w-[180px]">r.albarran@grupobimbo.com</span>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-data-mono text-data-mono font-bold">
+                1,420
+              </td>
+<td class="py-4 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-bold">
+                  2 Vigentes
+                </span>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activa
+                </span>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="viewCompany('Bimbo')" title="Consultar">
+<span class="material-symbols-outlined text-body-lg">visibility</span>
+</button>
+<button class="action-edit-company p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editCompany(1)" title="Editar Empresa">
+<span class="material-symbols-outlined text-body-lg">edit</span>
+</button>
+<button class="action-delete-company p-1.5 rounded-lg text-error hover:bg-error-container transition-all" onclick="deleteCompany(1, 'Grupo Bimbo Corporativo')" title="Eliminar (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: FEMSA Logística -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">FEMSA Servicios Polanco</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">FOMENTO ECONOMICO MEXICANO S.A.B.</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">FEM790518AQ2</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dra. Claudia Paredes</span>
+<span class="font-body-sm text-body-sm text-secondary">Coord. Medicina Laboral</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-label-md text-primary">call</span>
+                    55 8000 4567
+                  </span>
+<span class="text-on-surface-variant truncate max-w-[180px]">cparedes@femsa.com.mx</span>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-data-mono text-data-mono font-bold">
+                850
+              </td>
+<td class="py-4 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-bold">
+                  1 Vigente
+                </span>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activa
+                </span>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="viewCompany('FEMSA')" title="Consultar">
+<span class="material-symbols-outlined text-body-lg">visibility</span>
+</button>
+<button class="action-edit-company p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editCompany(2)" title="Editar Empresa">
+<span class="material-symbols-outlined text-body-lg">edit</span>
+</button>
+<button class="action-delete-company p-1.5 rounded-lg text-error hover:bg-error-container transition-all" onclick="deleteCompany(2, 'FEMSA Servicios Polanco')" title="Eliminar (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Softtek CDMX -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Softtek Information Services</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DESARROLLOS TECNOLOGICOS SOFT S.A. DE C.V.</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">DTS9402118K9</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ing. Carlos Montes</span>
+<span class="font-body-sm text-body-sm text-secondary">People &amp; Culture Lead</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-label-md text-primary">call</span>
+                    55 3300 9090
+                  </span>
+<span class="text-on-surface-variant truncate max-w-[180px]">cmontes@softtek.com</span>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-data-mono text-data-mono font-bold">
+                620
+              </td>
+<td class="py-4 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold">
+                  0 Activos
+                </span>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                  Prospecto
+                </span>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="viewCompany('Softtek')" title="Consultar">
+<span class="material-symbols-outlined text-body-lg">visibility</span>
+</button>
+<button class="action-edit-company p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editCompany(3)" title="Editar Empresa">
+<span class="material-symbols-outlined text-body-lg">edit</span>
+</button>
+<button class="action-delete-company p-1.5 rounded-lg text-error hover:bg-error-container transition-all" onclick="deleteCompany(3, 'Softtek Information Services')" title="Eliminar (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: BBVA México Corporativo -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">BBVA México Banca Operativa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">BBVA BANCOMER SERVICIOS S.A.</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">BBA830831LJ2</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lic. Mariana Garza</span>
+<span class="font-body-sm text-body-sm text-secondary">Bienestar &amp; Seguros</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-label-md text-primary">call</span>
+                    55 5621 3400
+                  </span>
+<span class="text-on-surface-variant truncate max-w-[180px]">mgarza@bbva.com</span>
+</div>
+</td>
+<td class="py-4 px-space-md text-center font-data-mono text-data-mono font-bold">
+                2,100
+              </td>
+<td class="py-4 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-bold">
+                  1 Vigente
+                </span>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Suspendida
+                </span>
+</td>
+<td class="py-4 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="viewCompany('BBVA')" title="Consultar">
+<span class="material-symbols-outlined text-body-lg">visibility</span>
+</button>
+<button class="action-edit-company p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editCompany(4)" title="Editar Empresa">
+<span class="material-symbols-outlined text-body-lg">edit</span>
+</button>
+<button class="action-delete-company p-1.5 rounded-lg text-error hover:bg-error-container transition-all" onclick="deleteCompany(4, 'BBVA México Banca Operativa')" title="Eliminar (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Mostrando <strong>4</strong> de <strong>24</strong> empresas registradas en la sucursal Polanco CDMX.
+        </span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm disabled:opacity-50" disabled="">Anterior</button>
+<span class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold">1</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container">2</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container">3</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container">Siguiente</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CONVENIOS CORPORATIVOS (Listado, Coberturas y Pólizas) -->
+<section class="hidden flex-col w-full space-y-space-md" id="sectionConvenios">
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="w-full md:w-96 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-lg">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="convenioSearchInput" placeholder="Buscar folio ej. CS-2026-0001, empresa..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full md:w-auto justify-end">
+<select class="px-3 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convenioStatusFilter">
+<option value="todos">Todos los Estados</option>
+<option value="Borrador">Borrador</option>
+<option value="Activo">Activo</option>
+<option value="Suspendido">Suspendido</option>
+<option value="Vencido">Vencido</option>
+<option value="Cancelado">Cancelado</option>
+</select>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all" id="btnSimularVacio" onclick="toggleEmptyStateView()">
+<span class="material-symbols-outlined text-body-md">toggle_on</span>
+<span>Alternar Estado Vacío</span>
+</button>
+</div>
+</div>
+<!-- Empty State Container (Hidden by default, toggleable for requirement inspection) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm text-center flex-col items-center justify-center my-4" id="conveniosEmptyState">
+<div class="w-24 h-24 rounded-full bg-primary-fixed/30 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-headline-xl">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">No hay convenios corporativos registrados</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1 mb-space-lg">
+        Aún no has generado ningún acuerdo de cobertura corporativa o descuento dental para los colaboradores de tus empresas aliadas.
+      </p>
+<button class="px-space-lg py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container transition-all flex items-center gap-2" onclick="openConvenioModal('new')">
+<span class="material-symbols-outlined text-body-lg">post_add</span>
+<span>Crear Primer Convenio Corporativo</span>
+</button>
+</div>
+<!-- Convenios Active Cards List -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-md" id="conveniosListContainer">
+<!-- Convenio Card 1: CS-2026-0001 (Bimbo Premium) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono text-primary font-bold px-2 py-0.5 rounded bg-primary-fixed">CS-2026-0001</span>
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Convenio Bienestar Dental Oro 2026</h3>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">domain</span>
+                Grupo Bimbo Corporativo (BIM010523TR8)
+              </span>
+</div>
+<!-- Dueño-Only Action Control -->
+<div class="flex items-center gap-1">
+<button class="action-owner-convenio p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editConvenio(1)" title="Editar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">edit_note</span>
+</button>
+<button class="action-owner-convenio p-2 rounded-lg text-error hover:bg-error-container transition-all" onclick="confirmDeleteConvenio('CS-2026-0001', 'Grupo Bimbo Corporativo', 1420)" title="Eliminar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete_forever</span>
+</button>
+</div>
+</div>
+<!-- Date & Term Span -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 my-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Inicio</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">01 Ene 2026</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Fin</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">31 Dic 2026 (12 Meses)</span>
+</div>
+<div class="flex flex-col col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Esquema Pagador</span>
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">receipt</span>
+                Empresa (Factura Mensual)
+              </span>
+</div>
+</div>
+<!-- Core Benefit Parameters -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between py-1 border-b border-surface-container">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Máximo de Beneficiarios por Titular:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface bg-surface-container px-2 py-0.5 rounded">
+                5 Miembros (Específico por este Convenio)
+              </span>
+</div>
+<div class="py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant block mb-1">Parentescos Autorizados:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Cónyuge</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Pareja</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Hijo/a</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Padre</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Madre</span>
+</div>
+</div>
+<div class="py-2 bg-surface-container-low/50 px-space-sm rounded-lg mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold block mb-0.5">Términos Clave y Descuentos:</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Profilaxis ultrasónica y valoraciones 100% cubiertas por la empresa. 35% de descuento en ortodoncia y endodoncia liquidables vía nómina.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Afiliados activos en clínica: <strong class="text-on-surface">614 pacientes</strong></span>
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">check_circle</span>
+            Sincronizado al expediente 360
+          </span>
+</div>
+</div>
+<!-- Convenio Card 2: CS-2026-0002 (FEMSA Copago) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono text-primary font-bold px-2 py-0.5 rounded bg-primary-fixed">CS-2026-0002</span>
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Plan Salud Colectiva FEMSA Polanco</h3>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">domain</span>
+                FEMSA Servicios Polanco (FEM790518AQ2)
+              </span>
+</div>
+<!-- Dueño-Only Action Control -->
+<div class="flex items-center gap-1">
+<button class="action-owner-convenio p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editConvenio(2)" title="Editar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">edit_note</span>
+</button>
+<button class="action-owner-convenio p-2 rounded-lg text-error hover:bg-error-container transition-all" onclick="confirmDeleteConvenio('CS-2026-0002', 'FEMSA Servicios Polanco', 850)" title="Eliminar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete_forever</span>
+</button>
+</div>
+</div>
+<!-- Date & Term Span -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 my-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Inicio</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">15 Feb 2026</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Fin</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Indefinido</span>
+</div>
+<div class="flex flex-col col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Esquema Pagador</span>
+<span class="font-label-md text-label-md font-bold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">point_of_sale</span>
+                Paciente en Ventanilla
+              </span>
+</div>
+</div>
+<!-- Core Benefit Parameters -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between py-1 border-b border-surface-container">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Máximo de Beneficiarios por Titular:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface bg-surface-container px-2 py-0.5 rounded">
+                4 Miembros (Configuración a la medida)
+              </span>
+</div>
+<div class="py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant block mb-1">Parentescos Autorizados:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Cónyuge</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Hijo/a</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Hermano/a</span>
+</div>
+</div>
+<div class="py-2 bg-surface-container-low/50 px-space-sm rounded-lg mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold block mb-0.5">Términos Clave y Descuentos:</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Tarifa preferencial con 25% de ahorro en todos los tratamientos clínicos al presentar gafete institucional vigente. Pago inmediato en recepción.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Afiliados activos en clínica: <strong class="text-on-surface">432 pacientes</strong></span>
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">check_circle</span>
+            Validador QR Operativo
+          </span>
+</div>
+</div>
+<!-- Convenio Card 3: CS-2026-0003 (Borrador BBVA) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between opacity-85">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-bold px-2 py-0.5 rounded bg-surface-container">CS-2026-0003</span>
+<span class="px-3 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Borrador
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Convenio Integral BBVA Ejecutivos</h3>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">domain</span>
+                BBVA México Banca Operativa (BBA830831LJ2)
+              </span>
+</div>
+<!-- Dueño-Only Action Control -->
+<div class="flex items-center gap-1">
+<button class="action-owner-convenio p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all" onclick="editConvenio(3)" title="Editar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">edit_note</span>
+</button>
+<button class="action-owner-convenio p-2 rounded-lg text-error hover:bg-error-container transition-all" onclick="confirmDeleteConvenio('CS-2026-0003', 'BBVA México Banca Operativa', 0)" title="Eliminar Convenio (Sólo Dueño)">
+<span class="material-symbols-outlined text-body-lg">delete_forever</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 my-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Inicio</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">01 May 2026</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia Fin</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">30 Abr 2027</span>
+</div>
+<div class="flex flex-col col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Esquema Pagador</span>
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">receipt</span>
+                Empresa (Factura Mensual)
+              </span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between py-1 border-b border-surface-container">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Máximo de Beneficiarios por Titular:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface bg-surface-container px-2 py-0.5 rounded">
+                6 Miembros (Configuración ampliada)
+              </span>
+</div>
+<div class="py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant block mb-1">Parentescos Autorizados:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Cónyuge</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Hijo/a</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Padre</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Madre</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Otro</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Estado jurídico: <strong>Pendiente de firma directiva</strong></span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">Sin afiliados aún</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL 1: ALTA Y EDICIÓN DE EMPRESA -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md overflow-y-auto" id="companyModal">
+<div class="w-full max-w-3xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col my-auto animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm">add_business</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="companyModalTitle">Alta de Nueva Empresa Aliada</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Complete los campos requeridos conforme a la constancia de situación fiscal SAT</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center transition-all" onclick="closeCompanyModal()">
+<span class="material-symbols-outlined text-body-lg">close</span>
+</button>
+</div>
+<!-- Modal Body (Formulario estricto de empresas) -->
+<form class="p-space-lg space-y-space-md overflow-y-auto max-h-[75vh]" id="companyForm" onsubmit="handleCompanySubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Nombre comercial (*) -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Nombre Comercial <span class="text-error">*</span>
+</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compNombreComercial" placeholder="Ej. Grupo Bimbo Corporativo" required="" type="text"/>
+</div>
+<!-- Razón social -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Razón Social (SAT) <span class="text-error">*</span>
+</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compRazonSocial" placeholder="Ej. BIMBO S.A.B. DE C.V." required="" type="text"/>
+</div>
+<!-- RFC (12 a 13 caracteres) -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold flex items-center justify-between">
+<span>RFC Persona Moral o Física <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">12-13 caracteres</span>
+</label>
+<input class="h-10 px-3 uppercase rounded-lg bg-surface-container-low font-data-mono text-data-mono text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compRFC" maxlength="13" minlength="12" placeholder="Ej. BIM010523TR8" required="" type="text" uppercase=""/>
+</div>
+<!-- Número estimado de colaboradores -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Número Estimado de Colaboradores / Empleados
+            </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compEmpleados" min="1" placeholder="Ej. 1200" type="number"/>
+</div>
+</div>
+<!-- Domicilio fiscal -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+            Domicilio Fiscal Completo (Calle, No., Colonia, Alcaldía/Mpio, C.P., Estado)
+          </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compDomicilio" placeholder="Ej. Prolongación Paseo de la Reforma 1000, Peña Blanca Santa Fe, Álvaro Obregón, 01210 CDMX" type="text"/>
+</div>
+<div class="pt-2 border-t border-surface-container">
+<h3 class="font-label-lg text-label-lg font-bold text-primary mb-space-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">contact_mail</span>
+            Contacto Principal de Enlace
+          </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Nombre del contacto -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+                Nombre del Contacto Principal
+              </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compContactoNombre" placeholder="Ej. Lic. Rodrigo Albarrán" type="text"/>
+</div>
+<!-- Cargo -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+                Cargo / Puesto
+              </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compContactoCargo" placeholder="Ej. Director de Recursos Humanos / Salud Ocupacional" type="text"/>
+</div>
+<!-- Correo electrónico -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+                Correo Electrónico de Contacto
+              </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compContactoEmail" placeholder="contacto@empresa.com.mx" type="email"/>
+</div>
+<!-- Teléfono -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+                Teléfono Directo o WhatsApp
+              </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compContactoTelefono" placeholder="Ej. 55 5268 6600 ext 401" type="tel"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2 border-t border-surface-container">
+<!-- Estado -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Estado de la Empresa
+            </label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="compEstado">
+<option value="Prospecto">Prospecto</option>
+<option selected="" value="Activa">Activa</option>
+<option value="Suspendida">Suspendida</option>
+<option value="Vencida">Vencida</option>
+<option value="Cancelada">Cancelada</option>
+</select>
+</div>
+<!-- Notas operativas -->
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Notas Operativas y Acuerdos de Facturación
+            </label>
+<textarea class="p-2 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="compNotas" placeholder="Indicaciones para recepción, requerimiento de número de orden de compra (PO) en factura SAT..." rows="2"></textarea>
+</div>
+</div>
+<!-- Botones Cancelar y Guardar Empresa -->
+<div class="pt-space-md flex items-center justify-end gap-space-sm border-t border-surface-container">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all" onclick="closeCompanyModal()" type="button">
+            Cancelar
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-1" type="submit">
+<span class="material-symbols-outlined text-body-lg">save</span>
+<span>Guardar Empresa</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL 2: ALTA Y EDICIÓN DE CONVENIO CORPORATIVO -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md overflow-y-auto" id="convenioModal">
+<div class="w-full max-w-3xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col my-auto animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm">handshake</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="convenioModalTitle">Registro de Convenio Colectivo</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Definición de reglas de cobertura, parentescos autorizados y esquema pagador</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center transition-all" onclick="closeConvenioModal()">
+<span class="material-symbols-outlined text-body-lg">close</span>
+</button>
+</div>
+<!-- Modal Body (Formulario exacto de Convenio) -->
+<form class="p-space-lg space-y-space-md overflow-y-auto max-h-[75vh]" id="convenioForm" onsubmit="handleConvenioSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Folio -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold flex items-center justify-between">
+<span>Folio de Convenio</span>
+<span class="text-xs text-primary">Autogenerado</span>
+</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container font-data-mono text-data-mono text-on-surface font-bold" id="convFolio" readonly="" type="text" value="CS-2026-0004"/>
+</div>
+<!-- Empresa asociada -->
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Empresa Asociada <span class="text-error">*</span>
+</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convEmpresa" required="">
+<option value="">Seleccione una empresa...</option>
+<option value="Grupo Bimbo Corporativo">Grupo Bimbo Corporativo (BIM010523TR8)</option>
+<option value="FEMSA Servicios Polanco">FEMSA Servicios Polanco (FEM790518AQ2)</option>
+<option value="Softtek Information Services">Softtek Information Services (DTS9402118K9)</option>
+<option value="BBVA México Banca Operativa">BBVA México Banca Operativa (BBA830831LJ2)</option>
+</select>
+</div>
+</div>
+<!-- Nombre del convenio -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+            Nombre del Convenio <span class="text-error">*</span>
+</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="convNombre" placeholder="Ej. Convenio Especial Ortodoncia &amp; Prevención Colaboradores" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Fecha de inicio -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Fecha de Inicio <span class="text-error">*</span>
+</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convFechaInicio" required="" type="date" value="2026-03-01"/>
+</div>
+<!-- Fecha de fin -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Fecha de Fin (Opcional / Dejar vacío = Indefinido)
+            </label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convFechaFin" type="date"/>
+</div>
+<!-- Estado -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+              Estado Inicial
+            </label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convEstado">
+<option value="Borrador">Borrador</option>
+<option selected="" value="Activo">Activo</option>
+<option value="Suspendido">Suspendido</option>
+<option value="Vencido">Vencido</option>
+<option value="Cancelado">Cancelado</option>
+</select>
+</div>
+</div>
+<!-- Cobertura y Reglas: Beneficiarios & Parentescos -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 space-y-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+                Máximo de Beneficiarios por Titular (Configurable para este convenio)
+              </label>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="badgeBeneficiarios">Valor actual: 5</span>
+</div>
+<div class="flex items-center gap-space-md">
+<input class="w-32 h-10 px-3 rounded-lg bg-surface-container-lowest font-data-mono text-data-mono text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="convMaxBeneficiarios" max="20" min="1" onchange="document.getElementById('badgeBeneficiarios').innerText = 'Valor actual: ' + this.value" type="number" value="5"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                * Nota importante: El límite de beneficiarios se define puntualmente por cada convenio y no es un valor universal clínico.
+              </span>
+</div>
+</div>
+<!-- Parentescos permitidos -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface font-bold mb-2">
+              Parentescos Autorizados para Cobertura Familiar:
+            </label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Cónyuge"/>
+<span class="font-body-sm text-body-sm text-on-surface">Cónyuge</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Pareja"/>
+<span class="font-body-sm text-body-sm text-on-surface">Pareja</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Hijo/a"/>
+<span class="font-body-sm text-body-sm text-on-surface">Hijo / Hija</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Padre"/>
+<span class="font-body-sm text-body-sm text-on-surface">Padre</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Madre"/>
+<span class="font-body-sm text-body-sm text-on-surface">Madre</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Hermano/a"/>
+<span class="font-body-sm text-body-sm text-on-surface">Hermano/a</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded text-primary focus:ring-primary" name="parentesco" type="checkbox" value="Otro"/>
+<span class="font-body-sm text-body-sm text-on-surface">Otro</span>
+</label>
+</div>
+</div>
+<!-- Pagador seleccionado -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface font-bold mb-2">
+              Pagador Seleccionado (Responsable de Liquidación de Honorarios) <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<label class="flex items-start gap-3 p-space-sm rounded-xl bg-surface-container-lowest border-2 border-transparent hover:border-primary cursor-pointer transition-all">
+<input class="mt-1 text-primary focus:ring-primary" name="convPagador" type="radio" value="Paciente"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Paciente en Ventanilla</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">El paciente liquida su copago o tratamiento con tarifa preferencial en cada cita.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-space-sm rounded-xl bg-surface-container-lowest border-2 border-primary cursor-pointer transition-all">
+<input checked="" class="mt-1 text-primary focus:ring-primary" name="convPagador" type="radio" value="Empresa"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Empresa por Factura Mensual</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Corte acumulado mensual B2B con emisión de CFDI y complemento de pago.</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Términos y Notas -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">
+            Términos, Coberturas Específicas y Notas Clínicas
+          </label>
+<textarea class="p-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="convTerminos" placeholder="Detalle de procedimientos con 100% de subsidio patronal, restricciones de ortodoncia, etc..." rows="3"></textarea>
+</div>
+<!-- Botones Cancelar y Guardar Convenio -->
+<div class="pt-space-md flex items-center justify-end gap-space-sm border-t border-surface-container">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all" onclick="closeConvenioModal()" type="button">
+            Cancelar
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-1" type="submit">
+<span class="material-symbols-outlined text-body-lg">handshake</span>
+<span>Guardar Convenio Corporativo</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL DE CONFIRMACIÓN DE ELIMINACIÓN CON ADVERTENCIA DE IMPACTO EN AFILIADOS ACTIVOS -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md" id="deleteConfirmModal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col p-space-lg animate-in fade-in zoom-in-95 duration-150">
+<div class="w-14 h-14 rounded-2xl bg-error-container text-on-error-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-headline-xl text-error">warning</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-1">
+        ¿Eliminar Convenio Corporativo Definitivamente?
+      </h3>
+<div class="p-space-md rounded-xl bg-error-container/40 my-space-md border border-error/20">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-error text-body-lg">report_problem</span>
+<span class="font-label-lg text-label-lg font-bold text-on-error-container" id="deleteItemTitle">Folio: CS-2026-0001</span>
+</div>
+<p class="font-body-md text-body-md text-on-error-container" id="deleteImpactMessage">
+<strong>Advertencia Crítica de Impacto:</strong> Este convenio tiene actualmente <span class="font-bold underline" id="activeAffiliatesCount">1,420</span> pacientes/colaboradores afiliados activos con tratamientos en curso en nuestros sillones. Eliminar este convenio suspenderá inmediatamente sus tabuladores con descuento y bloqueará la facturación mensual en MXN.
+        </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+        Esta acción es irreversible y queda registrada en la bitácora de auditoría clínica con el perfil de Dueño.
+      </p>
+<div class="flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold transition-all" onclick="closeDeleteConfirmModal()">
+          Cancelar y Conservar
+        </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-error hover:bg-red-700 text-on-error font-label-lg text-label-lg font-bold shadow-md transition-all flex items-center gap-1" onclick="executeDeletion()">
+<span class="material-symbols-outlined text-body-lg">delete_forever</span>
+<span>Confirmar Baja Inmediata</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TOAST FEEDBACK NOTIFICATION -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="appToast">
+<span class="material-symbols-outlined text-tertiary-fixed text-body-lg" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md font-semibold" id="toastMessage">Operación completada exitosamente</span>
+</div>
+</div>
+<script>
+  // Global State for Mock RBAC & Tabs
+  let currentRole = 'dueño'; // 'dueño', 'admin', 'recepcion'
+  let activeTab = 'empresas'; // 'empresas', 'convenios'
+  let pendingDeleteTarget = null;
+
+  function setRole(role) {
+    currentRole = role;
+    const btnD = document.getElementById('btnRoleDueno');
+    const btnA = document.getElementById('btnRoleAdmin');
+    const btnR = document.getElementById('btnRoleRecepcion');
+    const label = document.getElementById('roleLabel');
+
+    // Reset styles
+    [btnD, btnA, btnR].forEach(b => {
+      b.className = "px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center gap-1";
+    });
+
+    if (role === 'dueño') {
+      btnD.className = "px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1";
+      label.innerText = "Dueño (Control Total B2B)";
+    } else if (role === 'admin') {
+      btnA.className = "px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1";
+      label.innerText = "Administrador (Crea/Edita Empresas)";
+    } else {
+      btnR.className = "px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1";
+      label.innerText = "Recepción (Sólo Consulta de Afiliaciones)";
+    }
+
+    applyPermissions();
+    showToast(`Rol cambiado a: ${role.toUpperCase()}`);
+  }
+
+  function applyPermissions() {
+    const compCreateBtn = document.getElementById('companyActionWrapper');
+    const convCreateBtn = document.getElementById('convenioActionWrapper');
+    const editCompBtns = document.querySelectorAll('.action-edit-company');
+    const deleteCompBtns = document.querySelectorAll('.action-delete-company');
+    const ownerConvBtns = document.querySelectorAll('.action-owner-convenio');
+
+    if (currentRole === 'dueño') {
+      // Dueño: Full power
+      compCreateBtn.style.display = activeTab === 'empresas' ? 'block' : 'none';
+      convCreateBtn.style.display = activeTab === 'convenios' ? 'block' : 'none';
+      editCompBtns.forEach(el => el.classList.remove('hidden'));
+      deleteCompBtns.forEach(el => el.classList.remove('hidden'));
+      ownerConvBtns.forEach(el => el.classList.remove('hidden'));
+    } else if (currentRole === 'admin') {
+      // Admin: Create & Edit companies; Cannot delete companies; Cannot touch convenios
+      compCreateBtn.style.display = activeTab === 'empresas' ? 'block' : 'none';
+      convCreateBtn.style.display = 'none'; // Convenios are owner-only
+      editCompBtns.forEach(el => el.classList.remove('hidden'));
+      deleteCompBtns.forEach(el => el.classList.add('hidden'));
+      ownerConvBtns.forEach(el => el.classList.add('hidden'));
+    } else {
+      // Recepción: Read only everywhere
+      compCreateBtn.style.display = 'none';
+      convCreateBtn.style.display = 'none';
+      editCompBtns.forEach(el => el.classList.add('hidden'));
+      deleteCompBtns.forEach(el => el.classList.add('hidden'));
+      ownerConvBtns.forEach(el => el.classList.add('hidden'));
+    }
+  }
+
+  function switchMainTab(tab) {
+    activeTab = tab;
+    const tabEmpresas = document.getElementById('tabEmpresasBtn');
+    const tabConvenios = document.getElementById('tabConveniosBtn');
+    const secEmpresas = document.getElementById('sectionEmpresas');
+    const secConvenios = document.getElementById('sectionConvenios');
+    const compWrap = document.getElementById('companyActionWrapper');
+    const convWrap = document.getElementById('convenioActionWrapper');
+
+    if (tab === 'empresas') {
+      tabEmpresas.className = "px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold shadow-sm transition-all flex items-center gap-space-xs";
+      tabConvenios.className = "px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-headline-sm text-headline-sm font-semibold transition-all flex items-center gap-space-xs";
+      secEmpresas.classList.remove('hidden');
+      secConvenios.classList.add('hidden');
+      compWrap.classList.remove('hidden');
+      convWrap.classList.add('hidden');
+    } else {
+      tabConvenios.className = "px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold shadow-sm transition-all flex items-center gap-space-xs";
+      tabEmpresas.className = "px-space-lg py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-headline-sm text-headline-sm font-semibold transition-all flex items-center gap-space-xs";
+      secConvenios.classList.remove('hidden');
+      secEmpresas.classList.add('hidden');
+      convWrap.classList.remove('hidden');
+      compWrap.classList.add('hidden');
+    }
+    applyPermissions();
+  }
+
+  // Modals Management
+  function openCompanyModal(mode) {
+    if (currentRole === 'recepcion') {
+      showToast('Permiso denegado: Recepción solo tiene perfil de consulta.', 'error');
+      return;
+    }
+    const modal = document.getElementById('companyModal');
+    const title = document.getElementById('companyModalTitle');
+    title.innerText = mode === 'new' ? 'Alta de Nueva Empresa Aliada' : 'Edición de Empresa Aliada';
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeCompanyModal() {
+    const modal = document.getElementById('companyModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.getElementById('companyForm').reset();
+  }
+
+  function editCompany(id) {
+    if (currentRole === 'recepcion') return;
+    openCompanyModal('edit');
+    // Pre-fill demo
+    document.getElementById('compNombreComercial').value = "Grupo Bimbo Corporativo";
+    document.getElementById('compRazonSocial').value = "BIMBO S.A.B. DE C.V.";
+    document.getElementById('compRFC').value = "BIM010523TR8";
+    document.getElementById('compEmpleados').value = 1420;
+    document.getElementById('compDomicilio').value = "Prol. Paseo de la Reforma 1000, Santa Fe, CDMX";
+    document.getElementById('compContactoNombre').value = "Lic. Rodrigo Albarrán";
+    document.getElementById('compContactoCargo').value = "Director de Capital Humano";
+    document.getElementById('compContactoEmail').value = "r.albarran@grupobimbo.com";
+    document.getElementById('compContactoTelefono').value = "55 5268 6600";
+  }
+
+  function deleteCompany(id, name) {
+    if (currentRole !== 'dueño') {
+      showToast('Acción restringida: Sólo el Dueño de la clínica puede dar de baja empresas.', 'error');
+      return;
+    }
+    confirmDeleteConvenio(`Empresa ID #${id}`, name, 1420);
+  }
+
+  function handleCompanySubmit(e) {
+    e.preventDefault();
+    closeCompanyModal();
+    showToast('Empresa guardada satisfactoriamente en catálogo.');
+  }
+
+  function viewCompany(name) {
+    showToast(`Mostrando expediente fiscal y contratos de ${name}`);
+  }
+
+  // Convenios Modals & Handlers
+  function openConvenioModal(mode) {
+    if (currentRole !== 'dueño') {
+      showToast('Sólo el rol Dueño tiene facultades para emitir o modificar convenios.', 'error');
+      return;
+    }
+    const modal = document.getElementById('convenioModal');
+    const title = document.getElementById('convenioModalTitle');
+    title.innerText = mode === 'new' ? 'Registro de Nuevo Convenio Corporativo' : 'Modificación de Términos de Convenio';
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeConvenioModal() {
+    const modal = document.getElementById('convenioModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.getElementById('convenioForm').reset();
+  }
+
+  function editConvenio(id) {
+    if (currentRole !== 'dueño') return;
+    openConvenioModal('edit');
+    document.getElementById('convNombre').value = "Convenio Bienestar Dental Oro 2026";
+    document.getElementById('convEmpresa').value = "Grupo Bimbo Corporativo";
+    document.getElementById('convMaxBeneficiarios').value = 5;
+    document.getElementById('badgeBeneficiarios').innerText = 'Valor actual: 5';
+    document.getElementById('convTerminos').value = "Profilaxis ultrasónica 100% cubierta. Descuento 35% en prótesis y guardas oclusales.";
+  }
+
+  function handleConvenioSubmit(e) {
+    e.preventDefault();
+    closeConvenioModal();
+    showToast('Convenio corporativo registrado y validado para facturación.');
+  }
+
+  // Deletion with Warning
+  function confirmDeleteConvenio(folio, empresa, afiliados) {
+    if (currentRole !== 'dueño') {
+      showToast('Acción no autorizada para su nivel de acceso.', 'error');
+      return;
+    }
+    pendingDeleteTarget = folio;
+    document.getElementById('deleteItemTitle').innerText = `${folio} • ${empresa}`;
+    document.getElementById('activeAffiliatesCount').innerText = afiliados.toLocaleString('es-MX');
+    const modal = document.getElementById('deleteConfirmModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeDeleteConfirmModal() {
+    const modal = document.getElementById('deleteConfirmModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    pendingDeleteTarget = null;
+  }
+
+  function executeDeletion() {
+    closeDeleteConfirmModal();
+    showToast('Registro eliminado. Se emitió alerta a los pacientes y recepción.');
+  }
+
+  // Toggle Empty State view demonstration
+  let emptyStateActive = false;
+  function toggleEmptyStateView() {
+    emptyStateActive = !emptyStateActive;
+    const emptyBox = document.getElementById('conveniosEmptyState');
+    const listBox = document.getElementById('conveniosListContainer');
+    const btn = document.getElementById('btnSimularVacio');
+
+    if (emptyStateActive) {
+      emptyBox.classList.remove('hidden');
+      emptyBox.classList.add('flex');
+      listBox.classList.add('hidden');
+      btn.innerText = "Ver Listado con Datos";
+    } else {
+      emptyBox.classList.add('hidden');
+      emptyBox.classList.remove('flex');
+      listBox.classList.remove('hidden');
+      btn.innerText = "Alternar Estado Vacío";
+    }
+  }
+
+  // Toast Helper
+  function showToast(msg, type = 'success') {
+    const toast = document.getElementById('appToast');
+    const msgEl = document.getElementById('toastMessage');
+    const iconEl = document.getElementById('toastIcon');
+
+    msgEl.innerText = msg;
+    if (type === 'error') {
+      iconEl.innerText = 'error';
+      iconEl.className = 'material-symbols-outlined text-error text-body-lg';
+    } else {
+      iconEl.innerText = 'check_circle';
+      iconEl.className = 'material-symbols-outlined text-tertiary-fixed text-body-lg';
+    }
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3500);
+  }
+
+  function exportCompaniesMXN() {
+    showToast('Generando reporte fiscal B2B (XLSX / SAT CFDI 4.0)...');
+  }
+
+  function filterCompanies() {
+    const val = document.getElementById('companyStatusFilter').value;
+    showToast(`Filtrando catálogo por estado: ${val}`);
+  }
+
+  // Init
+  window.addEventListener('DOMContentLoaded', () => {
+    applyPermissions();
+  });
+</script></main></div></body></html>

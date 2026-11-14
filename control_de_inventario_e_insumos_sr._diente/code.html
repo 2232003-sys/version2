@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","on-primary-container":"#fdfcff","on-secondary-fixed-variant":"#005049","on-tertiary-fixed":"#002109","surface-bright":"#faf8ff","secondary-fixed":"#89f5e7","tertiary-container":"#00873a","on-error-container":"#93000a","outline":"#707881","on-background":"#131b2e","primary-fixed-dim":"#93ccff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005320","primary-container":"#007bb9","tertiary":"#006b2c","surface":"#faf8ff","tertiary-fixed":"#7ffc97","on-secondary-container":"#006f66","primary-fixed":"#cce5ff","outline-variant":"#bfc7d2","surface-container-high":"#e2e7ff","surface-container":"#eaedff","error":"#ba1a1a","on-secondary-fixed":"#00201d","error-container":"#ffdad6","tertiary-fixed-dim":"#62df7d","on-error":"#ffffff","on-secondary":"#ffffff","surface-variant":"#dae2fd","on-tertiary-container":"#f7fff2","secondary-container":"#86f2e4","inverse-surface":"#283044","on-surface":"#131b2e","secondary":"#006a61","on-tertiary":"#ffffff","secondary-fixed-dim":"#6bd8cb","on-surface-variant":"#3f4850","on-primary":"#ffffff","surface-container-low":"#f2f3ff","surface-tint":"#006398","inverse-primary":"#93ccff","on-primary-fixed":"#001d31","surface-container-highest":"#dae2fd","primary":"#006194","on-primary-fixed-variant":"#004b73","surface-dim":"#d2d9f4","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-tablet":"1.5rem","space-lg":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-md":"1rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"body-sm":["Manrope"],"label-md":["Manrope"],"headline-sm":["Outfit"],"label-sm":["Manrope"],"body-lg":["Manrope"],"headline-md":["Outfit"],"headline-lg-mobile":["Outfit"],"label-lg":["Manrope"],"body-md":["Manrope"],"data-mono":["Manrope"],"headline-xl":["Outfit"],"headline-lg":["Outfit"],"headline-xl-mobile":["Outfit"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[20px]">dentistry</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary">Sr. Diente</span><span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Dental Clinic OS</span></div></div><div class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">v2.4</div></div><div class="px-space-md py-space-xs"><div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">cloud_done</span><span>Sync OK (CDMX)</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Google Cal</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-xs"><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-sm pt-space-xs pb-1 font-label-sm text-label-sm uppercase text-outline">Clínica &amp; Agenda</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agenda-3-sillones" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="flex-1">Agenda (3 Sillones)</span><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">personal_injury</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><div class="px-space-sm pt-space-md pb-1 font-label-sm text-label-sm uppercase text-outline">Operación &amp; Finanzas</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="flex-1">Finanzas MXN</span><span class="font-label-sm text-label-sm text-tertiary bg-surface-container-low px-1.5 py-0.5 rounded">MXN</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Comisiones</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><div class="px-space-sm pt-space-md pb-1 font-label-sm text-label-sm uppercase text-outline">Fidelización &amp; Control</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span class="flex-1">Club Sonrisas</span><span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-1.5 py-0.5 rounded">Fidelidad</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Recepción / Admin</span></div></div><span class="material-symbols-outlined text-outline text-[18px]">more_vert</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-semibold">Sucursal Polanco</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">today</span><span>Miércoles, 25 Octubre</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all" placeholder="Buscar paciente por nombre, CURP o teléfono..." type="text"/></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center rounded-lg bg-surface-container p-0.5"><button class="px-space-sm py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]">Sillón 1</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Sillón 2</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Sillón 3</button></div><button class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="h-5 w-px bg-surface-container-high mx-space-xs"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background px-margin-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header Contextual con Estilo Clínico Moderno -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span class="uppercase tracking-wider">Módulo Operativo</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">Sucursal Polanco CDMX</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm ml-2">Norma COFEPRIS</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Control de Inventario e Insumos Clínicos</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Monitoreo de existencias de materiales y utensilios en clínica CDMX.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-secondary shadow-sm hover:bg-surface-container transition-all font-label-lg text-label-lg active:scale-95" id="btnRegistrarMovimiento">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+<span>Registrar Movimiento / Ajuste</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-primary text-on-primary shadow-md hover:bg-primary-container transition-all font-label-lg text-label-lg active:scale-95" id="btnAltaArticulo">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Alta de Artículo</span>
+</button>
+</div>
+</div>
+<!-- Métricas Clave (Bento Grid Operativo) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Ítems -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-low rounded-full pointer-events-none opacity-60"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Catalogados</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">142</span>
+<span class="font-label-md text-label-md text-secondary">activos</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">98 consumibles · 44 instrumental</p>
+</div>
+</div>
+<!-- Stock Crítico -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-error-container/40 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-error uppercase tracking-wider">Bajo Mínimo</span>
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-error font-bold tracking-tight">8</span>
+<span class="font-label-sm text-label-sm text-on-error-container bg-error-container px-2 py-0.5 rounded-full">Resurtir hoy</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Stock menor o igual al límite min_stock</p>
+</div>
+</div>
+<!-- Caducidades 60 días -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-high rounded-full pointer-events-none opacity-50"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Próx. Caducidad</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">3</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">&lt; 60 días (YYYY/MM)</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Anestésicos y cementos resinosos</p>
+</div>
+</div>
+<!-- Materiales vs Utensilios Ratio -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Composición</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">pie_chart</span>
+</div>
+</div>
+<div class="mt-space-sm space-y-2">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Materiales</span>
+<span class="font-semibold text-on-surface">69% (98)</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-l-full" style="width: 69%"></div>
+<div class="bg-secondary h-full rounded-r-full" style="width: 31%"></div>
+</div>
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface-variant flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Utensilios</span>
+<span class="font-semibold text-on-surface">31% (44)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barra de Filtros y Búsqueda Reactiva -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row gap-space-md items-stretch lg:items-center justify-between">
+<!-- Buscador -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="searchInput" placeholder="Buscar por nombre de insumo, especificación o clave numérica (#104)..." type="text"/>
+</div>
+<!-- Controles de Filtros -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Filtro Tipo -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="filter-type-btn px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md transition-all" data-type="ALL">Todos los tipos</button>
+<button class="filter-type-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="Material">Material</button>
+<button class="filter-type-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" data-type="Utensilio">Utensilio</button>
+</div>
+<!-- Filtro Estado -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl">
+<button class="filter-status-btn px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md" data-status="ACTIVE">Activos</button>
+<button class="filter-status-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" data-status="INACTIVE">Inactivos</button>
+</div>
+<!-- Switch de Stock Crítico -->
+<button class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors" id="toggleBajoStock">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span>Bajo mínimo de existencias</span>
+<span class="px-1.5 py-0.2 rounded-md bg-error text-on-error font-label-sm text-label-sm" id="badgeCriticos">8</span>
+</button>
+<!-- Botón Limpiar Filtros -->
+<button class="p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" id="resetFilters" title="Restablecer filtros">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- Contenedor Principal: Tabla y Listado -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 font-semibold">Clave</th>
+<th class="py-3.5 px-4 font-semibold min-w-[220px]">Artículo &amp; Descripción</th>
+<th class="py-3.5 px-4 font-semibold">Tipo</th>
+<th class="py-3.5 px-4 font-semibold">U. Medida</th>
+<th class="py-3.5 px-4 font-semibold text-center">Entradas</th>
+<th class="py-3.5 px-4 font-semibold text-center">Salidas</th>
+<th class="py-3.5 px-4 font-semibold">Stock Actual</th>
+<th class="py-3.5 px-4 font-semibold">Mínimo</th>
+<th class="py-3.5 px-4 font-semibold">Caducidad</th>
+<th class="py-3.5 px-4 font-semibold">Estado</th>
+<th class="py-3.5 px-4 font-semibold text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface" id="inventoryTableBody">
+<!-- Fila 1: Resina Filtek (Material - Óptimo) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors item-row" data-id="1" data-low="false" data-status="ACTIVE" data-type="Material">
+<td class="py-4 px-4 font-data-mono text-primary font-bold text-body-sm">#104</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Resina Fotocurable A2 Filtek</span>
+<span class="font-body-sm text-body-sm text-outline">Jeringa 4g restauradora universal microhíbrida 3M</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-md text-label-md">
+                Material
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Tubos</td>
+<td class="py-4 px-4 text-center font-data-mono text-tertiary">35</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">19</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">16</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-outline">6</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-on-surface-variant">2026/08</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Activo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ver Detalle / Historial">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-secondary hover:bg-surface-container transition-colors" title="Registrar Entrada/Salida">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ajustar Stock">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 2: Anestésico Mepivacaína (Material - Bajo Stock & Próximo a Caducar) -->
+<tr class="hover:bg-error-container/20 transition-colors item-row bg-error-container/10" data-id="2" data-low="true" data-status="ACTIVE" data-type="Material">
+<td class="py-4 px-4 font-data-mono text-error font-bold text-body-sm">#208</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Anestésico Mepivacaína 3%</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Crítico</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Sin vasoconstrictor, cajas de 50 cartuchos 1.8ml</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-md text-label-md">
+                Material
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Cajas</td>
+<td class="py-4 px-4 text-center font-data-mono text-tertiary">40</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">38</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-headline-sm text-headline-sm font-bold text-error">2</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm font-semibold text-error">5</td>
+<td class="py-4 px-4">
+<span class="px-2 py-1 rounded-lg bg-error-container text-on-error-container font-data-mono text-body-sm font-bold">2024/11</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Activo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ver Detalle / Historial">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-primary bg-primary-fixed/40 hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" title="Registrar Entrada/Salida">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ajustar Stock">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 3: Espejo Bucal #5 (Utensilio - Instrumental Esterilizable) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors item-row" data-id="3" data-low="false" data-status="ACTIVE" data-type="Utensilio">
+<td class="py-4 px-4 font-data-mono text-outline font-bold text-body-sm">#315</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Espejo Bucal Plano #5 con Mango</span>
+<span class="font-body-sm text-body-sm text-outline">Acero inoxidable grado médico Hu-Friedy autoclavable</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md">
+                Utensilio
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Piezas</td>
+<td class="py-4 px-4 text-center font-data-mono text-tertiary">24</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">2</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">22</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-outline">10</td>
+<td class="py-4 px-4 font-body-sm text-outline">No aplica</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Activo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ver Detalle / Historial">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-secondary hover:bg-surface-container transition-colors" title="Registrar Entrada/Salida">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ajustar Stock">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 4: Guantes de Látex Talla M (Material - Bajo Stock) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors item-row bg-surface-container-low/20" data-id="4" data-low="true" data-status="ACTIVE" data-type="Material">
+<td class="py-4 px-4 font-data-mono text-error font-bold text-body-sm">#112</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Guantes de Látex Examen Talla M</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm">Reponer</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Caja con 100 guantes ambidiestros no estériles</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-md text-label-md">
+                Material
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Cajas</td>
+<td class="py-4 px-4 text-center font-data-mono text-tertiary">50</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">47</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-headline-sm text-headline-sm font-bold text-error">3</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm font-semibold text-error">10</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-on-surface-variant">2027/02</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Activo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ver Detalle / Historial">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-secondary hover:bg-surface-container transition-colors" title="Registrar Entrada/Salida">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ajustar Stock">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 5: Cemento Ionómero de Vidrio (Material - Inactivo/Descontinuado) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors item-row opacity-60" data-id="5" data-low="false" data-status="INACTIVE" data-type="Material">
+<td class="py-4 px-4 font-data-mono text-outline font-bold text-body-sm">-</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug line-through">Cemento Ionómero Tipo I Tradicional</span>
+<span class="font-body-sm text-body-sm text-outline">Reemplazado por sellador resinoso autopolimerizable</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container text-primary font-label-md text-label-md">
+                Material
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Frascos</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">12</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">12</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-outline">0</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-outline">0</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-outline">2023/12</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-outline font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Inactivo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="Ver Detalle">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 6: Fórceps Dental 150 Universal (Utensilio) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors item-row" data-id="6" data-low="false" data-status="ACTIVE" data-type="Utensilio">
+<td class="py-4 px-4 font-data-mono text-outline font-bold text-body-sm">#420</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Fórceps Universal Superior #150</span>
+<span class="font-body-sm text-body-sm text-outline">Cirugía oral y exodoncia de premolares e incisivos</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md">
+                Utensilio
+              </span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">Piezas</td>
+<td class="py-4 px-4 text-center font-data-mono text-tertiary">6</td>
+<td class="py-4 px-4 text-center font-data-mono text-outline">0</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">6</span>
+</div>
+</td>
+<td class="py-4 px-4 font-data-mono text-body-sm text-outline">3</td>
+<td class="py-4 px-4 font-body-sm text-outline">No aplica</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Activo
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ver Detalle / Historial">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-secondary hover:bg-surface-container transition-colors" title="Registrar Entrada/Salida">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Ajustar Stock">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Paginación y Resumen Inferior -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+        Mostrando <span class="font-semibold text-on-surface" id="visibleRowCount">5</span> de <span class="font-semibold text-on-surface">142</span> artículos registrados
+      </div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface font-label-sm text-label-sm shadow-sm transition-all disabled:opacity-40" disabled="">
+          Anterior
+        </button>
+<span class="px-3 py-1 font-label-sm text-label-sm text-primary font-bold bg-primary-fixed rounded-lg">1</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:text-primary font-label-sm text-label-sm shadow-sm transition-all">
+          Siguiente
+        </button>
+</div>
+</div>
+</div>
+<!-- Bloque Contextual de Variantes de Estado (Demostración de UI Robusta) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Variante: Estado Vacío (Sin Coincidencias de Filtro) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center text-center space-y-space-sm py-10" id="emptyStateBox">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-low text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">No se encontraron artículos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">
+          No hay insumos que coincidan con la búsqueda actual o los filtros de tipo seleccionados.
+        </p>
+</div>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors" onclick="document.getElementById('searchInput').value=''; document.getElementById('searchInput').dispatchEvent(new Event('input'));">
+        Restablecer criterios
+      </button>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase">Vista de contingencia / empty state</span>
+</div>
+<!-- Variante: Simulación Error de Carga / Reintento -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center text-center space-y-space-sm py-10 relative overflow-hidden">
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm uppercase">Simulación Error API</span>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">sync_problem</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-error font-semibold">Error al sincronizar inventario clínico</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">
+          No se pudo consultar el servidor de existencias de la sucursal Polanco. Compruebe la conexión a intranet.
+        </p>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-xl bg-error text-on-error hover:bg-on-error-container font-label-md text-label-md shadow-sm transition-all active:scale-95" onclick="alert('Reintentando consulta de existencias a servidor central...');">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Reintentar carga de existencias</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase">Control de errores COFEPRIS / Auditoría</span>
+</div>
+</div>
+<!-- Modal Modalidad Drawer: Registrar Movimiento / Ajuste (Oculto inicialmente) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="modalMovimiento">
+<div class="bg-surface-container-lowest rounded-3xl max-w-lg w-full p-space-xl shadow-xl space-y-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[22px]">swap_vert</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Registrar Movimiento de Inventario</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low text-outline hover:text-on-surface flex items-center justify-center" id="btnCloseModal">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Registre entradas por reabastecimiento o salidas por merma/ajuste manual físico en el sillón operatorio.
+      </p>
+<div class="space-y-space-sm pt-2">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Artículo</label>
+<select class="w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>#104 - Resina Fotocurable A2 Filtek (Stock: 16)</option>
+<option>#208 - Anestésico Mepivacaína 3% (Stock: 2 - Crítico)</option>
+<option>#315 - Espejo Bucal Plano #5 con Mango (Stock: 22)</option>
+<option>#112 - Guantes de Látex Examen Talla M (Stock: 3)</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Tipo de Movimiento</label>
+<select class="w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none">
+<option>Entrada (+) Resurtido</option>
+<option>Salida (-) Ajuste/Merma</option>
+<option>Ajuste Manual Físico</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Cantidad</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" min="1" type="number" value="5"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Notas / Folio Interno</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" placeholder="Ej. Factura F-8921 / Revisión sillón 1" type="text"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" id="btnCancelModal">
+          Cancelar
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg shadow-sm transition-colors" onclick="alert('Movimiento registrado exitosamente con sincronización CDMX.'); document.getElementById('modalMovimiento').classList.add('hidden');">
+          Confirmar Movimiento
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactividad Cliente Rápida y Limpia -->
+<script>
+  (function() {
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.getElementById('inventoryTableBody');
+    const rows = tableBody.querySelectorAll('.item-row');
+    const visibleCountEl = document.getElementById('visibleRowCount');
+    const emptyStateBox = document.getElementById('emptyStateBox');
+    const typeButtons = document.querySelectorAll('.filter-type-btn');
+    const statusButtons = document.querySelectorAll('.filter-status-btn');
+    const toggleBajoStockBtn = document.getElementById('toggleBajoStock');
+    const resetFiltersBtn = document.getElementById('resetFilters');
+
+    let currentType = 'ALL';
+    let currentStatus = 'ACTIVE';
+    let onlyLowStock = false;
+
+    function applyFilters() {
+      const query = (searchInput.value || '').toLowerCase().trim();
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowType = row.getAttribute('data-type');
+        const rowStatus = row.getAttribute('data-status');
+        const isLow = row.getAttribute('data-low') === 'true';
+
+        const matchesQuery = !query || text.includes(query);
+        const matchesType = (currentType === 'ALL') || (rowType === currentType);
+        const matchesStatus = (currentStatus === 'ALL') || (rowStatus === currentStatus);
+        const matchesLow = !onlyLowStock || isLow;
+
+        if (matchesQuery && matchesType && matchesStatus && matchesLow) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (visibleCountEl) visibleCountEl.textContent = visibleCount;
+      if (emptyStateBox) {
+        if (visibleCount === 0) {
+          emptyStateBox.classList.remove('opacity-40');
+          emptyStateBox.classList.add('ring-2', 'ring-primary/20');
+        } else {
+          emptyStateBox.classList.add('opacity-40');
+          emptyStateBox.classList.remove('ring-2', 'ring-primary/20');
+        }
+      }
+    }
+
+    // Buscador
+    searchInput.addEventListener('input', applyFilters);
+
+    // Filtros de Tipo
+    typeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        typeButtons.forEach(b => {
+          b.className = 'filter-type-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+        });
+        btn.className = 'filter-type-btn px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-md text-label-md transition-all font-semibold';
+        currentType = btn.getAttribute('data-type');
+        applyFilters();
+      });
+    });
+
+    // Filtros de Estado
+    statusButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        statusButtons.forEach(b => {
+          b.className = 'filter-status-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md';
+        });
+        btn.className = 'filter-status-btn px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-semibold';
+        currentStatus = btn.getAttribute('data-status');
+        applyFilters();
+      });
+    });
+
+    // Switch Bajo Stock
+    toggleBajoStockBtn.addEventListener('click', () => {
+      onlyLowStock = !onlyLowStock;
+      if (onlyLowStock) {
+        toggleBajoStockBtn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        toggleBajoStockBtn.classList.add('bg-error-container', 'text-on-error-container', 'font-bold');
+      } else {
+        toggleBajoStockBtn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        toggleBajoStockBtn.classList.remove('bg-error-container', 'text-on-error-container', 'font-bold');
+      }
+      applyFilters();
+    });
+
+    // Reset
+    resetFiltersBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      currentType = 'ALL';
+      currentStatus = 'ACTIVE';
+      onlyLowStock = false;
+
+      // Reseteo visual
+      typeButtons[0].click();
+      statusButtons[0].click();
+      toggleBajoStockBtn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      toggleBajoStockBtn.classList.remove('bg-error-container', 'text-on-error-container', 'font-bold');
+
+      applyFilters();
+    });
+
+    // Modal Handlers
+    const modal = document.getElementById('modalMovimiento');
+    const openBtn = document.getElementById('btnRegistrarMovimiento');
+    const closeBtn = document.getElementById('btnCloseModal');
+    const cancelBtn = document.getElementById('btnCancelModal');
+
+    if (openBtn && modal) {
+      openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+    }
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    }
+    if (cancelBtn && modal) {
+      cancelBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    }
+
+    // Inicializar
+    applyFilters();
+  })();
+</script></main></div></body></html>

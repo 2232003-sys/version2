@@ -1,0 +1,104 @@
+# Brief de Diseño — Panel Administrativo Sr. Diente
+
+## 1. Resumen Ejecutivo y Objetivo
+Diseñar el sistema web de gestión integral para la clínica dental **Sr. Diente**. El sistema conecta la operación clínica, administrativa y financiera facilitando el trabajo coordinado de:
+- **Dueño:** Visión global, analítica financiera, comisiones y control de usuarios.
+- **Administrador:** Operación diaria, auditoría y control de inventarios/servicios.
+- **Recepción:** Gestión de agenda, citas, registro de pacientes, cobros en caja y seguimientos.
+- **Doctores:** Agenda de sillones, registro de atención clínica y consulta de honorarios/comisiones.
+
+---
+
+## 2. Sistema de Diseño e Identidad Visual
+- **Personalidad:** Profesional, cercana, confiable, higiénica y moderna.
+- **Paleta Cromática:**
+  - *Azul Dental Primario:* `#0284C7` (Sky 600)
+  - *Turquesa de Acento / Salud:* `#2DD4BF` (Teal 400)
+  - *Neutros y Superficies:* Blanco puro `#FFFFFF`, fondos gris clínico suave `#F8FAFC`, bordes sutiles `#E2E8F0`, textos en carbón legible `#0F172A` y `#475569`.
+  - *Semántica de Estados:* Verde clínico (Confirmada / Pagado / Disponible), Ámbar cálido (Pendiente / En atención / Stock bajo), Rojo suave (Cancelada / Vencido / Deuda), Azul celeste (Llegó / Agendada).
+- **Tipografía:**
+  - Encabezados: `Outfit` (amable, geométrica moderna).
+  - Cuerpo y tablas de datos: `Manrope` (alta legibilidad numérica y funcional).
+- **Criterios de Usabilidad:**
+  - Espaciado amplio y aireado (evitar saturación de tarjetas y sombras pesadas).
+  - Estados identificados con combinación de texto, color e íconos accesibles.
+  - Formato Desktop primario (1440px / 1280px) con vista adaptable para Tablet y Móvil en Agenda y Búsqueda de Pacientes.
+
+---
+
+## 3. Arquitectura de Información y Navegación
+**Sidebar Global Persistente:**
+1. **Dashboard** (KPIs del día, tareas críticas y accesos directos)
+2. **Agenda** (Vista de sillones/doctores, diaria y semanal)
+3. **Pacientes** (Directorio, expediente, planes, presupuestos y cobros)
+4. **Doctores** (Directorio, especialidades, comisiones y horarios)
+5. **Servicios** (Catálogo de procedimientos y aranceles)
+6. **Comisiones** (Liquidación y cálculo para doctores y clínica)
+7. **Inventario** (Materiales odontológicos, stock mínimo y caducidades)
+8. **Caja** (Aperturas, arqueos, cortes y cobros diarios)
+9. **Finanzas** (Ingresos, egresos fijos e informes contables)
+10. **Presupuestos** (Cotizaciones en fases, descuentos y cuotas)
+11. **Club Sonrisas** (Convenios corporativos, membresías y tarifas preferenciales)
+12. **Usuarios** (Permisos y accesos por rol)
+
+---
+
+## 4. Matriz de Módulos y Pantallas Prioritarias
+
+### Módulo 1: Acceso y Seguridad
+- **Pantalla:** Login profesional con branding Sr. Diente, selector/recuerdo de sesión, validación de contraseñas y mensajes de error específicos (credenciales inválidas, sesión expirada, permiso denegado).
+
+### Módulo 2: Dashboard Operativo
+- **Pantalla:** Tablero dinámico según rol:
+  - *KPIs principales:* Citas de hoy, citas por confirmar, pacientes en sala de espera, cobranza pendiente y balance del día.
+  - *Agenda en vivo:* Próximos pacientes con indicador de estado (Agendado, Llegó, En sillón, Terminado).
+  - *Acciones rápidas:* "+ Nueva Cita", "+ Nuevo Paciente", "Cobrar en Caja".
+
+### Módulo 3: Agenda Multidoctor y Sillones
+- **Pantalla:** Matriz de horarios (8:00 AM - 8:00 PM), filtros por Sillón (1, 2, 3, Quirófano) y Odontólogo.
+- **Interacciones:**
+  - Click en bloque para crear cita.
+  - Drag & drop para reprogramación.
+  - Modal de detalle: check-in ("Registrar Llegada"), iniciar atención, cancelar con motivo, pase directo a Cobro en Caja.
+  - Indicador de sincronización en tiempo real con Google Calendar.
+
+### Módulo 4: Directorio y Ficha 360° del Paciente
+- **Directorio:** Búsqueda rápida por nombre/teléfono/cédula, filtros por tiempo sin visita o pagos pendientes.
+- **Ficha Integral (Tabs):**
+  1. *Resumen:* Alertas médicas (alergias en badge destacado), saldo de cuenta corriente, próxima cita y botón directo WhatsApp.
+  2. *Citas:* Histórico de visitas pasadas y agendadas.
+  3. *Expediente Odontológico:* Antecedentes clínicos, odontograma gráfico de evolución, notas de evolución.
+  4. *Presupuestos y Tratamientos:* Avance clínico vs avance de pago.
+  5. *Pagos y Recibos:* Estado de cuenta, historial de abonos y facturas.
+  6. *Club Sonrisas:* Convenio vinculado y porcentaje de descuento aplicado.
+
+### Módulo 5: Caja y Cobranzas
+- **Pantalla de Caja Activa:** Estado de turno (Fondo inicial, Cobros en efectivo, Terminal bancaria, Transferencias, Total esperado).
+- **Flujo de Cobro Modal:**
+  1. Selección de paciente y desglose de tratamientos pendientes.
+  2. Aplicación de beneficios Club Sonrisas o convenios.
+  3. Desglose de método de pago (multimetodo: parte en tarjeta, parte en efectivo).
+  4. Emisión instantánea de recibo térmico / comprobante digital.
+- **Arqueo y Cierre:** Conteo físico ciego, registro de descuadre y firma digital del responsable.
+
+### Módulo 6: Presupuestos Multietapa
+- **Pantalla:** Creación asistida por pasos: Paciente → Selección de piezas/tratamientos → Fases clínicas → Simulación de financiamiento/cuotas → Vista de impresión y firma digital.
+
+### Módulo 7: Comisiones Médicas
+- **Pantalla:** Matriz transparente de honorarios: Paciente, Procedimiento, Monto cobrado, Deducción de materiales/laboratorio, % de comisión pactada y Monto neto a liquidar con botón de "Pagar comisión".
+
+---
+
+## 5. Prototipos y Flujos Críticos a Conectar en Figma
+1. **Flujo Cita:** Recepción busca paciente → Selecciona horario en Sillón 1 → Confirma cita con recordatorio WhatsApp.
+2. **Flujo Atención & Cobro:** Doctor marca "Atención finalizada" → Recepción recibe alerta → Abre flujo de cobro → Emite recibo y agenda cita de revisión.
+3. **Flujo Presupuesto:** Doctor genera propuesta en 2 fases con ortodoncia → Paciente firma en tablet → Se programa calendario de abonos.
+
+---
+
+## 6. Siguientes Pasos
+Se recomienda diseñar primero el **Design System** y los 4 pilares fundamentales de la clínica:
+1. **Dashboard Operativo** (Visión ejecutiva y de recepción)
+2. **Agenda de Sillones y Doctores** (Herramienta de uso continuo)
+3. **Ficha Integral del Paciente** (Núcleo clínico-administrativo)
+4. **Punto de Cobro y Caja** (Flujo monetario y facturación)

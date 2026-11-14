@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#d2d9f4", "outline-variant": "#bfc7d2", "surface-container": "#eaedff", "on-secondary-container": "#006f66", "on-primary-container": "#fdfcff", "secondary-fixed": "#89f5e7", "on-secondary-fixed-variant": "#005049", "tertiary": "#006b2c", "secondary-container": "#86f2e4", "inverse-on-surface": "#eef0ff", "on-primary": "#ffffff", "outline": "#707881", "on-background": "#131b2e", "surface-tint": "#006398", "on-tertiary-container": "#f7fff2", "surface-container-high": "#e2e7ff", "error-container": "#ffdad6", "secondary": "#006a61", "on-secondary-fixed": "#00201d", "tertiary-container": "#00873a", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3f4850", "on-error": "#ffffff", "error": "#ba1a1a", "on-primary-fixed": "#001d31", "surface-container-low": "#f2f3ff", "surface-container-highest": "#dae2fd", "inverse-primary": "#93ccff", "on-tertiary-fixed-variant": "#005320", "primary-fixed": "#cce5ff", "primary": "#006194", "primary-container": "#007bb9", "background": "#faf8ff", "surface-bright": "#faf8ff", "surface": "#faf8ff", "surface-variant": "#dae2fd", "on-primary-fixed-variant": "#004b73", "on-tertiary-fixed": "#002109", "on-secondary": "#ffffff", "primary-fixed-dim": "#93ccff", "tertiary-fixed": "#7ffc97", "secondary-fixed-dim": "#6bd8cb", "on-surface": "#131b2e", "tertiary-fixed-dim": "#62df7d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin-desktop": "2rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": [ "Manrope" ], "headline-sm": [ "Outfit" ], "headline-xl": [ "Outfit" ], "headline-lg": [ "Outfit" ], "headline-lg-mobile": [ "Outfit" ], "label-md": [ "Manrope" ], "body-sm": [ "Manrope" ], "label-sm": [ "Manrope" ], "body-lg": [ "Manrope" ], "data-mono": [ "Manrope" ], "headline-xl-mobile": [ "Outfit" ], "label-lg": [ "Manrope" ], "headline-md": [ "Outfit" ] }, "fontSize": { "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "data-mono": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low/40"><img alt="Logo Sr. Diente" class="w-10 h-10 object-contain rounded-lg bg-surface-container-lowest p-1 shadow-[0_1px_3px_rgba(15,23,42,0.04)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical OS</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.04)]"><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span>Pacientes 360</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">dentistry</span><span>Servicios</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">percent</span><span>Comisiones</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.04)]" data-path="laboratorio" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">biotech</span><span>Laboratorio</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Activo</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low/50 mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between px-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Versión Cloud</span><span class="font-data-mono text-body-sm text-primary font-semibold">v2.4 MX</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-1.5 rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.04)]"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-label-md text-label-md text-on-surface">Polanco CDMX</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1 rounded-full"><span class="material-symbols-outlined text-[16px] text-tertiary">sync</span><span class="font-label-sm text-label-sm text-tertiary font-bold">Google Calendar Sync OK</span></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative shadow-[0_1px_3px_rgba(15,23,42,0.04)]"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-lowest py-1 px-2.5 rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.04)]"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Dra. Jimena Alarcón</span><span class="font-label-sm text-label-sm text-secondary leading-none">Dirección Clínica</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1nUriOepxJ5h4C4Vu9HimqkBzJ9_DLbgMl7GllHuTgTkJCA-J_NKHr09q_CUhAHlec1KBuXQypEPQjD4l5VQQKhq4Duih-Wia-S8mhzm8dYwRLOMhrrc0Y_yTlfxV_7lLOrTs4DMKS6k0Z60WDFqgx4fbTDq8yMSzYkityms-EjrjeNxcGNHaEW60ldlkVBjoBw88mxyFjPwKWqSfZjliENymnzNggkQ3F0R4WMGPrlpru-J8S7eJ"></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1540px] mx-auto w-full space-y-space-lg">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+<span>Laboratorio</span>
+</a>
+<span class="text-outline-variant font-label-md">/</span>
+<span class="font-label-md text-label-md text-on-surface">Órdenes Técnicas</span>
+<span class="text-outline-variant font-label-md">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">#LAB-2026-0089</span>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<!-- Role badge indicator -->
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">admin_panel_settings</span>
+<span class="font-label-sm text-label-sm font-semibold">Perfil: Administrador / Dueño</span>
+</div>
+<!-- Improvement badge -->
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-primary border-0 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+          Propuesta de Mejora: Arqueo Dual
+        </span>
+</div>
+</div>
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Detalle de Orden de Laboratorio #LAB-2026-0089</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Enviada / En Proceso en Taller
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Inspección técnica, trazabilidad clínica y liquidación a técnico protésico con arqueo de Caja Turno.
+        </p>
+</div>
+<!-- Action pill buttons -->
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Boleta Técnica</span>
+</button>
+<button class="h-10 px-space-md rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-all flex items-center gap-2 font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Notificar Taller</span>
+</button>
+</div>
+</div>
+<!-- Notification pill regarding read-only status -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">info</span>
+<div class="text-body-sm font-body-sm">
+<span class="font-semibold text-on-surface">Lectura informativa del modelo de laboratorio:</span> 
+        El estado se reporta como lectura informativa del modelo; no incluye edición ni cambios de estado en este router. Los cambios de fase técnica se sincronizan directamente vía protocolo de taller periférico.
+      </div>
+</div>
+<!-- Overview Identity Banner (Technical & Clinical Context) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Folio & Date -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Folio &amp; Fecha de Salida</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">#LAB-2026-0089</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+            22 de Octubre de 2026
+          </div>
+</div>
+<!-- Paciente -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Paciente Receptor</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span>Lucía Garza Ramos</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-primary">#PAC-0842</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">assignment_turned_in</span>
+            Expediente Odontológico Activo
+          </div>
+</div>
+<!-- Presupuesto Vinculado -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Presupuesto Clínico</span>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold">#PRE-2026-0098</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Cuota 2 Rehabilitación Estética
+          </div>
+</div>
+<!-- Proveedor Externo -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Proveedor Técnico Dental</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Arte Dental Lab CDMX</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">handyman</span>
+            Téc. Marco Aurelio S.
+          </div>
+</div>
+</div>
+<!-- Extended Technical Description -->
+<div class="pt-space-md mt-space-md border-0 bg-surface-container-low/60 rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md"><div class="flex items-start gap-space-sm w-full"><div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm"><span class="material-symbols-outlined text-[24px]">dentistry</span></div><div class="space-y-1 flex-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Trabajo Prescrito &amp; Especificaciones Clínicas</span><p class="font-headline-sm text-headline-sm text-on-surface">Guarda oclusal miorrelajante rígida de acetato 3mm termoformada superior con planos de desoclusión canina</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">Material: Biolon Biocryl rígido de 3.0 mm de espesor termoformado al vacío sobre modelo de yeso tipo IV. Tono: Transparente cristalino de alto pulido superficial. Pruebas y calibración clínica: Ajuste en articulador semiajustable con verificación de contactos oclusales céntricos puntiformes bilaterales y desoclusión anterior balanceada con registro en cera céntrica y toma de impresión extraduro validada.</p></div></div></div>
+</div>
+<!-- Comparative Financial Breakdown -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Desglose Financiero Comparativo</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Separación estricta de flujo de ingresos de paciente frente a compromisos de egresos de laboratorio.</p>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 bg-surface-container rounded-lg font-data-mono text-body-sm text-primary font-semibold">
+          Moneda: MXN (Pesos Mexicanos)
+        </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Tarjeta 1 (Paciente) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary">person</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Anticipo de Paciente Cubierto en Caja</span>
+</div>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-container/20 text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Anticipo 100% Cubierto
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-md py-space-sm bg-surface-container-low/40 rounded-xl px-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Monto Pactado al Paciente</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">$3,200.00 <span class="font-body-sm text-body-sm text-outline">MXN</span></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block uppercase tracking-wider font-bold">Anticipo Cubierto en Caja</span>
+<span class="font-headline-md text-headline-md text-tertiary font-semibold">$1,600.00 <span class="font-body-sm text-body-sm text-outline">MXN</span></span>
+</div>
+</div>
+<div class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+                  Recibo Oficial Emitido:
+                </span>
+<span class="font-data-mono font-semibold text-on-surface">#REC-2026-0520</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">account_balance_wallet</span>
+                  Porcentaje de Anticipo:
+                </span>
+<span class="font-semibold text-on-surface">50.0% del total presupuestado</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">pending_actions</span>
+                  Saldo Restante al Entregar:
+                </span>
+<span class="font-data-mono font-semibold text-on-surface">$1,600.00 MXN</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">shield</span>
+              Operación ingresada en Caja Turno Polanco
+            </span>
+<a class="text-primary hover:underline font-semibold flex items-center gap-0.5" href="#">Ver comprobante</a>
+</div>
+</div>
+<!-- Tarjeta 2 (Proveedor) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-secondary">handyman</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Costo y Liquidación al Proveedor Externo</span>
+</div>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                Liquidación Pendiente
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm py-space-sm bg-surface-container-low/40 rounded-xl px-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Costo Lab</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">$850.00</span>
+<span class="block font-label-sm text-label-sm text-outline">MXN</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Pagado Hoy</span>
+<span class="font-headline-sm text-headline-sm text-outline font-semibold">$0.00</span>
+<span class="block font-label-sm text-label-sm text-outline">MXN</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-error block uppercase tracking-wider font-bold">Por Liquidar</span>
+<span class="font-headline-sm text-headline-sm text-error font-semibold">$850.00</span>
+<span class="block font-label-sm text-label-sm text-error">MXN</span>
+</div>
+</div>
+<div class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt_long</span>
+                  Taller Beneficiario:
+                </span>
+<span class="font-semibold text-on-surface truncate">Arte Dental Lab CDMX</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">payments</span>
+                  Condición Comercial:
+                </span>
+<span class="font-semibold text-on-surface">Contra-entrega física / Recolección</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">savings</span>
+                  Margen Bruto de Caso:
+                </span>
+<span class="font-data-mono font-semibold text-tertiary">+$2,350.00 MXN (73.4%)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+              Desembolso no registrado en el turno actual
+            </span>
+<span class="text-error font-semibold">Requiere Arqueo</span>
+</div>
+</div>
+</div>
+<!-- Critical Accounting Methodology Audit Banner -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Aviso Metodológico de Auditoría y Control Financiero</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-primary px-2 py-0.5 rounded-full font-semibold">Regla NIIF/SAT Clínicas</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Diferenciación contable:</strong> El anticipo que el paciente abona en Caja Turno es un ingreso de la clínica y <span class="text-error font-semibold">NO</span> un desembolso al proveedor. El pago al laboratorio es un egreso independiente que requiere Caja Turno activa y validación de Dueño o Administrador.
+          </p>
+</div>
+</div>
+</div>
+<!-- Panel de Registro de Pago a Proveedor (Main Interactive Section) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Form Container: Left 8 Cols -->
+<div class="lg:col-span-8 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm space-y-space-lg">
+<!-- Section Header with Active Cash Register Info -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md border-0 bg-surface-container-low/40 -m-space-lg p-space-lg rounded-t-xl gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">point_of_sale</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Registro de Pago a Proveedor</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Emisión de comprobante de egreso y cargo automático a la sesión de caja abierta.
+            </p>
+</div>
+<!-- Active Cash Register State -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-pulse shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-tertiary flex items-center gap-1">
+                Caja Turno Matutina Abierta
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caja General Abierta • Mariana Ruiz (Recepción)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-space-sm">
+            Formulario de Desembolso (Exclusivo Dueño / Dirección Administrativa)
+          </span>
+<form class="space-y-space-md" id="labPaymentForm" onsubmit="event.preventDefault(); handlePaymentSubmit();">
+<!-- Grid: Proveedor & Monto -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Proveedor Beneficiario -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant" for="provider_name">
+                  Proveedor Beneficiario
+                </label>
+<div class="relative">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md cursor-not-allowed" id="provider_name" readonly="" type="text" value="Arte Dental Lab CDMX (Téc. Marco Aurelio S.)">
+<span class="material-symbols-outlined text-[18px] text-outline absolute right-3 top-2.5">lock</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant">RFC: ADL-190412-MK4 • Polanco Norte</span>
+</div>
+<!-- Monto a Desembolsar -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant" for="amount_to_pay">
+                    Monto a Desembolsar (MXN)
+                  </label>
+<div class="flex items-center gap-2">
+<button class="text-label-sm font-label-sm text-primary hover:underline" onclick="setPaymentAmount(400)" type="button">
+                      Parcial: $400.00
+                    </button>
+<span class="text-outline-variant">•</span>
+<button class="text-label-sm font-label-sm text-primary font-bold hover:underline" onclick="setPaymentAmount(850)" type="button">
+                      Total: $850.00
+                    </button>
+</div>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-label-lg text-label-lg text-on-surface font-semibold">$</span>
+<input class="w-full h-10 pl-8 pr-16 rounded-lg bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm font-semibold shadow-inner focus:outline-none focus:bg-surface-container-low transition-colors" id="amount_to_pay" max="850" min="1" required="" step="0.50" type="number" value="850.00">
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline uppercase font-semibold">MXN</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Saldo máximo exigible pendiente: $850.00 MXN (calculado únicamente sobre pagos registrados en plataforma para esta orden #LAB-2026-0089)</span>
+</div>
+</div>
+<!-- Método de Egreso -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface-variant">
+                Método de Egreso en Caja
+              </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Option 1: Cash -->
+<label class="relative flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-all">
+<input checked="" class="mt-1 text-primary focus:ring-0" name="egreso_method" type="radio" value="efectivo">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">payments</span>
+                      Efectivo de Caja Turno
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Afecta arqueo físico esperado en gaveta de Caja General</span>
+</div>
+</label>
+<!-- Option 2: Transfer -->
+<label class="relative flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-all">
+<input class="mt-1 text-primary focus:ring-0" name="egreso_method" type="radio" value="transferencia">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance</span>
+                      Transferencia Bancaria Registrada
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cuenta Inbursa Clínica • Adjunta clave de rastreo SPEI</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Concepto Contable Automático -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant" for="concept_auto">
+                Concepto Contable Automático
+              </label>
+<div class="relative">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md cursor-not-allowed" id="concept_auto" readonly="" type="text" value="Liquidación Orden Lab #LAB-2026-0089 - Guarda Oclusal Lucía Garza">
+<span class="material-symbols-outlined text-[18px] text-tertiary absolute right-3 top-2.5">auto_mode</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Se catalogará en la subcuenta contable 502-04 (Gastos Operativos Protésicos).</span>
+</div>
+<!-- Notas del Desembolso -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant" for="payout_notes">
+                Notas del Desembolso / Justificante
+              </label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-inner focus:outline-none focus:bg-surface-container-low transition-colors" id="payout_notes" placeholder="Ej. Entrega física de modelo y factura física recibida en recepción" rows="2">Entrega física de modelo y factura física recibida en recepción</textarea>
+</div>
+<!-- Action Button & Summary Footer -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">security</span>
+<span>Registro firmado por: Dra. Jimena Alarcón (Dueña)</span>
+</div>
+<button class="w-full sm:w-auto h-11 px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-2" id="submitPaymentBtn" type="submit">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Registrar Pago al Proveedor y Asentar Egreso en Caja</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Success Toast Simulation Container -->
+<div class="hidden p-space-md rounded-xl bg-tertiary-container/15 text-tertiary flex items-center gap-space-sm animate-fadeIn" id="paymentSuccessNotice">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<div class="flex-1 font-body-sm text-body-sm">
+<strong>Egreso Asentado con Éxito:</strong> Se debitaron $850.00 MXN de la Caja Turno Matutina (Gaveta Sillón 1). El saldo pendiente con Arte Dental Lab CDMX para esta orden quedó en <strong>$0.00 MXN</strong>.
+          </div>
+<button class="text-tertiary hover:opacity-75" onclick="dismissNotice()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Right 4 Cols: Taller Details & Protocol Sidebar -->
+<div class="lg:col-span-4 space-y-space-md">
+<!-- Technician Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Ficha del Proveedor</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-on-surface-variant">ID: PROV-014</span>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-bold text-headline-sm">
+              AD
+            </div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Arte Dental Lab CDMX</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Técnico Titular: Marco Aurelio S.</p>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                +52 55 4912 8840
+              </div>
+</div>
+</div>
+<div class="pt-space-xs space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between py-1 bg-surface-container-low/50 px-2 rounded-lg">
+<span>Tiempo de Entrega:</span>
+<span class="font-semibold text-on-surface">5 días hábiles</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low/50 px-2 rounded-lg">
+<span>Fecha Límite Taller:</span>
+<span class="font-semibold text-on-surface">27 Oct 2026 (14:00 h)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low/50 px-2 rounded-lg">
+<span>Cita Entrega Paciente:</span>
+<span class="font-semibold text-primary">28 Oct 2026 (11:30 h)</span>
+</div>
+</div>
+</div>
+<!-- Arqueo Live Preview Pill -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Impacto Inmediato en Caja</span>
+<div class="space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Efectivo actual en gaveta:</span>
+<span class="font-data-mono font-semibold text-on-surface">$4,920.00 MXN</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-error">
+<span>Egreso por liquidación:</span>
+<span class="font-data-mono font-semibold" id="previewDebit">-$850.00 MXN</span>
+</div>
+<div class="pt-2 border-0 bg-surface-container-low/80 p-space-sm rounded-lg flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Arqueo proyectado al cierre:</span>
+<span class="font-data-mono text-tertiary font-bold" id="projectedBalance">$4,070.00 MXN</span>
+</div>
+</div>
+</div>
+<!-- Protocol checklist -->
+<div class="rounded-xl bg-surface-container-low p-space-md space-y-2">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span>Protocolo de Recepción Técnica</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check</span>
+<span>Revisar ausencia de burbujas en plano oclusal</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check</span>
+<span>Desinfección previa en clorhexidina 0.12%</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check</span>
+<span>Comprobar factura XML/PDF antes de finiquito</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Auditable History of Movements Section -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Historial Auditable de Movimientos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registro inmutable de recibos de paciente vs comprobantes de egreso emitidos a laboratorio.</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Trazabilidad Ledger SHA-256</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Fecha &amp; Hora</th>
+<th class="py-space-sm px-space-md">Tipo de Movimiento</th>
+<th class="py-space-sm px-space-md">Referencia / Folio</th>
+<th class="py-space-sm px-space-md">Responsable &amp; Caja</th>
+<th class="py-space-sm px-space-md">Método</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Monto (MXN)</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<!-- Row 1: Paciente Anticipo -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">22 Oct 2026</span>
+<span class="font-label-sm text-label-sm text-outline">09:42 hrs</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container/20 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+                  Ingreso Paciente (Anticipo)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono font-semibold text-on-surface">#REC-2026-0520</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Presupuesto #PRE-2026-0098</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-semibold">Mariana Ruiz</div>
+<div class="font-label-sm text-label-sm text-outline">Caja Matutina • Caja General</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Tarjeta Débito (TPV 02)
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right font-data-mono font-bold text-tertiary">
+                +$1,600.00 MXN
+              </td>
+</tr>
+<!-- Row 2: Laboratorio (Pending status or logged state) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-low/20" id="historyRowPending">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">22 Oct 2026</span>
+<span class="font-label-sm text-label-sm text-outline">En espera de pago</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold" id="historyStatusBadge">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+                  Egreso Taller (Pendiente)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono font-semibold text-on-surface">#ORD-LAB-0089</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Téc. Marco Aurelio S.</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-semibold" id="historyOperator">Dra. Jimena Alarcón</div>
+<div class="font-label-sm text-label-sm text-outline" id="historySession">Validación Administrativa</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm" id="historyMethod">
+                  Efectivo Gaveta
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right font-data-mono font-bold text-error" id="historyAmount">
+                -$850.00 MXN
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Historical footnote -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+          Cierre fiscal programado a las 20:00 hrs CDMX.
+        </span>
+<button class="text-primary hover:underline font-label-md text-label-md">Descargar Libro de Movimientos (CSV)</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function setPaymentAmount(val) {
+    const input = document.getElementById('amount_to_pay');
+    if (input) {
+      input.value = val.toFixed(2);
+      updateProjectedBalance();
+    }
+  }
+
+  function updateProjectedBalance() {
+    const input = document.getElementById('amount_to_pay');
+    const previewDebit = document.getElementById('previewDebit');
+    const projectedBalance = document.getElementById('projectedBalance');
+    if (!input || !previewDebit || !projectedBalance) return;
+
+    const amount = parseFloat(input.value) || 0;
+    previewDebit.innerText = '-$' + amount.toFixed(2) + ' MXN';
+    const finalBalance = 4920 - amount;
+    projectedBalance.innerText = '$' + finalBalance.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' MXN';
+  }
+
+  const amountInput = document.getElementById('amount_to_pay');
+  if (amountInput) {
+    amountInput.addEventListener('input', updateProjectedBalance);
+  }
+
+  function handlePaymentSubmit() {
+    const btn = document.getElementById('submitPaymentBtn');
+    const notice = document.getElementById('paymentSuccessNotice');
+    const historyBadge = document.getElementById('historyStatusBadge');
+    const historyMethod = document.getElementById('historyMethod');
+    const historySession = document.getElementById('historySession');
+    const historyAmount = document.getElementById('historyAmount');
+    const inputAmount = document.getElementById('amount_to_pay');
+
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Asentando en Caja...`;
+    }
+
+    setTimeout(() => {
+      if (btn) {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check</span> Pago Asentado`;
+        btn.classList.remove('bg-primary', 'hover:bg-primary-container');
+        btn.classList.add('bg-tertiary', 'hover:bg-tertiary-container');
+      }
+
+      if (notice) {
+        notice.classList.remove('hidden');
+      }
+
+      if (historyBadge) {
+        historyBadge.className = 'inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container/20 text-tertiary font-bold';
+        historyBadge.innerHTML = `<span class="material-symbols-outlined text-[14px]">done_all</span> Egreso Taller (Asentado)`;
+      }
+
+      if (historySession) {
+        historySession.innerText = 'Caja Matutina Polanco (Registrado)';
+      }
+
+      const methodRadio = document.querySelector('input[name="egreso_method"]:checked');
+      if (historyMethod && methodRadio) {
+        historyMethod.innerText = methodRadio.value === 'efectivo' ? 'Efectivo de Caja Turno' : 'Transferencia Bancaria';
+      }
+
+      if (historyAmount && inputAmount) {
+        historyAmount.innerText = '-$' + parseFloat(inputAmount.value).toFixed(2) + ' MXN';
+      }
+    }, 700);
+  }
+
+  function dismissNotice() {
+    const notice = document.getElementById('paymentSuccessNotice');
+    if (notice) {
+      notice.classList.add('hidden');
+    }
+  }
+</script></main></div>
+
+</body></html>

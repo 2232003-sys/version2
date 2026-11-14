@@ -1,0 +1,693 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "outline": "#707881", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "primary-container": "#007bb9", "tertiary-fixed-dim": "#62df7d", "on-tertiary-container": "#f7fff2", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "on-secondary-container": "#006f66", "on-secondary-fixed-variant": "#005049", "on-primary-container": "#fdfcff", "secondary-fixed": "#89f5e7", "primary": "#006194", "primary-fixed": "#cce5ff", "on-error": "#ffffff", "outline-variant": "#bfc7d2", "on-primary-fixed-variant": "#004b73", "surface-dim": "#d2d9f4", "secondary-container": "#86f2e4", "background": "#faf8ff", "error-container": "#ffdad6", "inverse-primary": "#93ccff", "surface-tint": "#006398", "on-error-container": "#93000a", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed-variant": "#005320", "tertiary": "#006b2c", "on-secondary-fixed": "#00201d", "secondary": "#006a61", "on-primary-fixed": "#001d31", "on-surface-variant": "#3f4850", "tertiary-fixed": "#7ffc97", "surface-container-low": "#f2f3ff", "on-secondary": "#ffffff", "surface": "#faf8ff", "primary-fixed-dim": "#93ccff", "inverse-surface": "#283044", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873a", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container": "#eaedff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-lg": ["Manrope"], "body-md": ["Manrope"], "data-mono": ["Manrope"], "label-sm": ["Manrope"], "headline-lg": ["Outfit"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Outfit"], "label-lg": ["Manrope"], "headline-sm": ["Outfit"], "headline-xl": ["Outfit"], "headline-xl-mobile": ["Outfit"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Sr. Diente Clinical OS" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical OS</span></div></div><nav class="flex-1 px-space-sm py-space-sm space-y-space-xs overflow-y-auto" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operación Clínica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda</span></div><span class="material-symbols-outlined text-[16px] text-outline">tune</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Finanzas &amp; Facturación</div><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Comisiones</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestión Médica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="laboratorio" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span>Laboratorio</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="infraestructura-sillones" href="#"><span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span><span>Infraestructura / Sillones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low m-space-sm rounded-xl"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div class="flex flex-col leading-tight"><span class="font-label-md text-label-md text-on-surface font-bold">Cédula COFEPRIS</span><span class="font-label-sm text-label-sm text-on-surface-variant">Vigente 2024-CDMX</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shadow-sm cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">apartment</span><span class="font-label-md text-label-md text-on-surface font-semibold">Sede Coyoacán - Plaza Cantil</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="material-symbols-outlined text-tertiary text-[16px]">cloud_done</span><span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Sync OK (Google Coyoacán)</span></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm cursor-pointer"><div class="flex flex-col text-right leading-none"><span class="font-label-md text-label-md text-on-surface font-bold">Dra. Jimena Alarcón</span><span class="font-label-sm text-label-sm text-secondary font-medium">Ortodoncista Titular</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"></div></div></header><main class="relative pt-16 bg-surface w-full min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Format Selector Ribbon -->
+<div class="sticky top-16 z-30 bg-surface-container-lowest/95 backdrop-blur-md px-margin-desktop py-space-md shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Metadata & Context Header -->
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]">print</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Formatos Impresos Oficiales</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm tracking-wide uppercase">Motor de Render v2.6</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[15px]">verified_user</span>
+            Maquetación exacta para salida POS 80mm y Papel Membretado Clínico Carta/A4
+          </p>
+</div>
+</div>
+<!-- Segmented Format Navigator -->
+<div class="flex items-center bg-surface-container p-1 rounded-xl shadow-inner gap-1">
+<button class="format-tab flex items-center gap-2 px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-all bg-surface-container-lowest text-primary shadow-sm font-bold" id="btn-tab-ticket" onclick="selectFormat('ticket')" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Recibo Térmico (80mm)</span>
+</button>
+<button class="format-tab flex items-center gap-2 px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface" id="btn-tab-presupuesto" onclick="selectFormat('presupuesto')" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+<span>Presupuesto Clínico</span>
+</button>
+<button class="format-tab flex items-center gap-2 px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface" id="btn-tab-convenio" onclick="selectFormat('convenio')" type="button">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+<span>Convenio de Pago</span>
+</button>
+</div>
+<!-- Print Dispatcher & Operational Warning Badge -->
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md transition-all active:scale-95" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">local_printshop</span>
+<span>Imprimir / Guardar como PDF</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="Descargar como PDF listo para envío" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+</div>
+</div>
+<!-- Fidelity Disclaimer Pill -->
+<div class="max-w-7xl mx-auto mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm bg-surface-container-low px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-outline text-[14px]">info</span>
+<span>Aviso de integridad: La impresión reproduce fielmente los registros de base de datos sin alterar el balance de caja ni devengar saldos contables.</span>
+</div>
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm">
+<span>Sede Activa: <strong class="text-on-surface">Coyoacán - Plaza Cantil</strong></span>
+<span>•</span>
+<span>Impresora Térmica Predeterminada: <strong class="text-on-surface">Epson TM-T88VI (USB/Red)</strong></span>
+</div>
+</div>
+</div>
+<!-- Main Viewport Arena for Physical Documents Rendering -->
+<div class="px-margin-desktop py-space-xl max-w-7xl mx-auto w-full flex flex-col items-center">
+<!-- ========================================================================= -->
+<!-- FORMATO 1: RECIBO TÉRMICO DE CAJA 80 MM (Ticket POS) -->
+<!-- ========================================================================= -->
+<div class="w-full flex flex-col items-center" id="view-ticket">
+<div class="mb-space-md flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span> Simulación Salida Papel Térmico Térmico 80mm
+        </span>
+<span class="text-outline font-body-sm text-body-sm">Salida de impresión estándar vía navegador / PDF (compatibilidad con rollo 80mm sujeta a validación en equipo físico en clínica; sin protocolo ESC/POS directo)</span>
+</div>
+<!-- Thermal Paper Outer Envelope -->
+<div class="w-full max-w-[400px] bg-surface-container-lowest p-6 rounded-2xl shadow-xl flex flex-col text-on-surface font-mono relative overflow-hidden">
+<!-- Serrated cutter top micro-accent -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-surface-container-high opacity-50 flex justify-between px-1">
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="block w-1.5 h-1.5 rounded-full bg-surface"></span>
+</div>
+<!-- Ticket Header with Official Mascot -->
+<div class="flex flex-col items-center text-center mt-2"><div class="w-20 h-20 mb-2 p-1.5 rounded-full bg-surface-container-low flex items-center justify-center shadow-inner"><img alt="Mascota Caballero Diente con Monóculo" class="w-full h-full object-contain filter drop-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"></div><h2 class="font-headline-md text-headline-md tracking-tight text-primary font-bold">Sr. Diente</h2><span class="text-[11px] font-bold tracking-widest text-on-surface-variant uppercase">Clinical OS • Odontología Avanzada</span><span class="text-[10px] text-outline font-sans leading-tight mt-1">Plaza Cantil, Av. Aztecas 270, Los Reyes, Coyoacán, CDMX. Tel: (55) 5281-9900</span><span class="text-[10px] text-outline font-sans">Cédula Reg: COFEPRIS-24-118</span></div>
+<!-- Divider line -->
+<div class="w-full my-3 py-1 text-outline-variant font-mono text-[9px] text-center tracking-widest overflow-hidden whitespace-nowrap select-none">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Receipt & Patient Metadata -->
+<div class="text-[11px] font-sans space-y-1">
+<div class="flex justify-between items-center">
+<span class="font-bold text-on-surface">FOLIO COMPROBANTE:</span>
+<span class="font-mono font-bold text-primary text-[12px]">#REC-2026-0520</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Fecha y Hora:</span>
+<span class="font-mono text-on-surface">24/May/2026 11:42:18 hrs</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Caja / Turno:</span>
+<span class="text-on-surface">CAJA-01 (Turno Matutino)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Cajero / Operador:</span>
+<span class="text-on-surface">J. Mendoza (Recepción)</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg mt-2 space-y-0.5">
+<div class="text-[10px] text-outline font-semibold uppercase tracking-wider">Identificación del Paciente</div>
+<div class="font-bold text-[12px] text-on-surface">Lucía Garza Ramos</div>
+<div class="flex justify-between text-[10px] text-on-surface-variant">
+<span>ID: <strong class="font-mono text-on-surface">#PAC-0842</strong></span>
+<span>Expediente: <strong class="font-mono text-on-surface">EXP-2024-LGR</strong></span>
+</div>
+<div class="text-[10px] text-secondary font-medium">Médico: Dra. Jimena Alarcón (Ortodoncia)</div>
+</div>
+</div>
+<!-- Divider line -->
+<div class="w-full my-3 py-1 text-outline-variant font-mono text-[9px] text-center tracking-widest overflow-hidden whitespace-nowrap select-none">
+          ==================================================
+        </div>
+<!-- Concepts Table -->
+<div class="space-y-2 text-[11px]">
+<div class="flex justify-between font-bold text-on-surface-variant pb-1 text-[10px] uppercase">
+<span class="w-6/12">Concepto / Procedimiento</span>
+<span class="w-2/12 text-center">Cant</span>
+<span class="w-4/12 text-right">Importe MXN</span>
+</div>
+<!-- Concept 1 -->
+<div class="flex flex-col">
+<div class="flex justify-between">
+<span class="w-6/12 font-semibold text-on-surface leading-tight">Limpieza Ultrasónica Profunda y Profilaxis</span>
+<span class="w-2/12 text-center text-on-surface-variant">1</span>
+<span class="w-4/12 text-right font-mono font-medium">$1,200.00</span>
+</div>
+<span class="text-[9px] text-outline italic ml-2">Odontología Preventiva / Piezas arcada completa</span>
+</div>
+<!-- Concept 2 -->
+<div class="flex flex-col">
+<div class="flex justify-between">
+<span class="w-6/12 font-semibold text-on-surface leading-tight">Resina Fotocurable Estética (Pieza #24 Oclusal)</span>
+<span class="w-2/12 text-center text-on-surface-variant">1</span>
+<span class="w-4/12 text-right font-mono font-medium">$1,450.00</span>
+</div>
+<div class="flex justify-between text-[9px] text-tertiary ml-2">
+<span>Desc. Convenio Club Sonrisas (-15%)</span>
+<span class="font-mono">-$217.50</span>
+</div>
+</div>
+<!-- Concept 3 -->
+<div class="flex flex-col">
+<div class="flex justify-between">
+<span class="w-6/12 font-semibold text-on-surface leading-tight">Anticipo Alineadores Invisibles Fase 1</span>
+<span class="w-2/12 text-center text-on-surface-variant">1</span>
+<span class="w-4/12 text-right font-mono font-medium">$3,500.00</span>
+</div>
+<span class="text-[9px] text-outline italic ml-2">Cuota inicial ortodoncia digital</span>
+</div>
+</div>
+<!-- Divider line -->
+<div class="w-full my-3 py-1 text-outline-variant font-mono text-[9px] text-center tracking-widest overflow-hidden whitespace-nowrap select-none">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Financial Summary -->
+<div class="space-y-1 text-[11px] font-sans">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal Bruto:</span>
+<span class="font-mono text-on-surface">$6,150.00 MXN</span>
+</div>
+<div class="flex justify-between text-tertiary">
+<span>Descuentos Aplicados:</span>
+<span class="font-mono">-$217.50 MXN</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Base Neta Operativa:</span>
+<span class="font-mono text-on-surface">$5,932.50 MXN</span>
+</div>
+<div class="pt-2 flex justify-between items-baseline font-bold text-headline-sm text-primary">
+<span class="text-on-surface text-[14px]">TOTAL PAGADO:</span>
+<span class="font-mono text-headline-sm font-bold">$5,932.50 MXN</span>
+</div>
+<div class="text-[9px] text-right text-outline">Cinco mil novecientos treinta y dos pesos 50/100 M.N.</div>
+</div>
+<!-- Divider line -->
+<div class="w-full my-3 py-1 text-outline-variant font-mono text-[9px] text-center tracking-widest overflow-hidden whitespace-nowrap select-none">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Payment Breakdown -->
+<div class="bg-surface-container-low p-2.5 rounded-lg space-y-1.5 text-[10px] font-sans">
+<div class="font-bold text-on-surface uppercase tracking-wider text-[10px] flex items-center justify-between">
+<span>Desglose de Pago Recibido:</span>
+<span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">check_circle</span> Liquidado</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">payments</span> Efectivo:</span>
+<span class="font-mono font-medium text-on-surface">$1,932.50 MXN</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">credit_card</span> Tarjeta Débito BBVA (TPV Aut. 883192):</span>
+<span class="font-mono font-medium text-on-surface">$3,000.00 MXN</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">sync_alt</span> SPEI Transferencia (Rastreo 094812):</span>
+<span class="font-mono font-medium text-on-surface">$1,000.00 MXN</span>
+</div>
+<div class="pt-1.5 border-t border-dashed border-outline-variant/50 flex justify-between items-center text-[10px]">
+<span class="font-bold text-on-surface">Saldo Restante Tratamiento:</span>
+<span class="font-mono font-bold text-error">$14,500.00 MXN</span>
+</div>
+<div class="text-[9px] text-outline leading-tight">Correspondiente al plan de 8 mensualidades Ortodoncia Invisible.</div>
+</div>
+<!-- Standard Mexican Fiscal & Operational Disclaimer -->
+<div class="mt-4 text-center space-y-1 text-[9px] text-outline font-sans leading-tight">
+<p class="font-semibold text-on-surface-variant">COMPROBANTE SIMPLIFICADO DE CONTROL INTERNO</p>
+<p>Este ticket ampara la recepción de valores en ventanilla clínica. Si requiere Comprobante Fiscal Digital por Internet (CFDI 4.0), solicítelo en recepción durante el mes en curso proporcionando su Constancia de Situación Fiscal o a través de: <span class="font-mono text-primary font-medium">facturacion@srdiente.mx</span></p>
+<div class="py-2 flex justify-center">
+<!-- Simulated QR code for receipt traceability -->
+<div class="w-24 h-24 bg-surface-container-high rounded p-1 flex items-center justify-center">
+<svg class="w-full h-full text-on-surface" viewBox="0 0 100 100">
+<rect fill="currentColor" height="28" width="28"></rect>
+<rect fill="white" height="20" width="20" x="4" y="4"></rect>
+<rect fill="currentColor" height="12" width="12" x="8" y="8"></rect>
+<rect fill="currentColor" height="28" width="28" x="72" y="0"></rect>
+<rect fill="white" height="20" width="20" x="76" y="4"></rect>
+<rect fill="currentColor" height="12" width="12" x="80" y="8"></rect>
+<rect fill="currentColor" height="28" width="28" x="0" y="72"></rect>
+<rect fill="white" height="20" width="20" x="4" y="76"></rect>
+<rect fill="currentColor" height="12" width="12" x="8" y="80"></rect>
+<rect fill="currentColor" height="16" width="10" x="36" y="8"></rect>
+<rect fill="currentColor" height="8" width="12" x="52" y="4"></rect>
+<rect fill="currentColor" height="28" width="28" x="36" y="36"></rect>
+<rect fill="currentColor" height="16" width="8" x="72" y="36"></rect>
+<rect fill="currentColor" height="20" width="14" x="86" y="48"></rect>
+<rect fill="currentColor" height="12" width="20" x="36" y="72"></rect>
+<rect fill="currentColor" height="28" width="28" x="64" y="72"></rect>
+</svg>
+</div>
+</div>
+<p class="font-mono text-[8px] text-outline">HASH VERIF: 84a9e-0520-2026-mxn-srdiente</p>
+<p class="font-bold text-primary mt-1 text-[10px]">¡Gracias por cuidar su sonrisa con Sr. Diente!</p>
+</div>
+<!-- Thermal Receipt Bottom Tear Edge -->
+<div class="mt-4 pt-2 flex justify-between text-outline-variant select-none">
+<span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span><span>•</span>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- FORMATO 2: PRESUPUESTO CLÍNICO IMPRIMIBLE (Hoja Carta / A4) -->
+<!-- ========================================================================= -->
+<div class="w-full hidden flex-col items-center" id="view-presupuesto">
+<div class="mb-space-md flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">article</span> Formato Hoja Carta / A4 Clínico Oficial
+        </span>
+<span class="text-outline font-body-sm text-body-sm">Vigencia administrativa estándar: 30 días naturales</span>
+</div>
+<!-- Letter Size Sheet Simulation (816px approx for crisp standard rendering) -->
+<div class="w-full max-w-4xl bg-surface-container-lowest p-10 md:p-12 rounded-2xl shadow-xl flex flex-col text-on-surface">
+<!-- Header Banner with Brand Identity -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-space-lg border-b-2 border-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low p-1.5 flex items-center justify-center shadow-inner">
+<img alt="Mascota Caballero Diente con Monóculo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs">
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold">Sr. Diente</h1>
+<span class="font-headline-sm text-headline-sm text-on-surface font-light">| Clinical OS</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Odontología Integral y Ortodoncia Especializada</p>
+<p class="font-body-sm text-body-sm text-outline">Plaza Cantil, Av. Aztecas 270, Los Reyes, Coyoacán, CDMX • Tel: (55) 5281-9900</p>
+</div>
+</div>
+<div class="mt-4 md:mt-0 flex flex-col md:items-end">
+<span class="px-3 py-1 rounded-md bg-surface-container-high text-primary font-mono font-bold text-body-lg">
+              #PRE-2026-0098
+            </span>
+<div class="mt-1 text-right">
+<div class="font-label-md text-label-md text-on-surface font-bold">Emisión: 24 de Mayo de 2026</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">Vigencia: 30 días (Vence: 23/Junio/2026)</div>
+</div>
+</div>
+</div>
+<!-- Clinical & Patient Details Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md py-space-md bg-surface-container-low my-space-md px-space-md rounded-xl">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Paciente</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block">Lucía Garza Ramos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expediente: <strong class="font-mono text-on-surface">#PAC-0842</strong></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Edad: 29 años • Tel: 55-4819-2011</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Doctor Responsable</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold block">Dra. Jimena Alarcón</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Especialidad: Ortodoncia y Oclusión</span>
+<span class="font-body-sm text-body-sm text-outline">Cédula Prof: 8941092 DGP</span>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Convenio / Afiliación</span>
+<span class="font-label-lg text-label-lg text-primary font-bold block">Club Sonrisas Platino</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tarifa preferencial aplicada (-15%)</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_box</span> Diagnóstico Radiológico 3D Validado
+            </div>
+</div>
+</div>
+<!-- Treatment Phases Breakdown Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg">Fase / Pieza</th>
+<th class="py-2.5 px-3">Descripción Clínica del Procedimiento</th>
+<th class="py-2.5 px-3 text-right">Precio Lista</th>
+<th class="py-2.5 px-3 text-right">Desc. Convenio</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Total Neto</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container">
+<!-- Fase 1: Saneamiento Básico -->
+<tr class="bg-surface-container-high/40">
+<td class="py-2 px-3 font-headline-sm text-[13px] text-primary font-bold uppercase tracking-wider" colspan="5">
+                  Fase 1: Saneamiento e Higiene Periodontal Pre-Ortodoncia
+                </td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono text-[13px] text-on-surface font-semibold">Gral.</td>
+<td class="py-2.5 px-3">
+<div class="font-semibold text-on-surface">Limpieza Ultrasónica Cavitrón y Profilaxis con Flúor</div>
+<div class="text-[12px] text-outline">Remoción de cálculo supragingival y pulido coronario.</div>
+</td>
+<td class="py-2.5 px-3 text-right font-mono">$1,200.00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary">-$180.00</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">$1,020.00 MXN</td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono text-[13px] text-on-surface font-semibold">#24 Oclusal</td>
+<td class="py-2.5 px-3">
+<div class="font-semibold text-on-surface">Reconstrucción con Resina Fotocurable Nano-Híbrida</div>
+<div class="text-[12px] text-outline">Aislamiento absoluto con dique de hule, grabado y fotopolimerización.</div>
+</td>
+<td class="py-2.5 px-3 text-right font-mono">$1,450.00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary">-$217.50</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">$1,232.50 MXN</td>
+</tr>
+<!-- Fase 2: Ortodoncia Activa -->
+<tr class="bg-surface-container-high/40">
+<td class="py-2 px-3 font-headline-sm text-[13px] text-primary font-bold uppercase tracking-wider" colspan="5">
+                  Fase 2: Alineación y Corrección Oclusal Invisible
+                </td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono text-[13px] text-on-surface font-semibold">Arcadas Sup/Inf</td>
+<td class="py-2.5 px-3">
+<div class="font-semibold text-on-surface">Paquete Planificación Digital 3D + 16 Alineadores Transparentes</div>
+<div class="text-[12px] text-outline">Incluye escaner intraoral iTero, attachments estéticos y 8 consultas de avance.</div>
+</td>
+<td class="py-2.5 px-3 text-right font-mono">$24,000.00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary">-$3,600.00</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">$20,400.00 MXN</td>
+</tr>
+<!-- Fase 3: Retención -->
+<tr class="bg-surface-container-high/40">
+<td class="py-2 px-3 font-headline-sm text-[13px] text-primary font-bold uppercase tracking-wider" colspan="5">
+                  Fase 3: Estabilidad y Retención Post-Tratamiento
+                </td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono text-[13px] text-on-surface font-semibold">Sup / Inf</td>
+<td class="py-2.5 px-3">
+<div class="font-semibold text-on-surface">Retenedores Termoformados Vivera / Essix (2 Juegos)</div>
+<div class="text-[12px] text-outline">Garantía de preservación estética y vector de mordida.</div>
+</td>
+<td class="py-2.5 px-3 text-right font-mono">$3,800.00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary">-$570.00</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">$3,230.00 MXN</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Totals & Proposed Financing Scheme Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mt-space-md pt-space-md border-t border-surface-container">
+<!-- Proposed Financing Schedule -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface font-bold uppercase">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_view_month</span>
+<span>Esquema de Pago Programado Sugerido</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Facilidad de financiamiento directo en ventanilla sin comisiones bancarias:</p>
+<div class="mt-3 space-y-1.5 text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">• Anticipo de Inicialización:</span>
+<span class="font-mono font-bold text-on-surface">$5,882.50 MXN (Fase 1 y Setup)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">• 8 Mensualidades Consecutivas:</span>
+<span class="font-mono font-bold text-primary">$2,500.00 MXN / mes</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-surface-container text-[11px] text-outline">
+              * Acepta transferencias SPEI, efectivo o cargo recurrente a tarjeta de crédito/débito.
+            </div>
+</div>
+<!-- Financial Balance Block -->
+<div class="flex flex-col justify-end items-end space-y-1.5">
+<div class="flex justify-between w-64 text-body-md text-on-surface-variant">
+<span>Subtotal Lista:</span>
+<span class="font-mono font-medium text-on-surface">$30,450.00 MXN</span>
+</div>
+<div class="flex justify-between w-64 text-body-md text-tertiary">
+<span>Descuento Especial:</span>
+<span class="font-mono font-medium">-$4,567.50 MXN</span>
+</div>
+<div class="flex justify-between w-64 text-body-md text-on-surface-variant">
+<span>I.V.A. (Tasa 0% Acto Médico):</span>
+<span class="font-mono text-on-surface">$0.00 MXN</span>
+</div>
+<div class="w-64 pt-2 border-t-2 border-surface-container flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">TOTAL NETO:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold font-mono">$25,882.50</span>
+</div>
+<span class="text-label-sm text-outline uppercase font-mono">Pesos Mexicanos (MXN)</span>
+</div>
+</div>
+<!-- Clinical Legal / Evolution Disclaimer -->
+<div class="mt-space-md p-3.5 rounded-xl bg-surface-container-high/50 text-[11px] text-on-surface-variant leading-relaxed">
+<p class="font-bold text-on-surface mb-0.5">Nota Aclaratoria y Términos Clínicos:</p>
+<p>El presente documento constituye una cotización y estimación clínica integral sujeta a la respuesta tisular, hallazgos radiográficos complementarios o requerimientos endodónticos no previsibles durante la exploración preliminar. No representa una promesa de resultado médico inmutable ni contrato legal definitivo hasta la formalización de la Historia Clínica y Consentimiento Informado respectivo. La vigencia económica de las tarifas cotizadas es de 30 días a partir de su expedición.</p>
+</div>
+<!-- Endorsement Signatures Section -->
+<div class="grid grid-cols-2 gap-space-xl mt-space-xl pt-space-lg">
+<div class="flex flex-col items-center text-center">
+<div class="w-48 border-b-2 border-on-surface-variant/40 mb-2 h-14 flex items-end justify-center">
+<span class="font-handwriting text-outline text-[13px] italic">Lucía Garza Ramos</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">Lucía Garza Ramos</span>
+<span class="font-label-sm text-label-sm text-outline">Firma del Paciente / Responsable Financiero</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-48 border-b-2 border-on-surface-variant/40 mb-2 h-14 flex items-end justify-center">
+<span class="text-secondary font-mono text-[11px] font-bold">DR-ALARCÓN-VALIDADO</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">Dra. Jimena Alarcón</span>
+<span class="font-label-sm text-label-sm text-outline">Dirección Clínica Ortodoncia • Céd. 8941092</span>
+</div>
+</div>
+<!-- Document Footer Code -->
+<div class="mt-space-lg pt-space-sm border-t border-surface-container flex justify-between items-center text-[10px] text-outline">
+<span>Sr. Diente Clinical OS • Formato Certificado de Salida Impresa</span>
+<span>Folio Interno: PRE-2026-0098-COYOACAN • Impreso el: 24/05/2026</span>
+<span>Página 1 de 1</span>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- FORMATO 3: CONVENIO DE PLAN DE PAGO IMPRIMIBLE (CONV-2026-XXXX) -->
+<!-- ========================================================================= -->
+<div class="w-full hidden flex-col items-center" id="view-convenio">
+<div class="mb-space-md flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">handshake</span> Documento Formal de Compromiso de Pago en Parcialidades
+        </span>
+<span class="text-outline font-body-sm text-body-sm">Registro Administrativo: #CONV-2026-0418</span>
+</div>
+<!-- Formal Letter Paper Container -->
+<div class="w-full max-w-4xl bg-surface-container-lowest p-10 md:p-12 rounded-2xl shadow-xl flex flex-col text-on-surface relative">
+<!-- Header with Dual Badge -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-space-md border-b-2 border-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low p-1.5 flex items-center justify-center shadow-inner">
+<img alt="Mascota Caballero Diente con Monóculo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs">
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">Sr. Diente</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Clinical OS</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold">Convenio Administrativo de Parcialidades Clínicas</span>
+</div>
+</div>
+<div class="mt-4 md:mt-0 text-right">
+<div class="font-mono font-bold text-headline-sm text-primary">#CONV-2026-0418</div>
+<div class="font-label-sm text-label-sm text-outline">Suscrito en Ciudad de México a 24 de Mayo de 2026</div>
+</div>
+</div>
+<!-- Preamble / Parties Identification -->
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-xl space-y-2 text-body-sm text-on-surface">
+<div class="font-bold text-label-lg text-on-surface uppercase tracking-wide">1. Identificación de las Partes Convenientes:</div>
+<p class="leading-relaxed">Por una parte, <strong>Sr. Diente</strong>, con domicilio en Plaza Cantil, Av. Aztecas 270, Los Reyes, Coyoacán, CDMX (Tel: 55 5281-9900), representada por la Administración Clínica; y por la otra parte:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1 font-body-sm">
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="text-[10px] text-outline uppercase block">Paciente Beneficiario</span>
+<strong class="text-on-surface">Lucía Garza Ramos</strong> (ID #PAC-0842)
+            </div>
+<div class="bg-surface-container-lowest p-3 rounded-lg">
+<span class="text-[10px] text-outline uppercase block">Responsable Económico Titular</span>
+<strong class="text-on-surface">Lucía Garza Ramos</strong> (RFC / CURP GARL970412HDF)
+            </div>
+</div>
+<p class="text-[12px] text-on-surface-variant pt-1 leading-snug">
+            Ambas partes reconocen expresamente que el monto total financiado corresponde al presupuesto clínico aprobado <strong>#PRE-2026-0098</strong> por un valor total neto de <strong>$20,000.00 MXN</strong> descontado el anticipo cubierto con recibo #REC-2026-0520.
+          </p>
+</div>
+<!-- Schedule / Pagaré Installments Table -->
+<div class="mt-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Calendario de Cuotas y Vencimientos Programados</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Total a financiar: $20,000.00 MXN en 8 parcialidades</span>
+</div>
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-2.5 px-3">Cuota / Pagaré</th>
+<th class="py-2.5 px-3">Fecha Límite de Pago</th>
+<th class="py-2.5 px-3">Monto Parcial</th>
+<th class="py-2.5 px-3">Método Acordado</th>
+<th class="py-2.5 px-3 text-right">Estatus Inicial</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 1 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Junio de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Ventanilla / Tarjeta</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 2 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Julio de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 3 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Agosto de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 4 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Septiembre de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 5 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Octubre de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Ventanilla / Efectivo</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 6 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Noviembre de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 7 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Diciembre de 2026</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold">Programado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2 px-3 font-mono font-bold text-primary">Cuota 8 de 8</td>
+<td class="py-2 px-3 font-medium">10 de Enero de 2027</td>
+<td class="py-2 px-3 font-mono font-bold">$2,500.00 MXN</td>
+<td class="py-2 px-3 text-on-surface-variant">Transferencia SPEI</td>
+<td class="py-2 px-3 text-right">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold">Liquidación Final</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Terms and Conditions Accordance -->
+<div class="mt-space-md bg-surface-container-low/80 p-space-md rounded-xl text-[11px] text-on-surface-variant leading-relaxed space-y-1.5">
+<div class="font-bold text-on-surface uppercase tracking-wide">3. Cláusulas y Términos Operativos de Ventanilla:</div>
+<p><strong>A. Entrega de Aparatología / Alineadores:</strong> La entrega progresiva de los juegos de alineadores ortodónticos está vinculada a la regularidad de las cuotas mensuales acordadas.</p>
+<p><strong>B. Tolerancia y Canales de Pago:</strong> Se concede una tolerancia de 5 días naturales posteriores a cada fecha de vencimiento. Los pagos podrán liquidarse físicamente en la recepción de la clínica (Sede Coyoacán - Plaza Cantil) o vía transferencia electrónica a la CLABE Interbancaria BBVA: 012180004499112233 a nombre de <strong>Sr. Diente</strong>, indicando el número de referencia <span class="font-mono font-bold text-primary">PAC0842</span>.</p>
+<p><strong>C. Resguardo y Facturación:</strong> Cada cuota cubierta emitirá su respectivo Recibo Térmico Oficial de Caja de Sr. Diente Clinical OS con efecto de descargo administrativo.</p>
+</div>
+<!-- Physical Signatures and Seal Area -->
+<div class="mt-space-xl pt-space-lg grid grid-cols-1 md:grid-cols-2 gap-space-xl items-end">
+<!-- Patient Signature Box -->
+<div class="flex flex-col items-center text-center">
+<div class="w-full max-w-xs h-20 border-b-2 border-on-surface-variant/40 flex items-end justify-center pb-2">
+<span class="font-mono text-outline text-[12px] italic">[ Firma física autógrafa del paciente ]</span>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-bold">Lucía Garza Ramos</span>
+<span class="font-label-sm text-label-sm text-outline">Paciente y Deudor Aceptante</span>
+<span class="text-[10px] text-outline font-mono">INE / Pasaporte verificado</span>
+</div>
+<!-- Administrative Stamp / Clinical Director -->
+<div class="flex flex-col items-center text-center">
+<div class="w-full max-w-xs h-20 border-b-2 border-on-surface-variant/40 flex items-center justify-around pb-2">
+<!-- Physical Stamp Mockup -->
+<div class="w-24 h-16 rounded border-2 border-dashed border-primary/40 flex flex-col items-center justify-center p-1 transform -rotate-3 bg-primary-fixed/20">
+<span class="text-[8px] font-bold text-primary uppercase leading-tight tracking-tighter">Sr. Diente Coyoacán</span>
+<span class="text-[7px] text-primary">ADMINISTRACIÓN</span>
+<span class="text-[7px] font-mono text-primary">COFEPRIS 2024</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="text-[10px] font-bold text-on-surface">Validó en Caja:</span>
+<span class="text-[10px] text-outline">J. Mendoza</span>
+<span class="text-[9px] font-mono text-outline">24-MAY-2026</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-bold">Dirección Administrativa y Cobranza</span>
+<span class="font-label-sm text-label-sm text-outline">Sr. Diente Clinical OS • Sede Plaza Cantil, Coyoacán</span>
+</div>
+</div>
+<!-- Footer Identification Note -->
+<div class="mt-space-lg pt-space-sm border-t border-surface-container flex justify-between items-center text-[10px] text-outline">
+<span>Clave de Registro Único: CONV-2026-0418-LGR</span>
+<span>Expedido bajo normas internas de control asistencial CDMX</span>
+<span>Copia 1 de 2: Expediente Físico</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Tab Switcher Script (Vanilla JS for instantaneous ergonomics) -->
+<script>
+    function selectFormat(type) {
+      // Containers
+      const viewTicket = document.getElementById('view-ticket');
+      const viewPresupuesto = document.getElementById('view-presupuesto');
+      const viewConvenio = document.getElementById('view-convenio');
+
+      // Tabs
+      const tabTicket = document.getElementById('btn-tab-ticket');
+      const tabPresupuesto = document.getElementById('btn-tab-presupuesto');
+      const tabConvenio = document.getElementById('btn-tab-convenio');
+
+      // Hide all views
+      viewTicket.classList.add('hidden');
+      viewPresupuesto.classList.add('hidden');
+      viewConvenio.classList.add('hidden');
+
+      // Reset all buttons style
+      [tabTicket, tabPresupuesto, tabConvenio].forEach(btn => {
+        btn.className = 'format-tab flex items-center gap-2 px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface';
+      });
+
+      // Active styling tokens
+      const activeClass = 'format-tab flex items-center gap-2 px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-all bg-surface-container-lowest text-primary shadow-sm font-bold';
+
+      if (type === 'ticket') {
+        viewTicket.classList.remove('hidden');
+        tabTicket.className = activeClass;
+      } else if (type === 'presupuesto') {
+        viewPresupuesto.classList.remove('hidden');
+        tabPresupuesto.className = activeClass;
+      } else if (type === 'convenio') {
+        viewConvenio.classList.remove('hidden');
+        tabConvenio.className = activeClass;
+      }
+    }
+  </script>
+</div></main></div>
+
+</body></html>

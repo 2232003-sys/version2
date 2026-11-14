@@ -1,0 +1,599 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#faf8ff", "inverse-on-surface": "#eef0ff", "inverse-primary": "#93ccff", "on-primary-container": "#fdfcff", "inverse-surface": "#283044", "secondary-fixed": "#89f5e7", "on-error": "#ffffff", "on-background": "#131b2e", "tertiary-container": "#00873a", "on-surface": "#131b2e", "error": "#ba1a1a", "on-secondary-container": "#006f66", "surface-container": "#eaedff", "tertiary-fixed": "#7ffc97", "on-tertiary-container": "#f7fff2", "on-tertiary-fixed-variant": "#005320", "on-secondary-fixed": "#00201d", "tertiary-fixed-dim": "#62df7d", "on-primary-fixed-variant": "#004b73", "surface-container-low": "#f2f3ff", "on-surface-variant": "#3f4850", "surface-dim": "#d2d9f4", "on-secondary": "#ffffff", "error-container": "#ffdad6", "secondary-container": "#86f2e4", "surface-container-high": "#e2e7ff", "secondary-fixed-dim": "#6bd8cb", "outline": "#707881", "surface": "#faf8ff", "primary": "#006194", "primary-container": "#007bb9", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "outline-variant": "#bfc7d2", "surface-container-highest": "#dae2fd", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-bright": "#faf8ff", "tertiary": "#006b2c", "surface-variant": "#dae2fd", "on-tertiary-fixed": "#002109", "primary-fixed": "#cce5ff", "on-primary-fixed": "#001d31", "surface-tint": "#006398", "primary-fixed-dim": "#93ccff", "secondary": "#006a61", "on-secondary-fixed-variant": "#005049" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-tablet": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-xl": "2rem", "margin": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Manrope"], "data-mono": ["Manrope"], "label-md": ["Manrope"], "body-sm": ["Manrope"], "label-lg": ["Manrope"], "headline-xl-mobile": ["Outfit"], "body-lg": ["Manrope"], "body-md": ["Manrope"], "headline-xl": ["Outfit"], "headline-sm": ["Outfit"], "headline-lg-mobile": ["Outfit"], "headline-lg": ["Outfit"], "headline-md": ["Outfit"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">dentistry</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-tight">Sr. Diente</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Clinical OS</span></div></div><div class="overflow-y-auto flex-1 px-space-sm py-space-xs"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda (3 Sillones)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">percent</span><span>Comisiones</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div></div><div class="p-space-sm bg-surface-container"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded-full bg-primary flex-shrink-0 flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold"><span class="material-symbols-outlined text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md font-bold text-on-surface truncate">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase truncate">Directora Clínica</span></div></div><button class="text-on-surface-variant hover:text-primary transition-colors p-1" title="Ajustes" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-semibold">Sucursal:</span><select class="bg-transparent font-semibold text-primary outline-none cursor-pointer pr-1"><option>Polanco CDMX</option><option>Roma Norte CDMX</option><option>Del Valle CDMX</option></select></div><div class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-medium text-on-surface-variant">Hoy:</span><span class="font-semibold text-on-surface">24 Oct, 2024</span></div></div><div class="flex-1 max-w-md mx-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined text-[20px] text-outline absolute left-3 pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" placeholder="Buscar paciente (Nombre, Tel, CURP) o Folio..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Sync OK (CDMX)</span></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Persistent Medical & Financial Policy Notice Strip -->
+<section class="bg-surface-container-high px-space-lg py-2.5 flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</span>
+<span class="font-semibold text-on-surface">Módulo Fiscal &amp; Tesorería Clínica</span>
+<span class="text-outline">Regla Activa: <strong class="text-on-surface">Prelación 3-Etapas (Lab → Base clínica para comisión → % Congelado)</strong></span>
+<span>Regla Activa: <strong class="text-on-surface">Prelación 3-Etapas (Lab → Base Neta → % Congelado)</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">verified_user</span>
+        Rol Activo: Dueño / Administrador General
+      </span>
+</div>
+</section>
+<!-- Page Header & Tab Navigation -->
+<header class="px-space-lg pt-space-lg pb-space-sm">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md font-semibold transition-colors w-fit" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+        Volver al Resumen de Comisiones y Doctores
+      </a>
+<div class="flex flex-wrap items-end justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Registro de Liquidación y Políticas de Honorarios</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Liquidación interna de honorarios a especialistas, dispersión de caja y calibración de absorción de comisiones bancarias.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">currency_exchange</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Moneda Base:</span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">MXN ($)</span>
+</div>
+</div>
+</div>
+<!-- Segmented Navigation Tabs -->
+<nav class="flex border-0 gap-2 bg-surface-container-low p-1.5 rounded-2xl w-fit max-w-full overflow-x-auto shadow-sm" id="module-tabs">
+<button class="tab-btn active-tab flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow-sm transition-all" onclick="switchTab('registro-tab', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+        Registrar Pago a Doctor
+      </button>
+<button class="tab-btn flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-all" onclick="switchTab('politicas-tab', this)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span>
+        Porcentaje de Comisión TPV / Tarjeta</button>
+<button class="tab-btn flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-all" onclick="switchTab('historico-tab', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+        Histórico de Liquidaciones
+      </button>
+</nav>
+</header>
+<!-- Main Content Layout (12-Column Responsive Mesh) -->
+<div class="px-space-lg py-space-md grid grid-cols-12 gap-space-lg">
+<!-- LEFT 8-COLUMNS: Active Tab Interactive Canvas -->
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- TAB 1: FORMULARIO DE REGISTRO DE LIQUIDACIÓN -->
+<section class="tab-content flex flex-col gap-space-lg" id="registro-tab">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Emisión de Liquidación de Honorarios Médicos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Permisos requeridos: <span class="font-semibold text-secondary">Dueño</span> o <span class="font-semibold text-primary">Administrador Clínico</span></p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Bitácora Oficial</span>
+</div>
+<form class="grid grid-cols-12 gap-space-md" onsubmit="event.preventDefault(); simulateSettlement();">
+<!-- Doctor Selector -->
+<div class="col-span-12 md:col-span-7 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="doctor-select">
+<span>Doctor Odontólogo Especialista *</span>
+<span class="text-outline font-normal">Cédula profesional activa</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all cursor-pointer" id="doctor-select" onchange="updatePendingBalance(this.value)">
+<option selected="" value="morales">Dr. Ricardo Morales Vázquez — Ortodoncia &amp; Alineadores (Ced. 849201)</option>
+<option value="mendoza">Dra. Sofía Mendoza — Endodoncia Microscópica (Ced. 918230)</option>
+<option value="ibarra">Dr. Javier Ibarra — Implantología &amp; Cirugía Oral (Ced. 734912)</option>
+<option value="cuevas">Dra. Elena Cuevas — Periodoncia Clínica (Ced. 620481)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-outline text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Settlement Period -->
+<div class="col-span-12 md:col-span-5 grid grid-cols-2 gap-2">
+  <div class="flex flex-col gap-1">
+    <label class="font-label-md text-label-md text-on-surface font-semibold" for="fecha-desde">Fecha Inicial *</label>
+    <input class="w-full h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" id="fecha-desde" type="date" value="2026-10-01">
+  </div>
+  <div class="flex flex-col gap-1">
+    <label class="font-label-md text-label-md text-on-surface font-semibold" for="fecha-hasta">Fecha Final *</label>
+    <input class="w-full h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" id="fecha-hasta" type="date" value="2026-10-15">
+  </div>
+</div>
+<!-- Financial Callout Strip: Saldo Pendiente Calculado -->
+<div class="col-span-12 p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">account_balance_wallet</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Saldo Pendiente Calculado (Periodo)</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="saldo-display">$14,350.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">MXN</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all" onclick="setFullAmount()" type="button">
+                  Liquidar Saldo Completo
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all" onclick="setHalfAmount()" type="button">
+                  50% Parcial
+                </button>
+</div>
+</div>
+<!-- Amount Input (Full / Partial) -->
+<div class="col-span-12 md:col-span-6 flex flex-col gap-1">
+  <label class="font-label-md text-label-md text-on-surface font-semibold">Estado de la Liquidación *</label>
+  <div class="grid grid-cols-2 gap-2">
+    <label class="flex flex-col p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+      <div class="flex items-center gap-2 mb-1">
+        <input checked="" class="accent-primary" name="settlement_status" type="radio" value="autorizado">
+        <span class="font-label-md text-label-md font-bold text-on-surface">Autorizado</span>
+      </div>
+      <span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dueño o Admin Clínico. Aprobación contable para dispersión.</span>
+    </label>
+    <label class="flex flex-col p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+      <div class="flex items-center gap-2 mb-1">
+        <input class="accent-primary" name="settlement_status" type="radio" value="pagado">
+        <span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+          Pagado
+          <span class="material-symbols-outlined text-primary text-[14px]" title="Permiso exclusivo de Dueño">shield</span>
+        </span>
+      </div>
+      <span class="font-label-sm text-label-sm text-primary font-semibold leading-tight">Exclusivo Rol Dueño: Marca el desembolso como liquidado.</span>
+    </label>
+  </div>
+</div>
+<!-- Settlement Status Choice -->
+<div class="col-span-12 p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2 border-0">
+  <div class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+    <span class="material-symbols-outlined text-[18px]">info</span>
+    <span>Registro Contable de Honorarios (Modelo CommissionPayout)</span>
+  </div>
+  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+    Este registro formaliza el cálculo y devengo de honorarios en la bitácora financiera interna. <strong class="text-on-surface">No realiza dispersiones bancarias electrónicas (SPEI) ni salidas automatizadas en Caja Turno</strong>; toda entrega o transferencia debe conciliarse manualmente en sus respectivos libros.
+  </p>
+</div>
+<!-- Internal Registry Method (Disbursement Channel) -->
+<div class="col-span-12 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="metodo-registro">Canal de Registro Interno de Desembolso *</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary" name="metodo_canal" type="radio" value="caja_menor">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">payments</span>
+                      Efectivo de caja menor
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Afecta arqueo del turno</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="metodo_canal" type="radio" value="cheque">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">edit_document</span>
+                      Cheque de clínica
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Requiere folio físico</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="metodo_canal" type="radio" value="transferencia">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">account_balance</span>
+                      Transferencia bancaria
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Registro contable manual</span>
+</div>
+</label>
+</div>
+<!-- Explicit Operational Disclaimer Note -->
+<div class="mt-2 flex items-start gap-2.5 p-3 rounded-xl bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">info</span>
+<p class="font-body-sm text-body-sm">
+<strong class="text-on-surface font-semibold">Nota legal y operativa obligatoria:</strong> Este módulo funciona como <em>registro contable interno para bitácora clínica y fiscal</em>. Sr. Diente <strong>no emite transferencias electrónicas bancarias automáticas (SPEI)</strong> ni sustituye los portales bancarios de la entidad.
+                </p>
+</div>
+</div>
+<!-- Notes & Observations -->
+<div class="col-span-12 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="notas-liquidacion">Notas u Observaciones de la Liquidación</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all resize-none" id="notas-liquidacion" placeholder="Ej. Retención convenida por recambio de retenedor o ajuste de factura folio CFDI-389..." rows="2"></textarea>
+</div>
+<!-- Submission Row -->
+<div class="col-span-12 flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Se emitirá comprobante interno imprimible folio <strong class="text-on-surface">LIQ-2026-10-044</strong></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-all" type="reset">
+                  Cancelar
+                </button>
+<button class="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold shadow-md transition-all active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+                  Registrar Liquidación de Honorarios
+                </button>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- TAB 2: POLÍTICAS DE COMISIÓN Y COSTO DE TARJETA -->
+<section class="tab-content hidden flex flex-col gap-space-lg" id="politicas-tab"><div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md border-0">
+  <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+    <div class="flex items-center gap-space-sm">
+      <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+        <span class="material-symbols-outlined text-[24px]">credit_card</span>
+      </div>
+      <div>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">Configuración de Comisión por Tarjeta / Pasarela TPV</h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Tasa porcentual única aplicada a pagos con tarjeta para determinar la base clínica imponible.</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+      <span class="material-symbols-outlined text-[15px]">shield</span>
+      Edición Exclusiva: Dueño
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+    <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-3">
+      <label class="font-label-md text-label-md text-on-surface font-semibold" for="comision-pasarela-input">
+        Comisión de Pasarela TPV Global (%)
+      </label>
+      <div class="relative flex items-center">
+        <input class="w-full h-11 pl-4 pr-10 rounded-xl bg-surface-container-lowest text-on-surface font-data-mono text-data-mono font-bold focus:ring-2 focus:ring-primary outline-none transition-all" id="comision-pasarela-input" max="15.0" min="0.0" step="0.1" type="number" value="3.0">
+        <span class="absolute right-4 font-data-mono text-data-mono font-bold text-outline">%</span>
+      </div>
+      <span class="font-body-sm text-body-sm text-on-surface-variant">
+        Porcentaje aplicado a cada cobro con tarjeta previo a fijar la <strong class="text-on-surface">Base clínica para comisión</strong> del profesional.
+      </span>
+    </div>
+
+    <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+      <div>
+        <h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">Cálculo de Base Clínica</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          [Cobro Bruto] − [Laboratorio Directo] − [Comisión TPV %] = <strong class="text-on-surface">Base clínica para comisión</strong>. La tasa médica pactada se dispersa sobre este remanente.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <button class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm active:scale-[0.98]" onclick="alert('Porcentaje de comisión TPV actualizado correctamente a 3.0%')" type="button">
+          <span class="material-symbols-outlined text-[18px]">save</span>
+          Guardar Porcentaje TPV
+        </button>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- TAB 3: HISTÓRICO DE LIQUIDACIONES -->
+<section class="tab-content hidden flex flex-col gap-space-md" id="historico-tab">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Historial de Pagos &amp; Cortes Realizados</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trazabilidad completa con folios de caja y sellos de autorización.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+                Exportar Excel
+              </button>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<tr>
+<th class="p-3 rounded-l-xl">Folio / Fecha</th>
+<th class="p-3">Doctor Especialista</th>
+<th class="p-3">Periodo</th>
+<th class="p-3 text-right">Monto Liquidado</th>
+<th class="p-3">Canal</th>
+<th class="p-3 rounded-r-xl text-center">Estado</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-3">
+<span class="font-data-mono text-data-mono font-bold text-on-surface block">LIQ-2026-09-038</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">30 Sep 2026 • 18:22</span>
+</td>
+<td class="p-3 font-semibold text-on-surface">Dr. Ricardo Morales V.</td>
+<td class="p-3 text-on-surface-variant">16 - 30 Sep 2026</td>
+<td class="p-3 text-right font-data-mono text-data-mono font-bold text-on-surface">$18,920.00 MXN</td>
+<td class="p-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">account_balance</span>
+                      Transferencia
+                    </span>
+</td>
+<td class="p-3 text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Pagado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-3">
+<span class="font-data-mono text-data-mono font-bold text-on-surface block">LIQ-2026-09-037</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">30 Sep 2026 • 17:45</span>
+</td>
+<td class="p-3 font-semibold text-on-surface">Dra. Sofía Mendoza</td>
+<td class="p-3 text-on-surface-variant">16 - 30 Sep 2026</td>
+<td class="p-3 text-right font-data-mono text-data-mono font-bold text-on-surface">$22,400.00 MXN</td>
+<td class="p-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-tertiary">payments</span>
+                      Caja menor
+                    </span>
+</td>
+<td class="p-3 text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Pagado</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-3">
+<span class="font-data-mono text-data-mono font-bold text-on-surface block">LIQ-2026-09-036</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">28 Sep 2026 • 11:15</span>
+</td>
+<td class="p-3 font-semibold text-on-surface">Dr. Javier Ibarra</td>
+<td class="p-3 text-on-surface-variant">1 - 15 Sep 2026 (Ajuste)</td>
+<td class="p-3 text-right font-data-mono text-data-mono font-bold text-on-surface">$8,150.00 MXN</td>
+<td class="p-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary">edit_document</span>
+                      Cheque #8812
+                    </span>
+</td>
+<td class="p-3 text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">Autorizado</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Active Operational Breakdown Card: Pacientes Vinculados al Corte Actual -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md"><div class="flex items-center justify-between">
+  <div class="flex items-center gap-space-sm">
+    <span class="material-symbols-outlined text-primary text-[22px]">clinical_notes</span>
+    <h3 class="font-headline-sm text-headline-sm text-on-surface">Detalle de Procedimientos del Periodo Activo</h3>
+  </div>
+  <span class="font-label-sm text-label-sm text-on-surface-variant">Dr. Ricardo Morales • 1 al 15 Octubre</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+  <!-- Item 1 -->
+  <div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-2">
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Ortodoncia Invisible</span>
+        <h4 class="font-label-lg text-label-lg font-bold text-on-surface">Alineadores Etapa 3 • Mariana Gómez P.</h4>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">Pago TPV Débito • Folio #8931</span>
+      </div>
+      <span class="font-data-mono text-data-mono font-bold text-on-surface">$5,400.00 MXN</span>
+    </div>
+    <div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-lowest/60 p-2 rounded-lg">
+      <span>Lab: <strong class="text-error">$1,800.00</strong></span>
+      <span>Comisión TPV (3%): <strong class="text-on-surface">$162.00</strong></span>
+      <span>Base clínica para comisión: <strong class="text-tertiary font-bold">$3,438.00</strong></span>
+    </div>
+  </div>
+  <!-- Item 2 -->
+  <div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-2">
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Control &amp; Retenedor</span>
+        <h4 class="font-label-lg text-label-lg font-bold text-on-surface">Ajuste Oclusal y Arcos • Carlos Ruiz H.</h4>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">Pago Efectivo • Folio #8945</span>
+      </div>
+      <span class="font-data-mono text-data-mono font-bold text-on-surface">$1,200.00 MXN</span>
+    </div>
+    <div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm bg-surface-container-lowest/60 p-2 rounded-lg">
+      <span>Lab: <strong class="text-on-surface">$0.00</strong></span>
+      <span>TPV (0%): <strong class="text-on-surface">$0.00</strong></span>
+      <span>Base clínica para comisión: <strong class="text-tertiary font-bold">$1,200.00</strong></span>
+    </div>
+  </div>
+</div></section>
+</div>
+<!-- RIGHT 4-COLUMNS: Informational Cards, Legacy Rules, & Owner Controls -->
+<aside class="col-span-12 xl:col-span-4 flex flex-col gap-space-lg">
+<!-- CARD 1: Preservación de Cálculos Históricos Legados (MANDATORY REQUIREMENT) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cálculos Históricos Legados</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold">Inmutabilidad Financiera</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Los registros previos a la implementación del motor de <strong>Prelación en 3-Etapas</strong> carecen de trazabilidad granular por componente de laboratorio y fee de TPV.
+        </p>
+<!-- Structured Rule Attributes -->
+<div class="flex flex-col gap-2.5 bg-surface-container-low p-space-md rounded-xl text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">verified</span>
+<div>
+<strong class="text-on-surface font-semibold">Integridad Preservada:</strong>
+<span> Los montos liquidados con anterioridad se mantienen congelados tal y como fueron autorizados originalmente en bitácora física o software legado.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary mt-0.5">check</span>
+<div>
+<strong class="text-on-surface font-semibold">No Retroactividad:</strong>
+<span> Modificar las políticas de absorción de tarjetas (ej. pasar de 100% clínica a 50/50) jamás recalculará liquidaciones o saldos de cortes cerrados.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">history_toggle_off</span>
+<div>
+<strong class="text-on-surface font-semibold">Auditoría Dueño:</strong>
+<span> Cualquier recalificación de liquidaciones legadas requiere un expediente de ajuste firmado por el Dueño General.</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Versión Algoritmo: <strong class="text-on-surface">v3.4-MXN</strong></span>
+<span class="text-secondary font-bold">Activo desde Ene 2025</span>
+</div>
+</div>
+<!-- CARD 2: Resumen Global de Tesorería por Desembolsar -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Pasivo Corriente de Comisiones</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Sucursal Polanco</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight block">$48,210.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant">MXN pendientes por liquidar en quincena actual</span>
+</div>
+<!-- Mini Progress breakdown -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Progreso de Liquidación (Oct 1-15)</span>
+<span class="font-data-mono text-data-mono font-bold text-primary">64%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 64%;"></div>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant pt-1">
+<span>Pagado: <strong class="text-on-surface">$85,790 MXN</strong></span>
+<span>Pendiente: <strong class="text-error">$48,210 MXN</strong></span>
+</div>
+</div>
+<!-- Quick Summary List of Doctors Pending -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Dr. Ricardo Morales</span>
+<span class="font-data-mono text-data-mono font-bold text-primary">$14,350.00</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Dra. Sofía Mendoza</span>
+<span class="font-data-mono text-data-mono font-bold text-primary">$19,860.00</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Dr. Javier Ibarra</span>
+<span class="font-data-mono text-data-mono font-bold text-primary">$14,000.00</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Protocolo de Arqueo y Caja Menor -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col gap-space-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">point_of_sale</span>
+<h4 class="font-headline-sm text-headline-sm">Protocolo de Desembolso Físico</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Al seleccionar <strong class="text-on-surface">Efectivo de caja menor</strong>, la recepcionista en turno debe imprimir el vale foliado y solicitar la firma autógrafa del doctor al entregar los billetes.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Formato Oficial FO-FIN-08</span>
+<a class="font-label-md text-label-md font-bold text-primary hover:text-primary-container flex items-center gap-1" href="#">
+            Descargar Vale PDF
+            <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Simulated Toast Feedback Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="bg-surface-container-lowest text-on-surface px-5 py-4 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface" id="toast-title">Liquidación Registrada</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="toast-desc">Se generó la bitácora interna y comprobante.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tabId, element) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(content => {
+      content.classList.add('hidden');
+    });
+
+    // Remove active styles from buttons
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    // Show target tab
+    const targetTab = document.getElementById(tabId);
+    if (targetTab) {
+      targetTab.classList.remove('hidden');
+    }
+
+    // Apply active styles to clicked button
+    element.classList.remove('text-on-surface-variant');
+    element.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+  }
+
+  function updatePendingBalance(doctorKey) {
+    const balances = {
+      'morales': '$14,350.00',
+      'mendoza': '$19,860.00',
+      'ibarra': '$14,000.00',
+      'cuevas': '$7,420.00'
+    };
+
+    const amounts = {
+      'morales': '14350.00',
+      'mendoza': '19860.00',
+      'ibarra': '14000.00',
+      'cuevas': '7420.00'
+    };
+
+    const displayEl = document.getElementById('saldo-display');
+    const inputEl = document.getElementById('monto-input');
+
+    if (balances[doctorKey]) {
+      displayEl.innerText = balances[doctorKey];
+      inputEl.value = amounts[doctorKey];
+    }
+  }
+
+  function setFullAmount() {
+    const displayVal = document.getElementById('saldo-display').innerText.replace('$', '').replace(',', '');
+    document.getElementById('monto-input').value = parseFloat(displayVal).toFixed(2);
+  }
+
+  function setHalfAmount() {
+    const displayVal = document.getElementById('saldo-display').innerText.replace('$', '').replace(',', '');
+    const half = parseFloat(displayVal) / 2;
+    document.getElementById('monto-input').value = half.toFixed(2);
+  }
+
+  function simulateSettlement() {
+    const toast = document.getElementById('toast-notification');
+    const title = document.getElementById('toast-title');
+    const desc = document.getElementById('toast-desc');
+    const amount = document.getElementById('monto-input').value;
+
+    title.innerText = 'Liquidación Registrada con Éxito';
+    desc.innerText = 'Monto de $' + amount + ' MXN acreditado en bitácora contable.';
+
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 4000);
+  }
+</script></main></div>
+
+</body></html>

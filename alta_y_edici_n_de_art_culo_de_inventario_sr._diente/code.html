@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","on-primary-container":"#fdfcff","on-secondary-fixed-variant":"#005049","on-tertiary-fixed":"#002109","surface-bright":"#faf8ff","secondary-fixed":"#89f5e7","tertiary-container":"#00873a","on-error-container":"#93000a","outline":"#707881","on-background":"#131b2e","primary-fixed-dim":"#93ccff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#005320","primary-container":"#007bb9","tertiary":"#006b2c","surface":"#faf8ff","tertiary-fixed":"#7ffc97","on-secondary-container":"#006f66","primary-fixed":"#cce5ff","outline-variant":"#bfc7d2","surface-container-high":"#e2e7ff","surface-container":"#eaedff","error":"#ba1a1a","on-secondary-fixed":"#00201d","error-container":"#ffdad6","tertiary-fixed-dim":"#62df7d","on-error":"#ffffff","on-secondary":"#ffffff","surface-variant":"#dae2fd","on-tertiary-container":"#f7fff2","secondary-container":"#86f2e4","inverse-surface":"#283044","on-surface":"#131b2e","secondary":"#006a61","on-tertiary":"#ffffff","secondary-fixed-dim":"#6bd8cb","on-surface-variant":"#3f4850","on-primary":"#ffffff","surface-container-low":"#f2f3ff","surface-tint":"#006398","inverse-primary":"#93ccff","on-primary-fixed":"#001d31","surface-container-highest":"#dae2fd","primary":"#006194","on-primary-fixed-variant":"#004b73","surface-dim":"#d2d9f4","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-tablet":"1.5rem","space-lg":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-md":"1rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"body-sm":["Manrope"],"label-md":["Manrope"],"headline-sm":["Outfit"],"label-sm":["Manrope"],"body-lg":["Manrope"],"headline-md":["Outfit"],"headline-lg-mobile":["Outfit"],"label-lg":["Manrope"],"body-md":["Manrope"],"data-mono":["Manrope"],"headline-xl":["Outfit"],"headline-lg":["Outfit"],"headline-xl-mobile":["Outfit"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[20px]">dentistry</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary">Sr. Diente</span><span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Dental Clinic OS</span></div></div><div class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">v2.4</div></div><div class="px-space-md py-space-xs"><div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">cloud_done</span><span>Sync OK (CDMX)</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Google Cal</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-xs"><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-sm pt-space-xs pb-1 font-label-sm text-label-sm uppercase text-outline">Clínica &amp; Agenda</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agenda-3-sillones" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="flex-1">Agenda (3 Sillones)</span><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">personal_injury</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><div class="px-space-sm pt-space-md pb-1 font-label-sm text-label-sm uppercase text-outline">Operación &amp; Finanzas</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="flex-1">Finanzas MXN</span><span class="font-label-sm text-label-sm text-tertiary bg-surface-container-low px-1.5 py-0.5 rounded">MXN</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Comisiones</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><div class="px-space-sm pt-space-md pb-1 font-label-sm text-label-sm uppercase text-outline">Fidelización &amp; Control</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span class="flex-1">Club Sonrisas</span><span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-1.5 py-0.5 rounded">Fidelidad</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Recepción / Admin</span></div></div><span class="material-symbols-outlined text-outline text-[18px]">more_vert</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span class="font-semibold">Sucursal Polanco</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">today</span><span>Miércoles, 25 Octubre</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all" placeholder="Buscar paciente por nombre, CURP o teléfono..." type="text"/></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center rounded-lg bg-surface-container p-0.5"><button class="px-space-sm py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]">Sillón 1</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Sillón 2</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Sillón 3</button></div><button class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="h-5 w-px bg-surface-container-high mx-space-xs"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background px-margin-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Navigation & View Mode Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md flex-wrap">
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm transition-all font-label-lg text-label-lg group" href="#">
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+<span>Regresar al Listado de Inventario</span>
+</a>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed font-label-sm text-label-sm tracking-wide">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Formulario Oficial de Artículo</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm">
+<span>ID Esquema: INV-2024-MX</span>
+</div>
+</div>
+<!-- Toggle Mode Switcher (Simula Modo Alta vs Modo Edición) -->
+<div class="flex items-center bg-surface-container-high/80 p-1 rounded-xl shadow-inner self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all" id="btn-mode-create" onclick="setFormMode('create')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>Alta de Nuevo Artículo</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="btn-mode-edit" onclick="setFormMode('edit')">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Modo Edición (Ficha #105)</span>
+</button>
+</div>
+</div>
+<!-- Medical Inventory Banner / Clinical Context -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary via-primary-container to-secondary p-space-lg text-on-primary shadow-md mb-space-lg">
+<div class="absolute -right-8 -bottom-10 w-48 h-48 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">medical_services</span>
+<span>Control Maestro de Cadena de Suministros Clínicos</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-white mb-1" id="view-title">
+          Alta de Artículo en Inventario
+        </h1>
+<p class="font-body-md text-body-md text-primary-fixed-dim/90" id="view-subtitle">
+          Registra un nuevo insumo dental, medicamento o instrumental esterilizable con umbral de seguridad para abastecimiento continuo en consultorios.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest/15 backdrop-blur-md px-space-md py-2.5 rounded-xl border border-white/20">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">inventory</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-primary-fixed uppercase">Protocolo CDMX</div>
+<div class="font-label-md text-label-md font-semibold text-white">COFEPRIS NOM-013-SSA2</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid Form -->
+<form class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="inventory-form" onsubmit="event.preventDefault(); handleSubmit();">
+<!-- COLUMNA IZQUIERDA: Datos Maestros (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Card: Datos Principales -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">format_list_bulleted</span>
+<span>Datos Maestros del Insumo / Utensilio</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">* Campos mandatorios</span>
+</div>
+<!-- Clave numérica y Nombre -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-4 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="key_number">
+<span>Clave Numérica</span>
+<span class="text-outline font-normal text-body-sm">(Opcional)</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">tag</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="key_number" name="key_number" oninput="validateFormLive()" placeholder="Ej. 105" type="number"/>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Código de anaquel o SKU interno</span>
+</div>
+<div class="md:col-span-8 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="name">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+                Nombre del Artículo <span class="text-error">*</span>
+</span>
+<span class="text-outline font-body-sm text-[11px]" id="name-counter">0 / 120</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary text-[18px]">vaccines</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="name" maxlength="120" name="name" oninput="validateFormLive(); updateNameCounter(this);" placeholder="Ej. Ácido Grabador Fosfórico 37% Gel (Jeringa 50ml)" required="" type="text"/>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Indicar concentración, presentación o calibre clínico</span>
+</div>
+</div>
+<!-- Tipo de Artículo & Unidad de Medida -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pt-2">
+<!-- Selector Tipo de Artículo: Material vs Utensilio -->
+<div class="md:col-span-6 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1 font-semibold">
+              Tipo de Artículo <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-2 gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<label class="relative flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg cursor-pointer transition-all has-[:checked]:bg-surface-container-lowest has-[:checked]:text-primary has-[:checked]:shadow-sm text-on-surface-variant hover:text-on-surface">
+<input checked="" class="sr-only" name="item_type" onchange="handleItemTypeChange('Material'); validateFormLive();" type="radio" value="Material"/>
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+<span class="font-label-md text-label-md">Material</span>
+</label>
+<label class="relative flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg cursor-pointer transition-all has-[:checked]:bg-surface-container-lowest has-[:checked]:text-secondary has-[:checked]:shadow-sm text-on-surface-variant hover:text-on-surface">
+<input class="sr-only" name="item_type" onchange="handleItemTypeChange('Utensilio'); validateFormLive();" type="radio" value="Utensilio"/>
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+<span class="font-label-md text-label-md">Utensilio</span>
+</label>
+</div>
+<p class="text-outline font-body-sm text-[11px] leading-tight" id="item-type-desc">
+              Desechable / consumible de uso único por procedimiento odontológico.
+            </p>
+</div>
+<!-- Unidad de Medida -->
+<div class="md:col-span-6 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="unit">
+<span>Unidad de Medida <span class="text-error">*</span></span>
+<span class="text-outline font-normal text-body-sm">Catálogo</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">straighten</span>
+<select class="w-full h-10 pl-9 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 appearance-none transition-all" id="unit" name="unit" onchange="validateFormLive()" required="">
+<option value="piezas">Piezas (Pza)</option>
+<option value="cajas">Cajas (Cja)</option>
+<option value="frascos">Frascos (Fco)</option>
+<option value="jeringas">Jeringas (Jrg)</option>
+<option value="paquetes">Paquetes (Pqt)</option>
+<option value="rollos">Rollos (Rlo)</option>
+<option value="litros">Litros (Lt)</option>
+<option value="mililitros">Mililitros (ml)</option>
+<option value="kits">Kits Odontológicos</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Unidad de conteo para kardex y compras</span>
+</div>
+</div>
+<!-- Mínimo de existencias & Caducidad -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pt-2">
+<div class="md:col-span-6 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="min_stock">
+<span class="flex items-center gap-1">
+                Stock Mínimo Alerta <span class="text-error">*</span>
+</span>
+<span class="text-error font-label-sm text-[10px] uppercase font-bold">Resurtido</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">notification_important</span>
+<input class="w-full h-10 pl-9 pr-14 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="min_stock" min="0" name="min_stock" oninput="validateFormLive()" placeholder="5.0" required="" step="0.1" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline uppercase font-semibold" id="min_stock_unit_label">pza</span>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Disparará notificación amarilla cuando baje de este umbral</span>
+</div>
+<div class="md:col-span-6 flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="expiration_date">
+<span class="flex items-center gap-1">
+                Fecha de Caducidad
+                <span class="material-symbols-outlined text-[15px] text-outline" title="Obligatoria para medicamentos y anestésicos">info</span>
+</span>
+<span class="text-outline font-normal text-body-sm">(Opcional)</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">event_busy</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="expiration_date" name="expiration_date" oninput="validateFormLive()" type="month"/>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Relevante para resinas, selladores y anestésicos</span>
+</div>
+</div>
+<!-- Observaciones / Ubicación Física -->
+<div class="flex flex-col gap-1 pt-2">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="observations">
+<span class="flex items-center gap-1.5">
+<span>Observaciones y Ubicación en Gabinete</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-[10px] text-on-surface-variant">Recepción / Sillones 1-3</span>
+</span>
+<span class="text-outline font-normal text-body-sm">(Opcional)</span>
+</label>
+<div class="relative">
+<textarea class="w-full p-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all resize-none" id="observations" name="observations" oninput="validateFormLive()" placeholder="Ej. Guardado en Gaveta 2 de Almacén Principal. Usado preferentemente por Dra. Mendoza en Sillón 1 para operatoria de carillas..." rows="3"></textarea>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Instrucciones especiales de refrigeración o esterilizado autoclave</span>
+</div>
+<!-- Toggle Operativo: Activo / Inactivo -->
+<div class="mt-2 pt-space-sm border-t border-surface-container flex items-center justify-between bg-surface-container-low/50 p-space-sm rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center transition-colors" id="status-icon-wrap">
+<span class="material-symbols-outlined text-[20px]" id="status-icon">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-2">
+                Estado Operativo: <span class="text-tertiary" id="status-label">Activo para Agenda y Cargos</span>
+</span>
+<span class="font-body-sm text-body-sm text-outline">Los artículos inactivos se ocultan de la selección rápida de los odontólogos</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="is_active" name="is_active" onchange="toggleItemStatus(this.checked)" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[3px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-tertiary"></div>
+</label>
+</div>
+</div>
+<!-- Historical Audit Snippet (Only visible in edit mode) -->
+<div class="hidden bg-surface-container-low/60 rounded-2xl p-space-md" id="edit-audit-card">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">history</span> Último movimiento de almacén: Entrada +12 pzas (Orden #CO-892)</span>
+<span>Actualizado: 21 Oct 2023 por Dra. S. Mendoza</span>
+</div>
+</div>
+</div>
+<!-- COLUMNA DERECHA: Stock Inicial (Alta) / Reglas & Validación (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- BLOQUE DINÁMICO: Stock Inicial (Alta) vs Trazabilidad Estricta (Edición) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-transparent transition-all" id="card-stock-initial">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">add_box</span>
+<span>Inicialización de Stock</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm uppercase font-bold">Exclusivo Alta</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+          Al dar de alta por primera vez este insumo, puedes registrar el inventario físico existente en gavetas de Polanco.
+        </p>
+<div class="space-y-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="initial_stock">
+<span>Existencia Inicial Física</span>
+<span class="font-label-sm text-label-sm text-tertiary">Kardex Apertura</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-tertiary text-[20px]">layers</span>
+<input class="w-full h-11 pl-10 pr-16 rounded-xl bg-surface-container-low text-on-surface font-headline-sm text-headline-sm text-primary focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-tertiary/30 transition-all" id="initial_stock" min="0" name="initial_stock" oninput="validateFormLive()" placeholder="20.0" step="0.1" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold" id="initial_stock_unit_label">pzas</span>
+</div>
+<span class="text-outline font-body-sm text-[11px]">Genera automáticamente el asiento contable de apertura en almacén</span>
+</div>
+<!-- Costo Estimado Inicial MXN -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="initial_unit_cost">
+<span>Costo Estimado Unitario (MXN)</span>
+<span class="text-outline font-normal text-body-sm">(Opcional)</span>
+</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-label-md text-label-md text-outline font-semibold">$</span>
+<input class="w-full h-10 pl-8 pr-14 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="initial_unit_cost" min="0" name="initial_unit_cost" oninput="validateFormLive()" placeholder="145.00" step="0.01" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline font-semibold">MXN</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tarjeta Alternativa de Edición: Bloqueo Trazable (Oculto por defecto) -->
+<div class="hidden bg-surface-container-low/70 rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" id="card-stock-edit-locked">
+<div class="flex items-center gap-space-xs text-on-surface font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px] text-outline">lock</span>
+<span>Existencia Actual Protegida</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest flex items-baseline justify-between shadow-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Existencia en Polanco</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">18.0</span>
+<span class="font-label-md text-label-md text-on-surface-variant">piezas</span>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/40 px-2 py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Saludable
+            </span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-sm rounded-xl bg-primary-fixed/30 text-on-primary-fixed font-body-sm text-body-sm leading-snug">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">policy</span>
+<span>
+<strong>Control Auditor Clínico:</strong> La existencia no puede alterarse directamente en esta ficha. Para modificar cantidades debe registrarse un movimiento oficial en <a class="underline font-semibold hover:text-primary" href="#">Entradas/Salidas</a> o un <a class="underline font-semibold hover:text-primary" href="#">Ajuste de Merma / Rotura</a> con justificación.
+          </span>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-space-xs mt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Registrar Movimiento de Almacén</span>
+</button>
+</div>
+<!-- Tarjeta: Validación de Campos en Vivo -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-space-xs text-on-surface font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">rule</span>
+<span>Checklist de Validación</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold" id="validation-score">0 de 3 listos</span>
+</div>
+<ul class="space-y-space-sm text-body-sm font-body-sm">
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low transition-colors" id="val-name">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline val-icon">radio_button_unchecked</span>
+<span>Nombre y concentración del insumo</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline val-text">Pendiente</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low transition-colors" id="val-type-unit">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary val-icon">check_circle</span>
+<span>Tipo y unidad de conteo</span>
+</span>
+<span class="font-label-sm text-label-sm text-tertiary val-text">Completado</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low transition-colors" id="val-min-stock">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline val-icon">radio_button_unchecked</span>
+<span>Umbral de alerta mínima de stock</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline val-text">Pendiente</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low transition-colors" id="val-caducidad">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline val-icon">radio_button_unchecked</span>
+<span>Control de fecha de caducidad</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline val-text">Sin fecha (Opcional)</span>
+</li>
+</ul>
+<!-- Visual Mini-Preview Card -->
+<div class="mt-2 p-space-sm rounded-xl bg-surface-container-low border border-surface-container flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Previsualización en Catálogo</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-[10px] font-bold" id="preview-badge">MATERIAL</span>
+</div>
+<div class="font-headline-sm text-[15px] font-bold text-on-surface truncate" id="preview-title">
+            (Sin nombre especificado)
+          </div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span id="preview-code">Clave: S/N</span>
+<span id="preview-stock-info">Alerta a las: --</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-3 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs font-bold" id="btn-submit" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span id="btn-submit-text">Guardar Artículo</span>
+</button>
+<a class="py-3 px-space-md rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center" href="#">
+            Cancelar
+          </a>
+</div>
+<!-- Zona de Peligro / Retiro de Artículo (Solo en Edición) -->
+<div class="hidden pt-space-xs border-t border-surface-container flex flex-col gap-2" id="danger-zone-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Gestión de Catálogo</span>
+<span class="text-error font-label-sm text-label-sm">Auditoría Requerida</span>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-error-container/50 text-error hover:bg-error-container font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" onclick="openRetireModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+<span>Desactivar / Retirar Artículo del Sistema</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-space-xs text-outline font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[14px]">lock_clock</span>
+<span>Registro auditado con sello de tiempo (CST/CDMX)</span>
+</div>
+</div>
+</div>
+</form>
+<!-- MODAL DE CONFIRMACIÓN: Retiro / Desactivación de Artículo -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200" id="modal-retire">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg mx-margin flex flex-col gap-space-md border border-surface-container">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Confirmar Retiro de Artículo</h3>
+<p class="font-label-sm text-label-sm text-outline">Operación controlada de inventario clínico</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeRetireModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="font-body-md text-body-md text-on-surface-variant space-y-space-sm">
+<p>
+          Estás por marcar como <strong>inactivo/retirado</strong> el artículo <span class="font-semibold text-on-surface" id="modal-item-name">"Ácido Grabador Fosfórico 37%"</span>.
+        </p>
+<div class="p-space-sm rounded-xl bg-error-container/30 text-on-surface font-body-sm text-body-sm border border-error/20 flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">info</span>
+<div>
+            Si el artículo tiene existencias remanentes físicas, deberán registrarse las bajas por caducidad, merma o donación para mantener la coherencia fiscal y de costos en el reporte contable MXN.
+          </div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="retire-reason">
+            Motivo oficial del retiro / sustitución <span class="text-error">*</span>
+</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-error/30" id="retire-reason">
+<option value="discontinued">Descontinuado por proveedor / Laboratorio</option>
+<option value="replacement">Sustituido por nueva marca o presentación</option>
+<option value="regulatory">Aviso o recall sanitario COFEPRIS</option>
+<option value="duplicate">Registro duplicado erróneo</option>
+<option value="broken">Deterioro irreparable (en caso de Utensilio)</option>
+</select>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs border-t border-surface-container">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container" onclick="closeRetireModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-error text-on-error font-label-md text-label-md hover:bg-on-error-container shadow-sm flex items-center gap-1" onclick="confirmRetireArticle()" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_forever</span>
+<span>Confirmar Retiro</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-2xl shadow-xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-success">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold" id="toast-title">Artículo Guardado Exitosamente</span>
+<span class="font-body-sm text-body-sm text-surface-variant" id="toast-desc">Sincronizado con almacén central y sillones de Polanco</span>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+  let currentMode = 'create';
+
+  // Cambiar entre Modo Creación y Modo Edición para demonstrar ambos estados
+  function setFormMode(mode) {
+    currentMode = mode;
+    const btnCreate = document.getElementById('btn-mode-create');
+    const btnEdit = document.getElementById('btn-mode-edit');
+    const viewTitle = document.getElementById('view-title');
+    const viewSubtitle = document.getElementById('view-subtitle');
+    const btnSubmitText = document.getElementById('btn-submit-text');
+    const cardStockInitial = document.getElementById('card-stock-initial');
+    const cardStockLocked = document.getElementById('card-stock-edit-locked');
+    const dangerZone = document.getElementById('danger-zone-container');
+    const editAuditCard = document.getElementById('edit-audit-card');
+
+    const keyNumberInput = document.getElementById('key_number');
+    const nameInput = document.getElementById('name');
+    const minStockInput = document.getElementById('min_stock');
+    const obsInput = document.getElementById('observations');
+    const expirationInput = document.getElementById('expiration_date');
+    const initialStockInput = document.getElementById('initial_stock');
+
+    if (mode === 'create') {
+      btnCreate.className = "flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all";
+      btnEdit.className = "flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all";
+      
+      viewTitle.textContent = "Alta de Artículo en Inventario";
+      viewSubtitle.textContent = "Registra un nuevo insumo dental, medicamento o instrumental esterilizable con umbral de seguridad para abastecimiento continuo en consultorios.";
+      btnSubmitText.textContent = "Guardar Artículo";
+
+      cardStockInitial.classList.remove('hidden');
+      cardStockLocked.classList.add('hidden');
+      dangerZone.classList.add('hidden');
+      editAuditCard.classList.add('hidden');
+
+      // Limpiar campos para modo alta
+      keyNumberInput.value = '';
+      nameInput.value = '';
+      minStockInput.value = '5.0';
+      obsInput.value = '';
+      expirationInput.value = '';
+      if (initialStockInput) initialStockInput.value = '20.0';
+      setRadioValue('item_type', 'Material');
+      handleItemTypeChange('Material');
+    } else {
+      btnEdit.className = "flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all";
+      btnCreate.className = "flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all";
+      
+      viewTitle.textContent = "Edición de Artículo: #105 - Ácido Grabador Fosfórico 37%";
+      viewSubtitle.textContent = "Actualiza parámetros maestros, unidad y nivel de alerta. Las existencias operativas se concilian mediante el kardex de transacciones.";
+      btnSubmitText.textContent = "Actualizar Ficha de Artículo";
+
+      cardStockInitial.classList.add('hidden');
+      cardStockLocked.classList.remove('hidden');
+      dangerZone.classList.remove('hidden');
+      editAuditCard.classList.remove('hidden');
+
+      // Cargar datos muestra para edición
+      keyNumberInput.value = '105';
+      nameInput.value = 'Ácido Grabador Fosfórico 37% Gel (Jeringa 50ml)';
+      minStockInput.value = '6.0';
+      obsInput.value = 'Ubicación: Gabinete 2, gaveta superior. Para uso exclusivo en resinas directas y selladores en Sillón 1 y 2.';
+      expirationInput.value = '2025-11';
+      document.getElementById('unit').value = 'jeringas';
+      setRadioValue('item_type', 'Material');
+      handleItemTypeChange('Material');
+    }
+    updateNameCounter(nameInput);
+    validateFormLive();
+  }
+
+  function setRadioValue(name, val) {
+    const radios = document.getElementsByName(name);
+    for (let r of radios) {
+      r.checked = (r.value === val);
+    }
+  }
+
+  function handleItemTypeChange(type) {
+    const desc = document.getElementById('item-type-desc');
+    const previewBadge = document.getElementById('preview-badge');
+    if (type === 'Material') {
+      desc.textContent = "Desechable / consumible de uso único por procedimiento odontológico.";
+      previewBadge.textContent = "MATERIAL";
+      previewBadge.className = "px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-[10px] font-bold";
+    } else {
+      desc.textContent = "Instrumental reutilizable para ciclo continuo de lavado y esterilizado en autoclave.";
+      previewBadge.textContent = "UTENSILIO";
+      previewBadge.className = "px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold";
+    }
+  }
+
+  function toggleItemStatus(isActive) {
+    const label = document.getElementById('status-label');
+    const icon = document.getElementById('status-icon');
+    const iconWrap = document.getElementById('status-icon-wrap');
+
+    if (isActive) {
+      label.textContent = "Activo para Agenda y Cargos";
+      label.className = "text-tertiary";
+      icon.textContent = "check_circle";
+      iconWrap.className = "w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center transition-colors";
+    } else {
+      label.textContent = "Inactivo / Pausado Temporalmente";
+      label.className = "text-outline";
+      icon.textContent = "pause_circle";
+      iconWrap.className = "w-9 h-9 rounded-lg bg-surface-container-high text-outline flex items-center justify-center transition-colors";
+    }
+  }
+
+  function updateNameCounter(input) {
+    const counter = document.getElementById('name-counter');
+    const len = input.value.length;
+    counter.textContent = `${len} / 120`;
+  }
+
+  function validateFormLive() {
+    const nameVal = document.getElementById('name').value.trim();
+    const minStockVal = parseFloat(document.getElementById('min_stock').value);
+    const keyVal = document.getElementById('key_number').value.trim();
+    const expVal = document.getElementById('expiration_date').value;
+    const unitVal = document.getElementById('unit').value;
+
+    // Unit label badges
+    const minStockLabel = document.getElementById('min_stock_unit_label');
+    const initialStockLabel = document.getElementById('initial_stock_unit_label');
+    if (minStockLabel) minStockLabel.textContent = unitVal.substring(0, 4);
+    if (initialStockLabel) initialStockLabel.textContent = unitVal.substring(0, 4);
+
+    // Live preview update
+    const previewTitle = document.getElementById('preview-title');
+    const previewCode = document.getElementById('preview-code');
+    const previewStock = document.getElementById('preview-stock-info');
+
+    previewTitle.textContent = nameVal.length > 0 ? nameVal : "(Sin nombre especificado)";
+    previewCode.textContent = keyVal.length > 0 ? `Clave: #${keyVal}` : "Clave: S/N";
+    previewStock.textContent = !isNaN(minStockVal) ? `Alerta a las: ${minStockVal} ${unitVal}` : "Alerta: No definida";
+
+    // Checklist updates
+    let validCount = 1; // item_type & unit are defaulted
+
+    // 1. Name Check
+    const valNameLi = document.getElementById('val-name');
+    if (nameVal.length >= 3) {
+      validCount++;
+      setChecklistRow(valNameLi, true, "Válido");
+    } else {
+      setChecklistRow(valNameLi, false, nameVal.length === 0 ? "Requerido" : "Muy corto");
+    }
+
+    // 2. Min Stock Check
+    const valMinStockLi = document.getElementById('val-min-stock');
+    if (!isNaN(minStockVal) && minStockVal >= 0) {
+      validCount++;
+      setChecklistRow(valMinStockLi, true, `${minStockVal} ${unitVal}`);
+    } else {
+      setChecklistRow(valMinStockLi, false, "Obligatorio (>= 0)");
+    }
+
+    // 3. Expiration date check (optional)
+    const valCadLi = document.getElementById('val-caducidad');
+    if (expVal) {
+      setChecklistRow(valCadLi, true, expVal);
+    } else {
+      setChecklistRow(valCadLi, false, "Sin fecha (Opcional)", true);
+    }
+
+    // Score badge
+    const scoreBadge = document.getElementById('validation-score');
+    scoreBadge.textContent = `${validCount} de 3 listos`;
+    if (validCount === 3) {
+      scoreBadge.className = "font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold";
+    } else {
+      scoreBadge.className = "font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold";
+    }
+  }
+
+  function setChecklistRow(element, isSuccess, message, isNeutral = false) {
+    const icon = element.querySelector('.val-icon');
+    const text = element.querySelector('.val-text');
+
+    if (isNeutral) {
+      icon.textContent = "remove_circle_outline";
+      icon.className = "material-symbols-outlined text-[18px] text-outline val-icon";
+      text.textContent = message;
+      text.className = "font-label-sm text-label-sm text-outline val-text";
+      return;
+    }
+
+    if (isSuccess) {
+      icon.textContent = "check_circle";
+      icon.className = "material-symbols-outlined text-[18px] text-tertiary val-icon";
+      text.textContent = message;
+      text.className = "font-label-sm text-label-sm text-tertiary font-semibold val-text";
+    } else {
+      icon.textContent = "radio_button_unchecked";
+      icon.className = "material-symbols-outlined text-[18px] text-outline val-icon";
+      text.textContent = message;
+      text.className = "font-label-sm text-label-sm text-error val-text";
+    }
+  }
+
+  function handleSubmit() {
+    const nameVal = document.getElementById('name').value.trim();
+    if (nameVal.length < 3) {
+      alert("Por favor ingrese un nombre de artículo válido para continuar.");
+      return;
+    }
+
+    const toast = document.getElementById('toast-success');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+
+    if (currentMode === 'create') {
+      toastTitle.textContent = "Artículo Creado Exitosamente";
+      toastDesc.textContent = "Se generó el registro con stock inicial en Almacén Polanco.";
+    } else {
+      toastTitle.textContent = "Ficha de Artículo Actualizada";
+      toastDesc.textContent = "Los cambios maestros han sido guardados en el sistema.";
+    }
+
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    }, 3800);
+  }
+
+  // Modal Retiro
+  function openRetireModal() {
+    const modal = document.getElementById('modal-retire');
+    const nameInput = document.getElementById('name').value;
+    document.getElementById('modal-item-name').textContent = `"${nameInput || 'Artículo Actual'}"`;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+  }
+
+  function closeRetireModal() {
+    const modal = document.getElementById('modal-retire');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+  }
+
+  function confirmRetireArticle() {
+    closeRetireModal();
+    const isActiveToggle = document.getElementById('is_active');
+    isActiveToggle.checked = false;
+    toggleItemStatus(false);
+
+    const toast = document.getElementById('toast-success');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    toastTitle.textContent = "Artículo Retirado del Catálogo";
+    toastDesc.textContent = "El insumo ha sido marcado como inactivo y auditado con motivo.";
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    }, 4000);
+  }
+
+  // Init
+  document.addEventListener('DOMContentLoaded', () => {
+    validateFormLive();
+  });
+</script></main></div></body></html>

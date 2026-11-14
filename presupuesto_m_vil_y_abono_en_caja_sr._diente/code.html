@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#7ffc97", "primary-fixed": "#cce5ff", "on-error-container": "#93000a", "surface-container": "#eaedff", "on-tertiary-container": "#f7fff2", "secondary": "#006a61", "on-error": "#ffffff", "tertiary-fixed-dim": "#62df7d", "surface-container-high": "#e2e7ff", "on-surface-variant": "#3f4850", "tertiary": "#006b2c", "on-surface": "#131b2e", "inverse-on-surface": "#eef0ff", "surface-tint": "#006398", "surface-variant": "#dae2fd", "on-secondary-container": "#006f66", "surface-container-low": "#f2f3ff", "on-primary": "#ffffff", "primary-container": "#007bb9", "secondary-container": "#86f2e4", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-background": "#131b2e", "tertiary-container": "#00873a", "on-tertiary-fixed": "#002109", "on-primary-fixed-variant": "#004b73", "on-secondary-fixed-variant": "#005049", "on-primary-container": "#fdfcff", "error-container": "#ffdad6", "inverse-primary": "#93ccff", "surface": "#faf8ff", "on-secondary-fixed": "#00201d", "primary": "#006194", "outline": "#707881", "on-primary-fixed": "#001d31", "outline-variant": "#bfc7d2", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#005320", "on-secondary": "#ffffff", "secondary-fixed": "#89f5e7", "surface-bright": "#faf8ff", "background": "#faf8ff", "on-tertiary": "#ffffff", "surface-dim": "#d2d9f4", "secondary-fixed-dim": "#6bd8cb", "primary-fixed-dim": "#93ccff", "inverse-surface": "#283044" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-tablet": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Manrope"], "headline-lg": ["Outfit"], "headline-xl": ["Outfit"], "headline-xl-mobile": ["Outfit"], "headline-lg-mobile": ["Outfit"], "label-sm": ["Manrope"], "body-lg": ["Manrope"], "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-sm": ["Manrope"], "data-mono": ["Manrope"], "headline-sm": ["Outfit"], "label-lg": ["Manrope"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }] } } } };</script><style>body { min-height: max(884px, 100dvh); }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Volver" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container active:scale-95 text-on-surface" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight">Presupuesto y Cuotas</h1><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Sede CDMX</span></div></div><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[18px]">verified</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-4 bg-surface min-h-screen"><div class="flex flex-col w-full pb-24 space-y-4">
+<!-- Top Context Header & Folio -->
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md active:scale-95 transition-transform min-h-[44px]" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back_ios</span>
+<span>Volver a Presupuestos</span>
+</button>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-primary">receipt_long</span>
+<span class="font-data-mono text-label-sm text-on-surface">#PRE-2026-0142</span>
+</div>
+</div>
+<!-- Medical Alert Banner -->
+<aside aria-label="Alerta médica" class="w-full bg-error-container text-on-error-container rounded-xl p-3 flex items-start gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-error tracking-wide uppercase">Alerta Médica Relevante</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-error-container mt-0.5">Alergia confirmada a la Penicilina · Anestesia sugerida: Mepivacaína al 3% sin vasoconstrictor.</p>
+</div>
+</aside>
+<!-- Tarjeta Resumen del Paciente -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-surface-container-low/60 pointer-events-none"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of Lucia Garza Villalobos, a warm 38-year-old Mexican patient with pleasant dental clinic lighting, natural soft focus, friendly clinical atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR7THED91e8-RmPfjnKEYdY6dlioQlsmX_KlPWab8SBIl7h-lijUbGLDDXlRQubo7rWAB6ItO-GEcUCZ-NEu_XwomGYu2XhkiGmZqzbrVcmvadWRqFGlHA6iZ8o220__Oh5KYmz9fyB15C65QktYxd7omX8VRglDYmxdjauvh8SfiB8KCkfHfUImgyliWUMjWq-UdTET9_z8JVJIbg_X8nCat9UkMDgxWDYKxVGWk">
+</div>
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Lucía Garza Villalobos</h2>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span>Expediente:</span>
+<span class="font-data-mono text-primary font-bold">#SD-2026-0891</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">draw</span>
+        Firmado
+      </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Plan de Tratamiento</p>
+<p class="font-body-md text-body-md text-on-surface font-semibold truncate">Rehabilitación Integral &amp; Corona Zirconia</p>
+</div>
+</div>
+</section>
+<!-- Resumen Financiero Móvil de Alta Legibilidad -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resumen Financiero</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Moneda: MXN</span>
+</div>
+<!-- Saldo Pendiente Card Principal -->
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Saldo Pendiente de este Presupuesto</span>
+<div class="flex items-baseline justify-between flex-wrap gap-1">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-error font-bold tracking-tight">$4,500.00 <span class="font-label-md text-label-md text-error/80">MXN</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">43.75% por liquidar</span>
+</div>
+</div>
+<!-- Comparativa Presupuesto vs Pagado -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Presupuesto</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block mt-0.5">$8,000.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Honorarios: $6,200<br>Laboratorio: $1,800
+        </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary block">Total Abonado</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold block mt-0.5">$3,500.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Anticipo: $2,000<br>Cuota 1: $1,500
+        </p>
+</div>
+</div>
+<!-- Saldo Global Paciente (Diferenciado) -->
+<div class="bg-surface-variant/40 rounded-lg p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">folder_shared</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Saldo Global del Paciente</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Incluye periodoncia previa activa</p>
+</div>
+</div>
+<span class="font-data-mono text-label-lg text-on-surface font-bold shrink-0">$5,700.00 MXN</span>
+</div>
+</section>
+<!-- Plan de Cuotas Móvil -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Plan de Cuotas</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">3 Cuotas restantes</span>
+</div>
+<!-- Tarjeta Destacada: Próxima Cuota -->
+<div class="bg-primary/5 rounded-xl p-3.5 flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Próximo Vencimiento
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-0.5">Cuota 2 · $1,500.00 MXN</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">15 Abr 2026</span>
+</div>
+<button class="w-full min-h-[48px] rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" onclick="abrirModalCobro('Cuota 2', 1500)" type="button">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+<span>Abonar $1,500.00 MXN en Caja</span>
+</button>
+</div>
+<!-- Lista de Otras Cuotas -->
+<div class="space-y-2 mt-1">
+<!-- Cuota 1 (Pagada) -->
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Cuota 1 · $1,500.00 MXN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pagado el 02 Mar 2026 (Tarjeta Débito)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Liquidada</span>
+</div>
+<!-- Cuota 3 (Futura) -->
+<div class="bg-surface-container-low/70 rounded-lg p-3 flex items-center justify-between opacity-80">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-data-mono text-label-sm">
+            3
+          </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Cuota 3 · $1,500.00 MXN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vencimiento: 15 May 2026</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Por vencer</span>
+</div>
+<!-- Cuota 4 / Finiquito (Futura) -->
+<div class="bg-surface-container-low/70 rounded-lg p-3 flex items-center justify-between opacity-80">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-data-mono text-label-sm">
+            4
+          </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Finiquito Entrega · $1,500.00 MXN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Al cementar corona definitiva</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contra entrega</span>
+</div>
+</div>
+</section>
+<!-- Avance de Procedimientos Clínicos -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Avance Clínico</h3>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold bg-primary-fixed px-2.5 py-0.5 rounded-full">
+        2 de 5 completados
+      </span>
+</div>
+<!-- Step Progress Line -->
+<div class="flex items-center gap-1.5 w-full my-1">
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-high"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-high"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-high"></div>
+</div>
+<!-- Lista de Procedimientos -->
+<div class="space-y-2 mt-1">
+<!-- Proc 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">1. Limpieza ultrasónica y profilaxis</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person</span>
+              Dra. Elena Gómez · Sillón 1
+            </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded font-bold">Listo</span>
+</div>
+<!-- Proc 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">2. Desobturación y poste fibra de vidrio #14</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person</span>
+              Dr. Carlos Ramos · Sillón 2
+            </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded font-bold">Listo</span>
+</div>
+<!-- Proc 3 - En Proceso -->
+<div class="p-3 rounded-lg bg-primary-fixed/30 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">radio_button_checked</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">3. Preparación de muñón y escaneo 3D</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person</span>
+              Dr. Carlos Ramos · Programada 15 Abr
+            </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-2 py-0.5 rounded font-bold">Siguiente</span>
+</div>
+<!-- Proc 4 -->
+<div class="p-3 rounded-lg bg-surface-container-low opacity-70 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">radio_button_unchecked</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">4. Prueba de estructura Zirconia estandarizada</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person</span>
+              Dr. Carlos Ramos
+            </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded">Pendiente</span>
+</div>
+<!-- Proc 5 -->
+<div class="p-3 rounded-lg bg-surface-container-low opacity-70 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">radio_button_unchecked</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">5. Cementado final con resina dual &amp; oclusión</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person</span>
+              Dr. Carlos Ramos
+            </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded">Pendiente</span>
+</div>
+</div>
+</section>
+<!-- Bloque de Firma y Comprobante Digital -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Convenio y Firma Digital</h3>
+</div>
+
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Firma en Pantalla (Control Interno)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registrada por Lucía Garza el 24 Feb 2026</p>
+</div>
+</div>
+<!-- Botones táctiles >= 48px -->
+<div class="grid grid-cols-1 gap-2 pt-1">
+<button class="min-h-[48px] px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-all" onclick="mostrarNotificacion('Generando vista previa del Presupuesto #PRE-2026-0142...')" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">picture_as_pdf</span>
+<span>Ver PDF de Presupuesto</span>
+</button>
+<button class="min-h-[48px] px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-all" onclick="mostrarNotificacion('Cargando Convenio de Tratamiento firmado con sello digital...')" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+<span>Ver Convenio Firmado</span>
+</button>
+</div>
+</section>
+<!-- Google Calendar Sync Status Pill (Brand component) -->
+<div class="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cloud_done</span>
+<span>Google Calendar Clínico: Sincronizado (Sede CDMX)</span>
+</div>
+<span class="font-data-mono">Hace 3 min</span>
+</div>
+<!-- Bottom Bar Fija de Acción Rápida -->
+<aside aria-label="Acciones principales" class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md pb-safe px-4 pt-2.5 pb-3 shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+<div class="max-w-md mx-auto flex items-center gap-2.5">
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pendiente</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold leading-tight">$4,500</span>
+</div>
+<button class="flex-1 min-h-[48px] px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.98] transition-transform" onclick="abrirModalCobro('Abono General', 1500)" type="button">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+<span>Registrar Cobro en Caja</span>
+</button>
+</div>
+</aside>
+<!-- Modal / Drawer Rápido de Cobro en Caja (Interactivo) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden flex items-end justify-center p-0" id="modal-cobro" onclick="cerrarModalCobro(event)">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-2xl p-5 shadow-2xl flex flex-col gap-4 max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation()">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Recepción · Registrar Cobro</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-concepto-sub">Abono a Presupuesto #PRE-2026-0142</p>
+</div>
+</div>
+<button class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container text-on-surface active:scale-95" onclick="cerrarModalCobroDirecto()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Monto a cobrar -->
+<div class="bg-surface-container p-3 rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Monto a abonar (MXN)</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">$</span>
+<input class="w-full bg-transparent font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold focus:outline-none" id="input-monto-cobro" type="number" value="1500">
+</div>
+</div>
+<!-- Método de Pago -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Método de Pago</span>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="metodo_pago" type="radio" value="efectivo">
+<div class="p-2.5 rounded-lg bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center gap-1 min-h-[56px] text-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+<span class="font-label-sm text-label-sm">Efectivo</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="metodo_pago" type="radio" value="tarjeta">
+<div class="p-2.5 rounded-lg bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center gap-1 min-h-[56px] text-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+<span class="font-label-sm text-label-sm">Tarjeta</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="metodo_pago" type="radio" value="spei">
+<div class="p-2.5 rounded-lg bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center gap-1 min-h-[56px] text-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+<span class="font-label-sm text-label-sm">SPEI / Transf</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Botón Confirmar Cobro -->
+<button class="w-full min-h-[48px] rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" onclick="confirmarCobro()" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Confirmar e Imprimir Recibo</span>
+</button>
+</div>
+</div>
+<!-- Toast Notificaciones Feedback -->
+<div class="fixed top-20 left-4 right-4 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg flex items-center gap-2 text-body-md font-body-md transform -translate-y-20 opacity-0 pointer-events-none transition-all duration-300" id="toast-notif">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">info</span>
+<span class="flex-1" id="toast-mensaje">Operación realizada</span>
+</div>
+<script>
+    function mostrarNotificacion(mensaje) {
+      const toast = document.getElementById('toast-notif');
+      const toastMsg = document.getElementById('toast-mensaje');
+      if (toast && toastMsg) {
+        toastMsg.textContent = mensaje;
+        toast.classList.remove('-translate-y-20', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('-translate-y-20', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+    }
+
+    function abrirModalCobro(concepto, monto) {
+      const modal = document.getElementById('modal-cobro');
+      const inputMonto = document.getElementById('input-monto-cobro');
+      const sub = document.getElementById('modal-concepto-sub');
+      if (modal) {
+        if (inputMonto && monto) inputMonto.value = monto;
+        if (sub && concepto) sub.textContent = 'Cobro directo: ' + concepto + ' &middot; Presupuesto #PRE-2026-0142';
+        modal.classList.remove('hidden');
+      }
+    }
+
+    function cerrarModalCobro(event) {
+      const modal = document.getElementById('modal-cobro');
+      if (modal && event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function cerrarModalCobroDirecto() {
+      const modal = document.getElementById('modal-cobro');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function confirmarCobro() {
+      const inputMonto = document.getElementById('input-monto-cobro');
+      const monto = inputMonto ? inputMonto.value : '1500';
+      cerrarModalCobroDirecto();
+      mostrarNotificacion('Cobro de $' + Number(monto).toLocaleString('es-MX') + ' MXN registrado con éxito en caja.');
+    }
+  </script>
+</div></main>
+
+</body></html>

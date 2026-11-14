@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "outline": "#707881", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "primary-container": "#007bb9", "tertiary-fixed-dim": "#62df7d", "on-tertiary-container": "#f7fff2", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "on-secondary-container": "#006f66", "on-secondary-fixed-variant": "#005049", "on-primary-container": "#fdfcff", "secondary-fixed": "#89f5e7", "primary": "#006194", "primary-fixed": "#cce5ff", "on-error": "#ffffff", "outline-variant": "#bfc7d2", "on-primary-fixed-variant": "#004b73", "surface-dim": "#d2d9f4", "secondary-container": "#86f2e4", "background": "#faf8ff", "error-container": "#ffdad6", "inverse-primary": "#93ccff", "surface-tint": "#006398", "on-error-container": "#93000a", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed-variant": "#005320", "tertiary": "#006b2c", "on-secondary-fixed": "#00201d", "secondary": "#006a61", "on-primary-fixed": "#001d31", "on-surface-variant": "#3f4850", "tertiary-fixed": "#7ffc97", "surface-container-low": "#f2f3ff", "on-secondary": "#ffffff", "surface": "#faf8ff", "primary-fixed-dim": "#93ccff", "inverse-surface": "#283044", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873a", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container": "#eaedff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-lg": ["Manrope"], "body-md": ["Manrope"], "data-mono": ["Manrope"], "label-sm": ["Manrope"], "headline-lg": ["Outfit"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Outfit"], "label-lg": ["Manrope"], "headline-sm": ["Outfit"], "headline-xl": ["Outfit"], "headline-xl-mobile": ["Outfit"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Sr. Diente Clinical OS" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical OS</span></div></div><nav class="flex-1 px-space-sm py-space-sm space-y-space-xs overflow-y-auto" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operación Clínica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda</span></div><span class="material-symbols-outlined text-[16px] text-outline">tune</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Finanzas &amp; Facturación</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Comisiones</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestión Médica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="laboratorio" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span>Laboratorio</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="infraestructura-sillones" href="#"><span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span><span>Infraestructura / Sillones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low m-space-sm rounded-xl"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div class="flex flex-col leading-tight"><span class="font-label-md text-label-md text-on-surface font-bold">Cédula COFEPRIS</span><span class="font-label-sm text-label-sm text-on-surface-variant">Vigente 2024-CDMX</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shadow-sm cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">apartment</span><span class="font-label-md text-label-md text-on-surface font-semibold">Polanco CDMX</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="material-symbols-outlined text-tertiary text-[16px]">cloud_done</span><span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Sync OK (Google CDMX)</span></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm cursor-pointer"><div class="flex flex-col text-right leading-none"><span class="font-label-md text-label-md text-on-surface font-bold">Dra. Jimena Alarcón</span><span class="font-label-sm text-label-sm text-secondary font-medium">Ortodoncista Titular</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"/></div></div></header><main class="relative pt-16 bg-surface w-full min-h-screen"><div class="flex flex-col w-full">
+<!-- Persistent High-Urgency Medical Alert Banner (COFEPRIS Safe Practice) -->
+<div class="w-full bg-error-container text-on-error-container px-margin-desktop py-space-sm flex items-center justify-between shadow-sm relative z-30">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-error text-on-error px-space-sm py-0.5 rounded-full animate-pulse shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Alerta Médica Activa</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-md text-label-md">
+<span class="font-bold underline decoration-error">ALERGIA CRÍTICA: PENICILINA (Shock anafiláctico reportado)</span>
+<span class="text-on-error-container/60">•</span>
+<span class="font-semibold">Hipertensión Grado 1 (Controlada con Enalapril 10mg / 24h)</span>
+<span class="text-on-error-container/60">•</span>
+<span class="bg-surface-container-lowest/80 text-on-surface px-space-xs py-0.5 rounded text-[11px] font-bold">Riesgo Quirúrgico Medio</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-error-container/80">Validado por Dr. Alarcón | 14/Feb/2024</span>
+<button class="bg-error text-on-error px-space-sm py-1 rounded-md font-label-sm text-label-sm hover:opacity-90 transition-opacity">
+        Ver Protocolo Seguro
+      </button>
+</div>
+</div>
+<!-- Top Hero Header / Patient Profile Canvas -->
+<div class="px-margin-desktop py-space-md bg-surface-container-low flex flex-col gap-space-md">
+<!-- Breadcrumb & Clinic Location Metadata -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>Operación Clínica</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Pacientes 360</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-bold text-primary">EXP-2024-CHL</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Clinic Branch Pill -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-label-md text-label-md font-semibold">Sede Plaza Cantil, Coyoacán</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<!-- Improvement badge -->
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-space-sm py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+          Ficha 360 v4.2 Activa
+        </span>
+</div>
+</div>
+<!-- Patient Identity Card (Split Layout) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<!-- Patient Portrait with Status Ring -->
+<div class="relative">
+<img class="w-20 h-20 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close up clean medical studio photograph of a Mexican male patient in his early 40s with a polite warm smile, clinical lighting with soft cyan blue background, crisp focus and professional tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-RslqmeD_w5YYbQhitekOuiwSjlTKmlpFQzmkWdouPZ9j7K9kYzvGs4kFL4loEIRoLzhC3RsfNl06xNqArbEDZcNc_HVP3DCooRAPDpDvUbeqBwZZaErriw5vsmMetyWFbiRsv7xmcYfl_2qKx_YDuGT9DBjFFLHnVOKuE-nSFw4vjIr92lvYljim9OgiQJFXx0sU53eJV81BUvka3Gtfve8V_rFQRZMDjuFHXIQ"/>
+<span class="absolute bottom-0 right-0 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center text-[12px] shadow-sm font-bold" title="Paciente Activo">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Carlos Herrera López</h1>
+<span class="bg-surface-container px-space-sm py-0.5 rounded font-data-mono text-data-mono text-primary font-bold">EXP-2024-CHL</span>
+<!-- Corporate Agreement Tag -->
+<span class="bg-secondary-container text-on-secondary-container px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">corporate_fare</span>
+              Grupo Bimbo • CS-2024-0012
+            </span>
+</div>
+<div class="flex items-center gap-space-md mt-space-xs flex-wrap font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">cake</span>
+              40 años (28/09/1983)
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">phone</span>
+<span class="font-data-mono">55 4192 8810</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+              WhatsApp verificado
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">badge</span>
+              Titular Padrón Corporativo
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Right Widget -->
+<div class="flex items-center gap-space-md w-full lg:w-auto justify-between lg:justify-end bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Saldo Global Paciente</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">$1,450.00 <span class="font-label-md text-label-md text-on-surface-variant">MXN</span></span>
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center justify-end gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Pendiente Ortodoncia
+          </span>
+</div>
+<div class="h-10 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-primary text-on-primary px-space-md py-2.5 rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Agendar Cita</span>
+</button>
+<button class="bg-secondary text-on-secondary px-space-sm py-2.5 rounded-lg font-label-lg text-label-lg shadow-sm hover:opacity-90 transition-opacity flex items-center gap-space-xs" title="Registrar Cobro">
+<span class="material-symbols-outlined text-[18px]">point_of_sale</span>
+<span>Cobro</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs (Stitch Section 4 Requirements) -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs pt-space-xs">
+<button class="tab-btn active bg-primary text-on-primary font-bold px-space-md py-2 rounded-lg font-label-lg text-label-lg shadow-sm flex items-center gap-space-xs whitespace-nowrap transition-all" onclick="switchTab('tab-seguimientos', this)">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+<span>Seguimientos y Bitácora</span>
+<span class="bg-surface-container-lowest/20 px-1.5 py-0.2 rounded-full text-xs">5</span>
+</button>
+<button class="tab-btn bg-surface-container text-on-surface font-medium px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('tab-checklist', this)">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+<span>Checklist Documental</span>
+<span class="bg-error text-on-error font-bold text-[10px] px-1.5 py-0.5 rounded-full">1 Pendiente</span>
+</button>
+<button class="tab-btn bg-surface-container text-on-surface font-medium px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('tab-antecedentes', this)">
+<span class="material-symbols-outlined text-[18px]">medical_information</span>
+<span>Alertas y Antecedentes</span>
+</button>
+<button class="tab-btn bg-surface-container text-on-surface font-medium px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('tab-citas', this)">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Citas y Tratamientos</span>
+</button>
+<button class="tab-btn bg-surface-container text-on-surface font-medium px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('tab-financiero', this)">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Financiero &amp; Recibos MXN</span>
+</button>
+<button class="tab-btn bg-surface-container text-on-surface font-medium px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs whitespace-nowrap" onclick="switchTab('tab-club', this)">
+<span class="material-symbols-outlined text-[18px]">loyalty</span>
+<span>Club Sonrisas / Bimbo</span>
+</button>
+</div>
+</div>
+<!-- Main Content Body (Panels Container) -->
+<div class="px-margin-desktop py-space-md flex-1">
+<!-- TAB 1: SEGUIMIENTOS Y BITÁCORA DE CONTACTOS -->
+<div class="tab-pane flex flex-col xl:flex-row gap-space-lg" id="tab-seguimientos">
+<!-- Left: Contact Log Timeline / Table (65%) -->
+<div class="xl:w-2/3 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bitácora de Contacto y Seguimientos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Historial clínico-administrativo por WhatsApp y llamada telefónica directa</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Filtro rápido:</span>
+<button class="bg-surface-container px-space-xs py-1 rounded text-[11px] font-bold text-on-surface">Todos (5)</button>
+<button class="hover:bg-surface-container px-space-xs py-1 rounded text-[11px] text-on-surface-variant">Solo WhatsApp</button>
+<button class="hover:bg-surface-container px-space-xs py-1 rounded text-[11px] text-on-surface-variant">Solo Llamada</button>
+</div>
+</div>
+<!-- Structured Follow-up Timeline Items -->
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Row 1: Cita Agendada -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">WhatsApp Oficial</span>
+<span class="font-data-mono text-[11px] text-outline">• 22/Feb/2024, 11:40 AM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cita vinculada: Limpieza con Ultrasonido y Ajuste Arco</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+                    Cita agendada
+                  </span>
+<span class="font-label-sm text-label-sm text-outline font-bold">Resp: Brenda Morales (Recepción)</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 pl-10">
+                Se envió confirmación de turno para el próximo martes a las 16:30 hrs en Sillón 2. El paciente respondió con pulgar arriba y confirmó que acudirá con 10 minutos de anticipación.
+              </p>
+<div class="flex items-center justify-between pl-10 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">next_plan</span>
+                  Próxima acción pactada: Recordatorio automático 2h antes (27/Feb/2024 14:30)
+                </span>
+<span class="font-data-mono text-[11px]">ID Log: #LOG-8812</span>
+</div>
+</div>
+<!-- Row 2: Contactado / Quiere cita -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Llamada Telefónica Saliente</span>
+<span class="font-data-mono text-[11px] text-outline">• 19/Feb/2024, 09:15 AM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Motivo: Seguimiento a molestia post-limpieza</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="bg-surface-container-highest text-primary font-bold px-space-sm py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+                    Quiere cita
+                  </span>
+<span class="font-label-sm text-label-sm text-outline font-bold">Resp: Lic. Sofía Peña (Atención)</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 pl-10">
+                Se contactó al paciente para indagar si persistía sensibilidad en cuadrante 2. Mencionó que la molestia cedió pero desea agendar revisión preventiva para su hijo menor beneficiario en el convenio.
+              </p>
+<div class="flex items-center justify-between pl-10 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">event</span>
+                  Próxima fecha pactada: Envío de catálogo pediátrico el 20/Feb/2024
+                </span>
+<span class="font-data-mono text-[11px]">ID Log: #LOG-8790</span>
+</div>
+</div>
+<!-- Row 3: Sin respuesta -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs opacity-90 hover:opacity-100 transition-opacity">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">phone_missed</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Llamada Telefónica Saliente</span>
+<span class="font-data-mono text-[11px] text-outline">• 12/Feb/2024, 18:20 PM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Motivo: Notificación de radiografías listas</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="bg-error-container text-on-error-container font-bold px-space-sm py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+                    Sin respuesta
+                  </span>
+<span class="font-label-sm text-label-sm text-outline font-bold">Resp: Brenda Morales</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 pl-10">
+                Llamada sonó 5 veces y entró a buzón de voz de Telcel. Se procedió a enviar mensaje de texto puente con liga segura a WhatsApp.
+              </p>
+<div class="flex items-center justify-between pl-10 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Reintento automático programado para el día hábil posterior.
+                </span>
+<span class="font-data-mono text-[11px]">ID Log: #LOG-8641</span>
+</div>
+</div>
+<!-- Row 4: Contactado / No interesado por el momento -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">WhatsApp Oficial</span>
+<span class="font-data-mono text-[11px] text-outline">• 15/Ene/2024, 10:00 AM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Campaña: Blanqueamiento Dental Bimbo Saludable</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="bg-surface-container text-on-surface font-bold px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+                    No interesado
+                  </span>
+<span class="font-label-sm text-label-sm text-outline font-bold">Resp: Bot WhatsApp / Brenda</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 pl-10">
+                Paciente indicó que por el momento prefiere terminar primero el tratamiento de ortodoncia antes de evaluar blanqueamiento láser.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Fast Form "Registrar nuevo seguimiento" (35%) -->
+<div class="xl:w-1/3 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm sticky top-20">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">add_comment</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Registrar Seguimiento</h3>
+</div>
+<span class="bg-surface-container px-space-xs py-0.5 rounded text-[11px] font-bold text-outline uppercase font-label-sm">Inmediato</span>
+</div>
+<form class="flex flex-col gap-space-sm mt-space-xs" onsubmit="event.preventDefault(); alert('Seguimiento registrado y sincronizado en Google CDMX.');">
+<!-- Vía / Canal Selector -->
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Vía de Contacto</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container has-[:checked]:bg-primary-fixed has-[:checked]:text-on-primary-fixed-variant">
+<input checked="" class="accent-primary" name="canal" type="radio" value="whatsapp"/>
+<span class="font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp
+                  </span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container has-[:checked]:bg-primary-fixed has-[:checked]:text-on-primary-fixed-variant">
+<input class="accent-primary" name="canal" type="radio" value="telefono"/>
+<span class="font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span> Llamada
+                  </span>
+</label>
+</div>
+</div>
+<!-- Structured Result -->
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Resultado Estructurado</label>
+<select class="w-full bg-surface-container-low rounded-lg px-space-sm py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container">
+<option value="contactado">Contactado (Conversación sostenida)</option>
+<option value="sin_respuesta">Sin respuesta (Buzón / Desconectado)</option>
+<option value="quiere_cita">Quiere cita (Por definir horario)</option>
+<option value="cita_agendada">Cita agendada inmediatamente</option>
+<option value="no_interesado">No interesado / Rechazó promoción</option>
+</select>
+</div>
+<!-- Cita Relacionada -->
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Cita Relacionada</label>
+<select class="w-full bg-surface-container-low rounded-lg px-space-sm py-2 font-body-md text-body-md text-on-surface focus:outline-none">
+<option>Ajuste de Ortodoncia - 27/Feb/2024 16:30 (Sillón 2)</option>
+<option>Consulta Diagnóstica Pediátrica (Mariana)</option>
+<option>Sin cita previa vinculada (General)</option>
+</select>
+</div>
+<!-- Próxima Fecha Pactada -->
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Próxima Fecha de Acción Pactada</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-sm py-2 font-body-md text-body-md text-on-surface focus:outline-none" type="datetime-local" value="2024-02-27T14:30"/>
+</div>
+<!-- Notas de la llamada / conversación -->
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Notas de la Conversación / Acuerdos</label>
+<textarea class="w-full bg-surface-container-low rounded-lg p-space-sm font-body-md text-body-md text-on-surface focus:outline-none resize-none" placeholder="Escribe el resumen exacto del contacto, objeciones o instrucciones recibidas..." rows="3"></textarea>
+</div>
+<!-- User In Charge -->
+<div class="flex items-center justify-between text-xs text-on-surface-variant pt-1">
+<span>Registra: <strong>Dra. Jimena Alarcón</strong></span>
+<span class="font-data-mono">Sede Coyoacán</span>
+</div>
+<button class="mt-space-xs w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-lg text-label-lg font-bold shadow-sm hover:bg-primary-container transition-colors flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar en Bitácora</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+<!-- TAB 2: CHECKLIST DOCUMENTAL (DocumentChecklist - Section 4 Requirement) -->
+<div class="tab-pane hidden flex-col gap-space-md" id="tab-checklist">
+<!-- Mandatory System Clarification Note -->
+<div class="bg-surface-container-high text-on-surface p-space-md rounded-xl flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Aclaración Operativa COFEPRIS</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold">
+            Esta pantalla es una <span class="underline">Lista de verificación de estatus documental</span> para cumplimiento legal y auditorías sanitarias en clínica (no es repositorio ni visor de archivos adjuntos pesados). Los físicos radican en Archivo Muerto Coyoacán.
+          </p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Checklist Cards Column 1 & 2 -->
+<div class="lg:col-span-2 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-sm flex items-center justify-between">
+<span>Estatus de Documentación Legal &amp; Clínica</span>
+<span class="font-label-md text-label-md text-tertiary font-bold bg-tertiary-fixed px-space-sm py-0.5 rounded-full">4 / 5 Verificados</span>
+</h2>
+<!-- Matrix List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Consentimiento Firmado -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Consentimiento Informado General y Ortodoncia</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-xs py-0.2 rounded text-[10px] font-bold uppercase">SÍ / CUMPLIDO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Firmado físicamente con tinta azul y huella digital dactilar</span>
+<span class="font-data-mono text-[11px] text-outline mt-0.5">Fecha: 10/Ene/2024 • Registrado por: Dra. Jimena Alarcón (Cédula 992812)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-surface-container-lowest text-on-surface px-space-sm py-1.5 rounded-md font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-container-high transition-colors">
+                    Auditar Folio
+                  </button>
+</div>
+</div>
+<!-- Item 2: Identificación Oficial Recibida -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Identificación Oficial (INE / Pasaporte)</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-xs py-0.2 rounded text-[10px] font-bold uppercase">SÍ / COTEJADO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">INE Vigente con domicilio en Coyoacán. Clave elector HELLCP83092809H</span>
+<span class="font-data-mono text-[11px] text-outline mt-0.5">Fecha: 10/Ene/2024 • Registrado por: Brenda Morales (Recepción)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-surface-container-lowest text-on-surface px-space-sm py-1.5 rounded-md font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-container-high">
+                    Re-Validar
+                  </button>
+</div>
+</div>
+<!-- Item 3: Estudios Radiográficos Recibidos -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">radiology</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Estudios Radiográficos Panorámica &amp; Cefálica</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-xs py-0.2 rounded text-[10px] font-bold uppercase">SÍ / RECIBIDOS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Entregados por Gabinete Radiológico Polanco en físico y digital</span>
+<span class="font-data-mono text-[11px] text-outline mt-0.5">Fecha: 18/Ene/2024 • Registrado por: Dr. Ricardo Monroy (Cirujano)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-surface-container-lowest text-on-surface px-space-sm py-1.5 rounded-md font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-container-high">
+                    Ver Bitácora
+                  </button>
+</div>
+</div>
+<!-- Item 4: Presupuesto Firmado -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Presupuesto Clínico y Calendario de Pagos Firmado</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-xs py-0.2 rounded text-[10px] font-bold uppercase">SÍ / CONFIRMADO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plan Ortodoncia Brackets Autoligado + Retención ($24,000.00 MXN)</span>
+<span class="font-data-mono text-[11px] text-outline mt-0.5">Fecha: 22/Ene/2024 • Registrado por: Lic. Sofía Peña</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-surface-container-lowest text-on-surface px-space-sm py-1.5 rounded-md font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-container-high">
+                    Desglose
+                  </button>
+</div>
+</div>
+<!-- Item 5: Convenio Corporativo Firmado (PENDIENTE) -->
+<div class="bg-error-container/40 p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Adhesión al Convenio Corporativo Bimbo</span>
+<span class="bg-error text-on-error px-space-xs py-0.2 rounded text-[10px] font-bold uppercase">NO / PENDIENTE DE FIRMA</span>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium">Falta anexo de consentimiento de deducción o pago directo con descuento</span>
+<span class="font-data-mono text-[11px] text-outline mt-0.5">Estatus: Requiere entrega y rúbrica física en próxima cita</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="bg-primary text-on-primary px-space-sm py-1.5 rounded-md font-label-sm text-label-sm font-bold shadow-sm hover:bg-primary-container">
+                    Marcar como Recibido
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Audit Observations and Pending Action Box -->
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">security</span>
+<span>Auditoría Documental</span>
+</h3>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold">Folio de Archivo Físico</span>
+<p class="font-data-mono text-data-mono text-on-surface font-bold">ARC-CDMX-2024-0419</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gaveta 03, Fila B, Sede Coyoacán.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold">Última Revisión Sanitaria</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold">15/Feb/2024 - Aprobado COFEPRIS</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verificador Clínico: Dr. Ricardo Monroy</p>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1">Observaciones de Auditoría</label>
+<textarea class="w-full bg-surface-container-low rounded-lg p-space-sm font-body-sm text-body-sm text-on-surface focus:outline-none" placeholder="Agregar nota de control para la próxima inspección..." rows="4">Se cotejó INE con credencial de empleado Bimbo #BIM-8821. Paciente presentó copia simple y se verificó original en recepción.</textarea>
+<button class="mt-space-xs w-full bg-surface-container text-on-surface py-2 rounded-lg font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors">
+                  Actualizar Observación
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: ANTECEDENTES Y ALERTAS CLÍNICAS ESTRUCTURADAS -->
+<div class="tab-pane hidden flex-col gap-space-md" id="tab-antecedentes">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Enfermedades Sistémicas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">cardiology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Enfermedades Sistémicas</h3>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Hipertensión Arterial</span>
+<span class="bg-surface-container-highest text-primary font-bold px-space-xs py-0.5 rounded text-[11px]">Riesgo Medio</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Diagnosticada hace 4 años. Presión habitual 125/80 en consulta matutina.</p>
+<div class="font-label-sm text-label-sm text-outline pt-1">Toma de signos obligatoria previa a anestesia local.</div>
+</div>
+</div>
+<!-- Alergias Críticas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-error text-[22px]">coronavirus</span>
+<h3 class="font-headline-sm text-headline-sm text-error font-bold">Alergias Estructuradas</h3>
+</div>
+<div class="p-space-sm bg-error-container/40 rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-error">PENICILINA &amp; DERIVADOS</span>
+<span class="bg-error text-on-error font-bold px-space-xs py-0.5 rounded text-[11px] uppercase animate-pulse">Crítica</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Reacción adversa: Edema facial, broncoespasmo reportado en urgencias hace 8 años.</p>
+<p class="font-body-sm text-body-sm text-error font-bold">Alternativa prescrita: Clindamicina o Claritromicina únicamente.</p>
+</div>
+</div>
+<!-- Medicamentos Actuales -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">medication</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Medicamentos Actuales</h3>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Enalapril 10mg</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-bold px-space-xs py-0.5 rounded text-[11px]">Diario</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Dosis: 1 comprimido cada 24 horas por las mañanas. Buena adherencia al tratamiento farmacológico.</p>
+</div>
+</div>
+<!-- Problemas Cardíacos -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">favorite</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Problemas Cardíacos</h3>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2 text-tertiary font-bold mb-1">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Ninguno Reportado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin soplos, sin marcapasos, sin antecedentes de infarto miocárdico o arritmias severas.</p>
+</div>
+</div>
+<!-- Observaciones Médicas & Visibilidad Exclusiva -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm md:col-span-2">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">visibility</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Observaciones Médicas Reservadas</h3>
+</div>
+<span class="bg-surface-container-high text-primary px-space-sm py-0.5 rounded text-xs font-bold uppercase tracking-wider">
+              Solo visible para Doctor &amp; Dueño
+            </span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg space-y-space-xs">
+<p class="font-body-md text-body-md text-on-surface">
+              Paciente con fobia dental moderada (ansiedad al sonido de la pieza de mano de alta velocidad). Se recomienda explicar previamente cada paso, colocar anestésico tópico abundante en cuadrantes superiores y considerar aromaterapia relajante en Sillón 1 o 2.
+            </p>
+<div class="flex items-center justify-between text-xs text-on-surface-variant pt-2">
+<span>Registró: Dra. Jimena Alarcón (Ortodoncista)</span>
+<span>Última modificación: 22/Ene/2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: HISTORIAL DE CITAS Y TRATAMIENTOS -->
+<div class="tab-pane hidden flex-col gap-space-md" id="tab-citas">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cronograma Clínico y Notas de Evolución</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Citas registradas en sincronía con Google Calendar CDMX</p>
+</div>
+<button class="bg-primary text-on-primary px-space-md py-2 rounded-lg font-label-md text-label-md font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span> Nueva Evolución
+          </button>
+</div>
+<div class="space-y-space-sm mt-space-sm">
+<!-- Cita 1: Próxima -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-space-sm py-1 rounded font-data-mono text-data-mono font-bold">
+                  27/Feb/2024 • 16:30 hrs
+                </span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Ajuste de Ortodoncia y Cambio de Arcos NiTi .016</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container px-space-sm py-0.5 rounded text-xs font-bold text-primary">Sillón 2 (Coyoacán)</span>
+<span class="bg-surface-container-highest text-on-surface px-space-sm py-0.5 rounded text-xs font-bold">Dra. Jimena Alarcón</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-sm py-0.5 rounded-full text-xs font-bold">Programada</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Objetivo de la sesión: Evaluar nivelación en arcada inferior, recementado de bracket en pieza 34 si presenta desprendimiento.</p>
+</div>
+<!-- Cita 2: Pasada con nota de evolución -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="bg-surface-container text-on-surface px-space-sm py-1 rounded font-data-mono text-data-mono font-bold">
+                  22/Ene/2024 • 17:00 hrs
+                </span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Colocación de Brackets MBT Superior &amp; Limpieza Profiláctica</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container px-space-sm py-0.5 rounded text-xs font-bold text-outline">Sillón 1</span>
+<span class="bg-surface-container-highest text-on-surface px-space-sm py-0.5 rounded text-xs font-bold">Dra. Jimena Alarcón</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-space-sm py-0.5 rounded-full text-xs font-bold">Atendida</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-md mt-1 font-body-sm text-body-sm text-on-surface">
+<span class="font-bold text-primary">Nota de evolución clínica:</span> Se realiza grabado ácido y adhesión de aparatología fija superior de 15 a 25. Arco trenzado inicial colocado. Se imparten técnicas de higiene con cepillo interproximal y cera de alivio. Paciente refiere tolerancia excelente sin sintomatología dolorosa inmediata.
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 5: PERFIL FINANCIERO Y PAGOS -->
+<div class="tab-pane hidden flex-col gap-space-md" id="tab-financiero">
+<!-- Balance Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Saldo Global Paciente</span>
+<div class="font-headline-md text-headline-md font-bold text-error mt-1">$1,450.00 MXN</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Correspondiente a la mensualidad de febrero</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Total Tratamientos Contratados</span>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mt-1">$24,000.00 MXN</div>
+<span class="font-body-sm text-body-sm text-tertiary font-bold">Descuento Convenio Bimbo: -15% aplicado</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Nivel de Confianza Crediticia</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-headline-md text-headline-md font-bold text-secondary">Excelente (A+)</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin retrasos mayores a 5 días en cortes pasados</span>
+</div>
+</div>
+<!-- Financial Breakdown Table (Desglose de Saldos en MXN) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-sm">Desglose de Tratamientos y Cobros en Caja</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<tr>
+<th class="p-space-sm">Tratamiento</th>
+<th class="p-space-sm">Costo Convenio MXN</th>
+<th class="p-space-sm">Pagado a la fecha</th>
+<th class="p-space-sm">Saldo Pendiente</th>
+<th class="p-space-sm">Recibo de Caja</th>
+<th class="p-space-sm text-right">Acción</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-outline-variant/20">
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-bold text-on-surface">Ortodoncia Brackets Autoligado (Tratamiento Completo)</td>
+<td class="p-space-sm font-data-mono">$20,400.00 MXN</td>
+<td class="p-space-sm font-data-mono text-tertiary font-bold">$18,950.00 MXN</td>
+<td class="p-space-sm font-data-mono text-error font-bold">$1,450.00 MXN</td>
+<td class="p-space-sm"><span class="bg-surface-container px-space-xs py-0.5 rounded font-data-mono text-xs">REC-2024-0981</span></td>
+<td class="p-space-sm text-right">
+<button class="bg-secondary text-on-secondary px-space-sm py-1 rounded text-xs font-bold hover:opacity-90">Cobrar Saldo</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-bold text-on-surface">Limpieza Dental Profiláctica con Profilajet</td>
+<td class="p-space-sm font-data-mono">$850.00 MXN</td>
+<td class="p-space-sm font-data-mono text-tertiary font-bold">$850.00 MXN</td>
+<td class="p-space-sm font-data-mono text-tertiary font-bold">$0.00 MXN</td>
+<td class="p-space-sm"><span class="bg-surface-container px-space-xs py-0.5 rounded font-data-mono text-xs">REC-2024-0412</span></td>
+<td class="p-space-sm text-right">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Liquidado</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- TAB 6: MEMBRESÍA CLUB SONRISAS -->
+<div class="tab-pane hidden flex-col gap-space-md" id="tab-club">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Membership Card Left -->
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-sm flex flex-col justify-between h-56 relative overflow-hidden">
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">loyalty</span>
+<span class="font-headline-sm text-headline-sm font-bold">Club Sonrisas Corporativo</span>
+</div>
+<span class="bg-surface-container-lowest/20 px-space-sm py-0.5 rounded text-xs font-bold">Grupo Bimbo</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Número de Afiliación</span>
+<div class="font-data-mono text-[20px] font-bold tracking-widest">CS-2024-0012-BIM</div>
+<div class="font-body-sm text-body-sm text-primary-fixed mt-1">Titular: Carlos Herrera López</div>
+</div>
+<div class="relative z-10 flex items-center justify-between font-label-sm text-label-sm text-primary-fixed-dim">
+<span>Sede Preferente: Coyoacán Cantil</span>
+<span>Vigencia: Diciembre 2024</span>
+</div>
+<!-- Subtle decorative circle overlay -->
+<div class="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-surface-container-lowest/10"></div>
+</div>
+<!-- Beneficiarios Vinculados -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Beneficiarios Asociados al Convenio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Parientes directos con acceso al 15% de descuento en tratamientos</p>
+</div>
+<button class="bg-surface-container text-on-surface px-space-sm py-1.5 rounded-lg font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person_add</span> Asociar Familiar
+            </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Beneficiary 1: Cónyuge -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+                MO
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Mariana Orozco</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Parentesco: Cónyuge (38 años)</span>
+<span class="font-data-mono text-[11px] text-primary">Expediente: EXP-2024-MOR</span>
+</div>
+</div>
+<!-- Beneficiary 2: Hijo -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center font-bold">
+                SH
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Santiago Herrera</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Parentesco: Hijo (9 años - Odontopediatría)</span>
+<span class="font-data-mono text-[11px] text-primary">Expediente: EXP-2024-SHP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tabId, el) {
+    // Hide all tab panes
+    const panes = document.querySelectorAll('.tab-pane');
+    panes.forEach(pane => {
+      pane.classList.add('hidden');
+      pane.classList.remove('flex');
+    });
+
+    // Reset styles for all buttons
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+      btn.classList.add('bg-surface-container', 'text-on-surface', 'font-medium');
+    });
+
+    // Show active pane
+    const activePane = document.getElementById(tabId);
+    if (activePane) {
+      activePane.classList.remove('hidden');
+      activePane.classList.add('flex');
+    }
+
+    // Set active button style
+    el.classList.remove('bg-surface-container', 'text-on-surface', 'font-medium');
+    el.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+  }
+</script></main></div></body></html>

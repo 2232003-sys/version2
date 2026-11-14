@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#faf8ff","tertiary-container":"#00873a","on-secondary-container":"#006f66","on-primary":"#ffffff","tertiary-fixed-dim":"#62df7d","on-secondary":"#ffffff","secondary":"#006a61","inverse-on-surface":"#eef0ff","secondary-fixed-dim":"#6bd8cb","on-surface":"#131b2e","surface-dim":"#d2d9f4","on-error":"#ffffff","tertiary-fixed":"#7ffc97","surface":"#faf8ff","on-primary-fixed-variant":"#004b73","surface-container":"#eaedff","on-primary-container":"#fdfcff","on-primary-fixed":"#001d31","surface-container-lowest":"#ffffff","primary":"#006194","outline-variant":"#bfc7d2","outline":"#707881","secondary-fixed":"#89f5e7","surface-variant":"#dae2fd","secondary-container":"#86f2e4","surface-container-low":"#f2f3ff","surface-tint":"#006398","surface-container-highest":"#dae2fd","on-tertiary-container":"#f7fff2","on-secondary-fixed":"#00201d","primary-container":"#007bb9","on-background":"#131b2e","error":"#ba1a1a","on-tertiary-fixed-variant":"#005320","error-container":"#ffdad6","on-error-container":"#93000a","on-secondary-fixed-variant":"#005049","primary-fixed":"#cce5ff","on-tertiary":"#ffffff","primary-fixed-dim":"#93ccff","surface-bright":"#faf8ff","on-surface-variant":"#3f4850","inverse-surface":"#283044","surface-container-high":"#e2e7ff","inverse-primary":"#93ccff","on-tertiary-fixed":"#002109","tertiary":"#006b2c"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-tablet":"1.5rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","space-xs":"0.25rem","space-md":"1rem","margin-desktop":"2rem"},fontFamily:{"headline-sm":["Outfit"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-xl":["Outfit"],"headline-lg-mobile":["Outfit"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"body-md":["Manrope"],"label-lg":["Manrope"],"label-md":["Manrope"],"label-sm":["Manrope"],"headline-xl-mobile":["Outfit"],"data-mono":["Manrope"]},fontSize:{"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-md py-space-md bg-surface-container-low"><img alt="Sr. Diente Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCoSgum-Mv22fpPpUJNmh5aERe3JI0gue4qsMGH3U4bf77iqQf3_KAdp3QdhWP5HsQMdSosZmKpcOGhea4taCbp7eR1Ne-qfvF03Xrf7XHdGzxNUEOLF2_yy6HbcWeGQFc1_ERahnCHoBcg7wTv3ZPkXBFu8TsNQtegq2v321IG3Oh1IiE6qX-oyU1D9kr1N_R_h790_W6MW1-jihtSWtlKf10q4eEU7JR4nXJfnxU9"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clínica Dental</span></div></div><div class="p-space-sm bg-surface-container-low"><div class="p-space-xs bg-surface-container-high rounded-lg flex items-center justify-between text-on-surface-variant"><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all bg-surface-container-lowest text-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button">Recepción</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Doctor</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Dueño</button></div></div><nav class="flex flex-col gap-1 px-space-sm py-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda (3 Sillones)</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">dentistry</span><span>Servicios</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">percent</span><span>Comisiones</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-diaria" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Google Calendar</span></div><span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Sync OK</span></div><p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Última sinc: hace 4 min (CDMX)</p><p class="font-label-sm text-label-sm text-outline mt-0.5">Asíncrono · No tiempo real</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="hover:text-primary cursor-pointer">Clínica CDMX</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-semibold">Recepción Operativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span><span>Sábado 24 Octubre 2026 · CDMX</span></div></div><div class="flex items-center gap-space-sm"><div class="relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Buscar paciente (Nombre, cel o cédula)..." type="text"/></div><div class="flex items-center gap-1.5"><button class="flex items-center gap-1 px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm hover:bg-primary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Nueva Cita</span></button><button class="flex items-center gap-1 px-3 py-1.5 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm hover:bg-on-secondary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">payments</span><span>Cobro Rápido</span></button></div><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSn2aF3HO3MtPhsCk4DK2FNmym7Nv_Fknuvx94AjeQ91-wO4NIxMMMvUR4r0g0DrM8bthPhyEOkKMJCUTo-NkkV3bDNtMx9PdidibyHQ7z0ajWFssZjjjrOVMXj2KdMzcvMVkXDNO_o47KCi8j6oGBZ6Eg2oW4xMQbo2efaU3a6287d5LEc6ZMTvwG7306UKZNHTeJ9Y9gZN4GRIyws06fh49KM-6WS-jK3rgJfs"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Sofía Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Recepción</span></div><button class="p-1.5 text-on-surface-variant hover:text-error rounded-lg" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Medical Alert & Operative Status Banner -->
+<div class="w-full bg-error-container text-on-error-container px-space-md py-2 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-error" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="font-label-md text-label-md">Directorio de Facultativos · 3 Sillones Activos en Sucursal CDMX</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm bg-surface-container-lowest/80 px-2 py-0.5 rounded-full text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Google Calendar API: Activo (OAuth2)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-error-container/80">Gestión de Honorarios Clínicos</span>
+</div>
+</div>
+<!-- Main View Container: Master-Detail Architecture (Split 65% / 35%) -->
+<div class="p-space-md lg:p-space-lg flex flex-col gap-space-lg max-w-[1600px] w-full mx-auto">
+<!-- Top Action Bar & Filter Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Personal Médico &amp; Especialistas</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">12 Registrados</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Directorio de Doctores</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Control centralizado de honorarios por servicio, código cromático en agenda y enlace a Google Calendar ID.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" id="searchInput" placeholder="Buscar por doctor o especialidad..." type="text"/>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container shadow-sm active:scale-95 transition-all" id="btnOpenNewDoctor" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Nuevo Doctor</span>
+</button>
+</div>
+</div>
+<!-- Quick Filters Tab Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<!-- Status Segment -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-outline px-2">Estado:</span>
+<button class="filter-status-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all bg-primary text-on-primary shadow-sm" data-status="all" id="filterStatusAll" type="button">Todos (12)</button>
+<button class="filter-status-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container" data-status="active" id="filterStatusActive" type="button">Activos (10)</button>
+<button class="filter-status-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container" data-status="inactive" id="filterStatusInactive" type="button">Inactivos (2)</button>
+</div>
+<!-- Type Segment -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-outline px-2">Tipo:</span>
+<button class="filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all bg-secondary text-on-secondary shadow-sm" data-type="all" id="filterTypeAll" type="button">Todos</button>
+<button class="filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container" data-type="general" id="filterTypeGeneral" type="button">General (4)</button>
+<button class="filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container" data-type="specialist" id="filterTypeSpecialist" type="button">Especialista (6)</button>
+<button class="filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container" data-type="administrative" id="filterTypeAdministrative" type="button">Administrativo (2)</button>
+</div>
+</div>
+<!-- Master-Detail Content Zone -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT 65%: Doctors Roster Table & Card Views -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Interactive Card Mosaic of Active Roster -->
+<div class="flex flex-col gap-space-sm" id="doctorsListContainer">
+<!-- Doctor Card Item: Dr. Ricardo Morales (Selected State) -->
+<div class="doctor-row group cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-all p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-cal="dr.morales@srdiente.mx" data-color="#0284C7" data-commission="45" data-email="rmorales@srdiente.mx" data-id="morales" data-lastsync="Hoy, 10:14 CDMX" data-name="Ricardo Morales Vaca" data-phone="+52 55 4912 8831" data-spec="Ortodoncia &amp; Ortopedia Dentofacial" data-status="active" data-syncstatus="ok" data-type="specialist" onclick="selectDoctor('morales')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Close up portrait photograph of professional Mexican male orthodontist Dr. Ricardo Morales in clean white and sky blue modern dental coat smiling warmly in contemporary clinic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBftqSUrikY4VdiNb3xcJg6fh5CDDfWVKXjRp4gr-dydyqJ-861kJ5Ps1Oh2nqeoETxjUvTypVcGQ0u53fJNFO90DFDuyYCG-p7H66nDXHXZsxHw9pQhwAJG0iG4gEcTO26pPQ9wJCylToZLGsxpbkq3oyciSNVvAPqcHfI85RC2ewXsx0RhbcXSwCpApE_Mt6Ue6TQCaU_ldWXtL03LgHw-MMSlWsJrhNHHo99za4"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full shadow-sm" style="background-color: #0284C7;" title="Color asignado en agenda: Sky Dental"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Dr. Ricardo Morales Vaca</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shrink-0">Especialista</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ortodoncia &amp; Ortopedia Maxilofacial</span>
+<span class="text-outline">·</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">45% Honorario</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pt-space-xs md:pt-0">
+<!-- Google Calendar ID Indicator -->
+<div class="flex flex-col items-start md:items-end">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+<span>Sync OK</span>
+</div>
+<span class="font-data-mono text-body-sm text-outline mt-1 truncate max-w-[160px]">dr.morales@srdiente.mx</span>
+</div>
+<!-- Active Status Badge -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Doctor Card Item: Dra. Valeria Domínguez (General) -->
+<div class="doctor-row group cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-all p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-cal="dra.dominguez@srdiente.mx" data-color="#006A61" data-commission="35" data-email="vdominguez@srdiente.mx" data-id="dominguez" data-lastsync="Hoy, 09:40 CDMX" data-name="Dra. Valeria Domínguez Paz" data-phone="+52 55 8311 0244" data-spec="Odontología General &amp; Estética" data-status="active" data-syncstatus="ok" data-type="general" onclick="selectDoctor('dominguez')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Portrait of modern female general dentist Dra. Valeria Dominguez in teal scrub suit in a pristine high-end dental operatory setting, soft clinical morning natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8NubpTRgiGwf0VRzrWT4kYI-2pn7sUSheWaAJNw8j3NzKNciaOreF75Hr5nRJdKZla_eCO-25Zp3Ih3y9YvDqXuqhx2hf8evawYIGFgkzm67G8WqSUPaTF23yZwI93aPrC8LYREVWTAlIhx1u3qrugs9w9ZgJkZ2nWvQUY8ibSBXj6bwodeFVnbIe3mP5hJJqwWmutmGmYgneY0OCrC957K7vWiPDSRXs1p7ZYoM"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full shadow-sm" style="background-color: #006A61;" title="Color asignado en agenda: Teal Clínico"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Dra. Valeria Domínguez Paz</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0">General</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Rehabilitación Oral &amp; Profilaxis</span>
+<span class="text-outline">·</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">35% Honorario</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pt-space-xs md:pt-0">
+<div class="flex flex-col items-start md:items-end">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+<span>Sync OK</span>
+</div>
+<span class="font-data-mono text-body-sm text-outline mt-1 truncate max-w-[160px]">dra.dominguez@srdiente.mx</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Doctor Card Item: Dr. Héctor Salgado (Sync Error State) -->
+<div class="doctor-row group cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-all p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-cal="salgado.endo.calendar@gmail.com" data-color="#6366F1" data-commission="50" data-email="hsalgado@srdiente.mx" data-id="salgado" data-lastsync="Ayer, 18:20 CDMX" data-name="Dr. Héctor Salgado Rivas" data-phone="+52 55 1209 7745" data-spec="Endodoncia Microscópica" data-status="active" data-syncstatus="error" data-type="specialist" onclick="selectDoctor('salgado')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Professional portrait photo of experienced endodontist Dr. Hector Salgado in clean surgical attire with warm focused expression in bright clinical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1s_SE3t6D3SurC88Arw13BjN7yCd5_AjumY-46i0VAwZB5Xe9sdgcMzzVKMA_YArlm978Wp1YbX1yZb5LhSo0dDdQPyM4KAO61M61jVcB9FbSEHape3Hck1JKsml16bhNyClQAticvKDpuY6ZoBX7ACCGatqkY5C5w7moffEn3S8ORN4VNyV_GLjP2wzC9F8f26wpV3yQqc1XggHXj2xdtfSjKLKRHgJdu36cd9k"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full shadow-sm" style="background-color: #6366F1;" title="Color asignado en agenda: Violeta Endodoncia"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Dr. Héctor Salgado Rivas</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shrink-0">Especialista</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Endodoncia &amp; Tratamiento de Conductos</span>
+<span class="text-outline">·</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">50% Honorario</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pt-space-xs md:pt-0">
+<div class="flex flex-col items-start md:items-end">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span>Sync Error</span>
+</div>
+<span class="font-data-mono text-body-sm text-error mt-1 truncate max-w-[160px]">salgado.endo.calendar...</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Doctor Card Item: Dra. Claudia Téllez (Administrative / Inactive) -->
+<div class="doctor-row group cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-all p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md opacity-80" data-cal="ctellez.auditoria@srdiente.mx" data-color="#707881" data-commission="15" data-email="ctellez@srdiente.mx" data-id="tellez" data-lastsync="15 Octubre 2026" data-name="Dra. Claudia Téllez Marín" data-phone="+52 55 3301 9912" data-spec="Supervisión Médica &amp; Auditoría" data-status="inactive" data-syncstatus="pending" data-type="administrative" onclick="selectDoctor('tellez')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 grayscale">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Portrait photography of middle aged female dental clinic director Dra. Claudia Tellez wearing smart business clinical blazer in medical conference room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAioAr3hbqNtku9a2l41QC3R8KHBkSUqH3lf6yr4t6DXG6oKXwTndHX__IjlqCSjy8tLbL-QoBO6FC5jgemRXXf-YDuaLOC0ytPc4hj972xg4WMuvDQ4Whof4ay3IYxySXpEO1RZ-nPMyo5QK24B9A18xniKXNkxR9qqlkIGtrQF776iiTNNKnwyjIihUcckmjrUVmKX-4UhSgXj9NWCUYSqIo8ooAk9aNT8nQFxLE"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full shadow-sm" style="background-color: #707881;" title="Color asignado: Neutro Administrativo"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Dra. Claudia Téllez Marín</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0">Administrativo</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Auditoría Clínica Dental</span>
+<span class="text-outline">·</span>
+<span class="font-data-mono text-data-mono text-outline font-bold">15% Honorario</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pt-space-xs md:pt-0">
+<div class="flex flex-col items-start md:items-end">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+<span>Sync Inactivo</span>
+</div>
+<span class="font-data-mono text-body-sm text-outline mt-1 truncate max-w-[160px]">ctellez.auditoria@...</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Inactivo
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Component (Hidden by default, shown when filters match 0) -->
+<div class="hidden flex-col items-center justify-center p-space-xl bg-surface-container-lowest rounded-xl shadow-sm text-center" id="emptyState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[36px]">stethoscope</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">No se encontraron doctores registrados</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">No hay facultativos que coincidan con la búsqueda o con el filtro seleccionado. Puedes restablecer los filtros o dar de alta a un nuevo doctor.</p>
+<button class="mt-space-md px-4 py-2 bg-surface-container-high text-primary hover:bg-surface-variant font-label-md text-label-md rounded-lg transition-all" onclick="resetFilters()" type="button">
+            Limpiar Filtros
+          </button>
+</div>
+<!-- Bottom Informational Card: Model Boundaries & Guidelines -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px] text-primary shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Modelo Operativo Clínico Sr. Diente</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              La disponibilidad horaria en clínica está sujeta a los 3 sillones físicos de la sucursal y la agenda de turnos. En este catálogo se administran comisiones brutas sobre servicios clínicos y la sincronización asíncrona mediante Google Calendar ID.
+            </p>
+</div>
+</div>
+</div>
+<!-- RIGHT 35%: Selected Doctor Detail File & Calendar Integration -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Detail Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md" id="doctorDetailCard">
+<!-- Identity & Quick State -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-14 h-14 rounded-xl object-cover shadow-sm" data-alt="High resolution studio clinical photo of Dr. Ricardo Morales in Mexican orthodontic uniform" id="detailAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAY-YxHu2jdUWk-VkUEDVmF4sla_Z9Q7GmFR6iIEDwkU4o8r-YwwmchLTfk1UQpbuAn3RkAOMH7XX469Dc_xv3nw8cUbBK_BeKNQ22GPYdydwM_9l9d0MbydNYDiTtYgunUkj-8ZlDZTQqvR02OJS4doQrGDJcc66l2S2ISr1nE8wX-TElBxXtmwnx1cuyIjpuXPD3DcXzoqpBrDkZsqvrAWqwDxzYGPEOviOdKvc"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full shadow-sm ring-2 ring-surface-container-lowest" id="detailColorBadge" style="background-color: #0284C7;"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold" id="detailRoleBadge">specialist</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold" id="detailStatusBadge">Activo</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate mt-1" id="detailName">Dr. Ricardo Morales Vaca</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate" id="detailSpec">Ortodoncia &amp; Ortopedia Maxilofacial</span>
+</div>
+</div>
+<!-- Action Menu Dropdown/Button -->
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-all" onclick="openEditDoctorModal()" title="Editar doctor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<!-- Commission Highlight Box -->
+<div class="bg-primary/5 p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Comisión sobre Servicio</span>
+<span class="font-headline-xl text-headline-xl text-primary font-bold" id="detailCommission">45%</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tipo de Honorario</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Bruto por Procedimiento</span>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">Liquidación Quincenal</span>
+</div>
+</div>
+<!-- Contact Data Summary -->
+<div class="flex flex-col gap-2 bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">call</span>
+<span>Teléfono:</span>
+</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold" id="detailPhone">+52 55 4912 8831</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">mail</span>
+<span>Correo:</span>
+</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold truncate max-w-[200px]" id="detailEmail">rmorales@srdiente.mx</span>
+</div>
+</div>
+<!-- Google Calendar Integration Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_month</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Google Calendar ID</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1" id="detailSyncBadge">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Sincronizado
+              </span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg font-data-mono text-body-sm text-on-surface break-all" id="detailCalendarId">
+              dr.morales@srdiente.mx
+            </div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-outline" id="detailLastSync">Última sinc: Hoy, 10:14 CDMX</span>
+<button class="flex items-center gap-1 px-3 py-1 bg-primary text-on-primary hover:bg-primary-container rounded-lg font-label-sm text-label-sm transition-all shadow-sm" id="btnSyncNow" onclick="triggerDoctorSync()" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Sincronizar ahora</span>
+</button>
+</div>
+<!-- Sync Error Box (Simulated / Reactive) -->
+<div class="hidden bg-error-container text-on-error-container p-2.5 rounded-lg flex items-start gap-2 mt-1" id="syncErrorBox">
+<span class="material-symbols-outlined text-[18px] text-error shrink-0">error</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold">Error de conexión con Google Calendar ID</span>
+<span class="font-body-sm text-body-sm text-on-error-container/90 mt-0.5">El ID no tiene permisos compartidos con la cuenta maestra de la clínica. Revisa la delegación de calendario en Google Workspace.</span>
+</div>
+</div>
+</div>
+<!-- Agenda & Performance Snapshot (3 Sillones) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Actividad en Sillones (Turno Actual)</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-outline">Citas asignadas hoy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">7 Pacientes</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-body-sm text-body-sm text-outline">Sillón preferente</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">Sillón 1 (Qx)</span>
+</div>
+</div>
+</div>
+<!-- Bottom Actions: Edit & Deactivate -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2 bg-surface-container-high hover:bg-surface-variant text-primary rounded-lg font-label-md text-label-md font-semibold transition-all" onclick="openEditDoctorModal()" type="button">
+              Editar Datos
+            </button>
+<button class="flex items-center justify-center px-4 py-2 bg-surface-container-high hover:bg-error-container text-error rounded-lg font-label-md text-label-md transition-all" onclick="openDeactivateModal()" title="Desactivar doctor conservando historial" type="button">
+<span class="material-symbols-outlined text-[18px]">person_off</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL 1: Alta y Edición de Doctor (Side Sheet / Modal Integrado) -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="doctorModal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-xl overflow-hidden flex flex-col max-h-[942px]">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitle">Alta de Nuevo Doctor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configura los datos del profesional para agenda y comisiones clínicas.</p>
+</div>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeDoctorModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Form Fields conforming strictly to specifications) -->
+<form class="p-space-lg overflow-y-auto flex flex-col gap-space-md" id="doctorForm" onsubmit="handleDoctorSubmit(event)">
+<!-- Nombre Completo (Requerido) -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputName">
+            Nombre Completo <span class="text-error">*</span>
+</label>
+<input class="h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputName" placeholder="Ej. Dr. Mauricio Castillo R." required="" type="text"/>
+</div>
+<!-- Two Columns: Especialidad & Tipo de Doctor -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputSpec">
+              Especialidad (Opcional)
+            </label>
+<input class="h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputSpec" placeholder="Ej. Periodoncia, Implantología..." type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="selectType">
+              Tipo de Doctor <span class="text-error">*</span>
+</label>
+<select class="h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-low transition-all shadow-sm cursor-pointer" id="selectType">
+<option value="general">general (General)</option>
+<option value="specialist">specialist (Especialista)</option>
+<option value="administrative">administrative (Administrativo)</option>
+</select>
+</div>
+</div>
+<!-- Two Columns: Teléfono & Correo electrónico -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputPhone">
+              Teléfono (Opcional)
+            </label>
+<input class="h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputPhone" placeholder="+52 55 0000 0000" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputEmail">
+              Correo Electrónico (Opcional)
+            </label>
+<input class="h-10 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputEmail" placeholder="doctor@srdiente.mx" type="email"/>
+</div>
+</div>
+<!-- Honorarios (% Comisión) & Color de Agenda -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md items-start">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputCommission">
+              Porcentaje de Comisión (%) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="h-10 w-full pl-3 pr-8 bg-surface-container-lowest rounded-lg font-data-mono text-body-md text-on-surface focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputCommission" max="100" min="0" required="" step="0.5" type="number" value="40"/>
+<span class="absolute right-3 top-2.5 font-label-md text-label-md text-outline font-bold">%</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Porcentaje de honorarios sobre servicio neto.</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">
+              Color asignado en Agenda <span class="text-error">*</span>
+</label>
+<div class="flex items-center gap-2">
+<input class="h-10 w-12 rounded-lg cursor-pointer bg-surface-container-lowest shadow-sm" id="inputColorPicker" onchange="document.getElementById('inputColorHex').value = this.value" type="color" value="#0284c7"/>
+<input class="h-10 flex-1 px-3 bg-surface-container-lowest rounded-lg font-data-mono text-body-md text-on-surface uppercase focus:outline-none focus:bg-surface-container-low shadow-sm" id="inputColorHex" onchange="document.getElementById('inputColorPicker').value = this.value" type="text" value="#0284C7"/>
+</div>
+<!-- Quick preset palette -->
+<div class="flex items-center gap-1.5 pt-1">
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#0284C7')" style="background:#0284C7;" title="Azul Dental" type="button"></button>
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#006A61')" style="background:#006A61;" title="Teal Clínico" type="button"></button>
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#6366F1')" style="background:#6366F1;" title="Índigo" type="button"></button>
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#D97706')" style="background:#D97706;" title="Ámbar" type="button"></button>
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#DC2626')" style="background:#DC2626;" title="Coral Cirugía" type="button"></button>
+<button class="w-5 h-5 rounded-full shadow-sm" onclick="setColor('#707881')" style="background:#707881;" title="Gris Neutro" type="button"></button>
+</div>
+</div>
+</div>
+<!-- Google Calendar ID -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold" for="inputCalId">
+            Google Calendar ID
+          </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">alternate_email</span>
+<input class="h-10 w-full pl-9 pr-3 bg-surface-container-lowest rounded-lg font-data-mono text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-sm" id="inputCalId" placeholder="ejemplo.doctor@srdiente.mx o hash@group.calendar.google.com" type="text"/>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Identificador utilizado para la sincronización asíncrona de citas en los sillones.</span>
+</div>
+<!-- Estado Activo (Switch/Checkbox) -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-md rounded-xl mt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Doctor Activo en Plataforma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Al desactivar, el doctor no aparecerá al agendar citas pero conservará todo su histórico.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="inputActive" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary shadow-sm"></div>
+</label>
+</div>
+<!-- Form Submit & Cancel Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-space-md">
+<button class="px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg transition-all" onclick="closeDoctorModal()" type="button">
+            Cancelar
+          </button>
+<button class="px-5 py-2 bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded-lg shadow-sm transition-all" type="submit">
+            Guardar Doctor
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL 2: Confirmación de Desactivación de Doctor -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="deactivateModal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-2xl shadow-xl overflow-hidden p-space-lg flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">¿Desactivar al Dr. Ricardo Morales?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          El doctor dejará de estar disponible para asignación en los 3 sillones de la clínica. <strong class="text-on-surface">Todo su historial clínico, notas y comisiones previas se conservarán intactos.</strong>
+</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant">
+        No se eliminarán citas previas en Google Calendar.
+      </div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg transition-all" onclick="closeDeactivateModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-4 py-2 bg-error text-on-error hover:bg-error/90 font-label-md text-label-md rounded-lg shadow-sm transition-all" onclick="confirmDeactivate()" type="button">
+          Sí, Desactivar
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    let currentSelectedId = 'morales';
+    let currentFilterStatus = 'all';
+    let currentFilterType = 'all';
+
+    // Doctor selection function
+    function selectDoctor(id) {
+      currentSelectedId = id;
+      const rows = document.querySelectorAll('.doctor-row');
+      rows.forEach(row => {
+        if (row.dataset.id === id) {
+          row.classList.add('bg-surface-container-high');
+          row.classList.remove('bg-surface-container-lowest');
+          
+          // Update details panel
+          document.getElementById('detailName').textContent = row.dataset.name;
+          document.getElementById('detailSpec').textContent = row.dataset.spec;
+          document.getElementById('detailCommission').textContent = row.dataset.commission + '%';
+          document.getElementById('detailCalendarId').textContent = row.dataset.cal;
+          document.getElementById('detailPhone').textContent = row.dataset.phone;
+          document.getElementById('detailEmail').textContent = row.dataset.email;
+          document.getElementById('detailLastSync').textContent = 'Última sinc: ' + row.dataset.lastsync;
+          document.getElementById('detailColorBadge').style.backgroundColor = row.dataset.color;
+          document.getElementById('detailRoleBadge').textContent = row.dataset.type;
+
+          // Status Badge
+          const statusBadge = document.getElementById('detailStatusBadge');
+          if (row.dataset.status === 'active') {
+            statusBadge.className = 'px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold';
+            statusBadge.textContent = 'Activo';
+          } else {
+            statusBadge.className = 'px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold';
+            statusBadge.textContent = 'Inactivo';
+          }
+
+          // Calendar Sync Status Indicator
+          const syncBadge = document.getElementById('detailSyncBadge');
+          const syncErrorBox = document.getElementById('syncErrorBox');
+          if (row.dataset.syncstatus === 'ok') {
+            syncBadge.className = 'px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1';
+            syncBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check_circle</span> Sincronizado';
+            syncErrorBox.classList.add('hidden');
+          } else if (row.dataset.syncstatus === 'error') {
+            syncBadge.className = 'px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-bold flex items-center gap-1';
+            syncBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">error</span> Error Sync';
+            syncErrorBox.classList.remove('hidden');
+          } else {
+            syncBadge.className = 'px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-bold flex items-center gap-1';
+            syncBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">pending</span> Desconectado';
+            syncErrorBox.classList.add('hidden');
+          }
+
+        } else {
+          row.classList.remove('bg-surface-container-high');
+          row.classList.add('bg-surface-container-lowest');
+        }
+      });
+    }
+
+    // Palette quick-pick
+    function setColor(hex) {
+      document.getElementById('inputColorPicker').value = hex;
+      document.getElementById('inputColorHex').value = hex;
+    }
+
+    // Modal Handlers
+    const doctorModal = document.getElementById('doctorModal');
+    const deactivateModal = document.getElementById('deactivateModal');
+
+    document.getElementById('btnOpenNewDoctor').addEventListener('click', () => {
+      document.getElementById('modalTitle').textContent = 'Alta de Nuevo Doctor';
+      document.getElementById('doctorForm').reset();
+      document.getElementById('inputActive').checked = true;
+      setColor('#0284C7');
+      doctorModal.classList.remove('hidden');
+    });
+
+    function openEditDoctorModal() {
+      const activeRow = document.querySelector(`.doctor-row[data-id="${currentSelectedId}"]`);
+      if (!activeRow) return;
+      document.getElementById('modalTitle').textContent = 'Editar Datos de Doctor';
+      document.getElementById('inputName').value = activeRow.dataset.name;
+      document.getElementById('inputSpec').value = activeRow.dataset.spec;
+      document.getElementById('selectType').value = activeRow.dataset.type;
+      document.getElementById('inputPhone').value = activeRow.dataset.phone;
+      document.getElementById('inputEmail').value = activeRow.dataset.email;
+      document.getElementById('inputCommission').value = activeRow.dataset.commission;
+      document.getElementById('inputCalId').value = activeRow.dataset.cal;
+      document.getElementById('inputActive').checked = (activeRow.dataset.status === 'active');
+      setColor(activeRow.dataset.color);
+      doctorModal.classList.remove('hidden');
+    }
+
+    function closeDoctorModal() {
+      doctorModal.classList.add('hidden');
+    }
+
+    function openDeactivateModal() {
+      deactivateModal.classList.remove('hidden');
+    }
+
+    function closeDeactivateModal() {
+      deactivateModal.classList.add('hidden');
+    }
+
+    function confirmDeactivate() {
+      const activeRow = document.querySelector(`.doctor-row[data-id="${currentSelectedId}"]`);
+      if (activeRow) {
+        activeRow.dataset.status = 'inactive';
+        activeRow.classList.add('opacity-75');
+      }
+      selectDoctor(currentSelectedId);
+      closeDeactivateModal();
+    }
+
+    function handleDoctorSubmit(e) {
+      e.preventDefault();
+      closeDoctorModal();
+    }
+
+    // Sync trigger action
+    function triggerDoctorSync() {
+      const btn = document.getElementById('btnSyncNow');
+      const badge = document.getElementById('detailSyncBadge');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[14px] animate-spin">refresh</span><span>Sincronizando...</span>';
+      
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">refresh</span><span>Sincronizar ahora</span>';
+        badge.className = 'px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1';
+        badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check_circle</span> Sincronizado';
+        document.getElementById('detailLastSync').textContent = 'Última sinc: Ahora mismo (CDMX)';
+        document.getElementById('syncErrorBox').classList.add('hidden');
+      }, 1200);
+    }
+
+    // Filter Logic
+    function applyFilters() {
+      const term = document.getElementById('searchInput').value.toLowerCase().trim();
+      const rows = document.querySelectorAll('.doctor-row');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const matchesSearch = row.dataset.name.toLowerCase().includes(term) || row.dataset.spec.toLowerCase().includes(term);
+        const matchesStatus = (currentFilterStatus === 'all') || (row.dataset.status === currentFilterStatus);
+        const matchesType = (currentFilterType === 'all') || (row.dataset.type === currentFilterType);
+
+        if (matchesSearch && matchesStatus && matchesType) {
+          row.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      const empty = document.getElementById('emptyState');
+      if (visibleCount === 0) {
+        empty.classList.remove('hidden');
+        empty.classList.add('flex');
+      } else {
+        empty.classList.add('hidden');
+        empty.classList.remove('flex');
+      }
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+    // Filter buttons bindings
+    document.querySelectorAll('.filter-status-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-status-btn').forEach(b => {
+          b.className = 'filter-status-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container';
+        });
+        btn.className = 'filter-status-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all bg-primary text-on-primary shadow-sm';
+        currentFilterStatus = btn.dataset.status;
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll('.filter-type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-type-btn').forEach(b => {
+          b.className = 'filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:bg-surface-container';
+        });
+        btn.className = 'filter-type-btn px-3 py-1 rounded-md font-label-sm text-label-sm transition-all bg-secondary text-on-secondary shadow-sm';
+        currentFilterType = btn.dataset.type;
+        applyFilters();
+      });
+    });
+
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('filterStatusAll').click();
+      document.getElementById('filterTypeAll').click();
+      applyFilters();
+    }
+
+    // Initialize selection
+    selectDoctor('morales');
+  </script>
+</div></main></div>
+</body></html>

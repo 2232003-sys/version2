@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#005049","on-primary-fixed":"#001d31","surface-container":"#eaedff","primary":"#006194","surface-tint":"#006398","surface-variant":"#dae2fd","on-tertiary":"#ffffff","outline-variant":"#bfc7d2","on-secondary-container":"#006f66","primary-fixed":"#cce5ff","inverse-surface":"#283044","surface-container-lowest":"#ffffff","tertiary-fixed":"#7ffc97","on-primary":"#ffffff","secondary-fixed-dim":"#6bd8cb","background":"#faf8ff","tertiary":"#006b2c","on-error":"#ffffff","secondary-fixed":"#89f5e7","error":"#ba1a1a","surface":"#faf8ff","on-background":"#131b2e","on-primary-fixed-variant":"#004b73","primary-fixed-dim":"#93ccff","primary-container":"#007bb9","on-surface":"#131b2e","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","tertiary-fixed-dim":"#62df7d","tertiary-container":"#00873a","error-container":"#ffdad6","inverse-on-surface":"#eef0ff","on-surface-variant":"#3f4850","on-secondary":"#ffffff","on-tertiary-container":"#f7fff2","inverse-primary":"#93ccff","outline":"#707881","on-tertiary-fixed-variant":"#005320","secondary-container":"#86f2e4","on-secondary-fixed":"#00201d","on-error-container":"#93000a","surface-dim":"#d2d9f4","on-tertiary-fixed":"#002109","secondary":"#006a61","on-primary-container":"#fdfcff","surface-container-high":"#e2e7ff","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1rem","margin-tablet":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","space-xl":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-desktop":"2rem","space-lg":"1.5rem"},"fontFamily":{"data-mono":["Manrope"],"body-lg":["Manrope"],"body-md":["Manrope"],"headline-xl-mobile":["Outfit"],"headline-sm":["Outfit"],"headline-lg":["Outfit"],"headline-lg-mobile":["Outfit"],"headline-md":["Outfit"],"headline-xl":["Outfit"],"body-sm":["Manrope"],"label-sm":["Manrope"],"label-lg":["Manrope"],"label-md":["Manrope"]},"fontSize":{"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-hidden"><div class="px-6 py-2 flex items-center gap-3 mb-2"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center overflow-hidden shadow-sm shrink-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1nUriOepxJ5h4C4Vu9HimqkBzJ9_DLbgMl7GllHuTgTkJCA-J_NKHr09q_CUhAHlec1KBuXQypEPQjD4l5VQQKhq4Duih-Wia-S8mhzm8dYwRLOMhrrc0Y_yTlfxV_7lLOrTs4DMKS6k0Z60WDFqgx4fbTDq8yMSzYkityms-EjrjeNxcGNHaEW60ldlkVBjoBw88mxyFjPwKWqSfZjliENymnzNggkQ3F0R4WMGPrlpru-J8S7eJ" alt="Sr. Diente Mascota" class="w-full h-full object-contain"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">Sr. Diente</span><span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mt-0.5">Clinical OS</span></div></div><div class="px-4 py-2"><div class="bg-surface-container-high rounded-xl p-2.5 flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span><span class="font-label-md text-label-md text-on-surface font-semibold">Google Calendar</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest text-tertiary font-bold">Sync OK</span></div></div><nav class="flex-1 px-3 py-2 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="agenda" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Agenda</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-xl">person_search</span><span>Pacientes 360</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="doctores" href="#"><span class="material-symbols-outlined text-xl">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="servicios" href="#"><span class="material-symbols-outlined text-xl">medical_services</span><span>Servicios</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-xl">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-xl">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-xl">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="comisiones" href="#"><span class="material-symbols-outlined text-xl">price_change</span><span>Comisiones</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="inventario" href="#"><span class="material-symbols-outlined text-xl">inventory_2</span><span>Inventario</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-xl">loyalty</span><span class="flex-1">Club Sonrisas</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">PRO</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="usuarios" href="#"><span class="material-symbols-outlined text-xl">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="px-4 pt-2 border-t border-surface-container"><div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center justify-between"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center overflow-hidden shadow-sm shrink-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1nUriOepxJ5h4C4Vu9HimqkBzJ9_DLbgMl7GllHuTgTkJCA-J_NKHr09q_CUhAHlec1KBuXQypEPQjD4l5VQQKhq4Duih-Wia-S8mhzm8dYwRLOMhrrc0Y_yTlfxV_7lLOrTs4DMKS6k0Z60WDFqgx4fbTDq8yMSzYkityms-EjrjeNxcGNHaEW60ldlkVBjoBw88mxyFjPwKWqSfZjliENymnzNggkQ3F0R4WMGPrlpru-J8S7eJ" alt="Sr. Diente Mascota" class="w-full h-full object-contain"></div><span class="material-symbols-outlined text-secondary">airline_seat_flat</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-full px-6 flex items-center justify-between"><div class="flex items-center gap-6"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary text-xl">location_on</span><span class="font-label-md text-label-md text-on-surface font-bold">Polanco CDMX</span><span class="w-1.5 h-1.5 rounded-full bg-tertiary ml-1"></span></div><div class="hidden lg:flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-lg">schedule</span><span>Miércoles, 24 Octubre 2024</span><span class="text-outline-variant">•</span><span class="font-data-mono text-data-mono text-on-surface">11:42 AM</span></div></div><div class="flex items-center gap-4"><div class="hidden md:flex items-center bg-surface-container-low rounded-lg p-1"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-primary shadow-sm" type="button">Doctor</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface" type="button">Recepción</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface" type="button">Admin</button></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="h-7 w-px bg-surface-container"></div><div class="flex items-center gap-3 pl-1"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ortodoncia &amp; Cirugía</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/ALJJyrD3btN9dbEHiJZfCmsyXEnP8U6J-YTDgXnuWOR08_rIaWVNa-j3rBmQgivPsxsKmpW0naRgA_KQNDnzkWSABTa2YXl2dpWex2ZLwb7RQRYw7xkFKRqijhOpRQNsFgUwrew2mTt9qDnDSGti6joMFVCTPS94KSX4_4M18bWm9E-GJ4Gqtnsep45KeSiXZigu0I1uK4LSvKoRIdxL20vveGQV9W4i1n4k9Ipwf3_srkcjvVe_AQpT7DJgUA"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-tertiary rounded-full ring-2 ring-surface"></span></div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-navigation tabs: 6 tabs within Club Sonrisas with 'Analítica' active -->
+<div class="px-6 sm:px-8 pt-6 pb-2">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b-0 pb-1">
+<div class="flex items-center gap-2 overflow-x-auto py-1">
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">dashboard</span>
+<span>Resumen</span>
+</a>
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">domain</span>
+<span>Empresas</span>
+</a>
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">handshake</span>
+<span>Convenios</span>
+</a>
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">badge</span>
+<span>Afiliados</span>
+</a>
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">sell</span>
+<span>Tarifas</span>
+</a>
+<a class="px-4 py-2 rounded-lg font-label-lg text-label-lg bg-primary-container text-on-primary font-bold shadow-sm flex items-center gap-2 whitespace-nowrap" href="#">
+<span class="material-symbols-outlined text-lg">analytics</span>
+<span>Analítica</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+</a>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+<span>Convenios Activos: <strong class="text-on-surface font-data-mono">14 Aliadas</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Space -->
+<div class="px-6 sm:px-8 py-4 space-y-6">
+<!-- Section 1: Header, Restricted Role Badge & Strict Methodological Notice -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Analítica de Utilización de Beneficios Corporativos</h1>
+<!-- Exclusive Access Badge -->
+<div class="inline-flex items-center gap-1.5 bg-inverse-surface text-inverse-on-surface px-3 py-1 rounded-full shadow-sm font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">admin_panel_settings</span>
+<span>Acceso Exclusivo: Dueño y Administrador</span>
+</div>
+<!-- Propuesta de mejora badge -->
+<div class="inline-flex items-center gap-1 bg-surface-container text-primary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+<span>Propuesta v2.4</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Reporte de uso de convenios por empleados titulares dentro del periodo seleccionado.
+          </p>
+</div>
+<div class="flex items-center gap-3 self-start md:self-auto">
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md" id="refreshBtn" onclick="toggleDataReload()">
+<span class="material-symbols-outlined text-lg" id="refreshIcon">sync</span>
+<span>Actualizar Cifras</span>
+</button>
+<div class="text-right pl-2 hidden sm:block">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Cierre Auditoría</span>
+<span class="font-data-mono text-data-mono text-tertiary">Octubre 2026 • OK</span>
+</div>
+</div>
+</div>
+<!-- Critical Methodological Warning Box -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-start gap-3.5">
+<div class="p-2 rounded-lg bg-primary/10 text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Aviso Metodológico de Auditoría Médica &amp; Facturación</span>
+<span class="text-xs px-2 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Regla de Negocio #CL-89</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Este reporte mide estrictamente la utilización por parte de <strong>empleados registrados titulares</strong>. El <span class="text-on-surface font-semibold">“Uso”</span> se contabiliza exclusivamente cuando un beneficio es <strong>beneficio registrado como consumido dentro del periodo</strong>; la creación, simulación o presentación de un presupuesto presupuestario no cuenta como uso. Este indicador no mide rentabilidad financiera ni extiende sus métricas a beneficiarios familiares sin soporte verificado en póliza.</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Filter Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-3">
+<!-- Date Selector -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl">date_range</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Periodo Auditoría</span>
+<span class="font-label-lg text-label-lg font-semibold">01 Octubre 2026 — 31 Octubre 2026</span>
+</div>
+<button class="ml-1 p-1 hover:bg-surface-container rounded text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+<!-- Corporate Partner Filter -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary text-xl">corporate_fare</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Empresa Aliada</span>
+<select class="bg-transparent font-label-lg text-label-lg font-semibold text-on-surface outline-none cursor-pointer pr-4" id="empresaFilter" onchange="filterCompanyData(this.value)">
+<option value="all">Todas las empresas aliadas (14)</option>
+<option value="bimbo">Grupo Bimbo (Planta &amp; Corporativo)</option>
+<option value="bbva">BBVA México (Banca Central)</option>
+<option value="femsa">FEMSA Servicios CDMX</option>
+<option value="softtek">Softtek Innovation Hub</option>
+</select>
+</div>
+</div>
+<!-- Fast View presets -->
+<div class="hidden xl:flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-primary shadow-sm">Mes Actual</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface">Q3 2026</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface">Anual Acumulado</button>
+</div>
+</div>
+<!-- Action Buttons with Propuesta de Mejora badge -->
+<div class="flex items-center gap-3">
+<div class="relative group">
+<button class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2.5 rounded-lg font-label-lg text-label-lg hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="simulateExportCSV()">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Exportar Informe CSV</span>
+</button>
+<div class="absolute -top-3 -right-2 bg-secondary-container text-on-secondary-container text-[9px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider shadow-sm pointer-events-none">
+            Propuesta
+          </div>
+</div>
+</div>
+</div>
+<!-- Section 3: Key Performance Indicators (KPIs) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-md text-label-md font-bold uppercase">Total Registrados</span>
+<span class="material-symbols-outlined text-primary text-xl">badge</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold leading-none tracking-tight">890</span>
+<span class="font-label-md text-label-md text-on-surface-variant block mt-1">Colaboradores Titulares</span>
+</div>
+<div class="mt-3 pt-3 bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between text-xs">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Padrón verificado</span>
+<span class="font-data-mono text-data-mono text-tertiary">100% Póliza</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-md text-label-md font-bold uppercase">Activos Periodo</span>
+<span class="material-symbols-outlined text-secondary text-xl">how_to_reg</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold leading-none tracking-tight">840</span>
+<span class="font-data-mono text-data-mono text-secondary font-bold">94.4%</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant block mt-1">Vigentes para atención</span>
+</div>
+<div class="mt-3 pt-3 bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between text-xs">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Bajas en mes: 50</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold">Excluidos</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-md text-label-md font-bold uppercase">Con Al Menos 1 Uso</span>
+<span class="material-symbols-outlined text-tertiary text-xl">check_circle</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold leading-none tracking-tight">142</span>
+<span class="font-label-md text-label-md text-on-surface-variant block mt-1">Consumieron en Caja</span>
+</div>
+<div class="mt-3 pt-3 bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between text-xs">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Citas concluidas</span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">198 eventos</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-md text-label-md font-bold uppercase">Sin Uso en Periodo</span>
+<span class="material-symbols-outlined text-outline text-xl">person_off</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface-variant font-bold leading-none tracking-tight">698</span>
+<span class="font-label-md text-label-md text-on-surface-variant block mt-1">Titulares sin asistencia</span>
+</div>
+<div class="mt-3 pt-3 bg-surface-container-low px-2.5 py-1.5 rounded-lg flex items-center justify-between text-xs">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Oportunidad preventiva</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">83.1%</span>
+</div>
+</div>
+<!-- KPI 5: Core Metric -->
+<div class="bg-primary text-on-primary p-5 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition-all relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-primary/80 mb-2">
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Tasa Neta Utilización</span>
+<span class="material-symbols-outlined text-secondary-fixed text-xl">pie_chart</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl font-bold leading-none tracking-tight text-white">16.9%</span>
+<span class="font-label-md text-label-md text-white/80 block mt-1">142 c/consumo / 840 activos</span>
+</div>
+<div class="mt-3 pt-3 bg-black/15 px-2.5 py-1.5 rounded-lg flex items-center justify-between text-xs">
+<span class="text-white/80 font-body-sm text-body-sm">Meta Corporativa: 15.0%</span>
+<span class="font-label-sm text-label-sm bg-secondary text-white px-1.5 py-0.5 rounded font-bold">+1.9% Superada</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Charts & Monthly Evolution (2 Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Chart Left: 6 Months Trend (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Evolución de Utilización Mensual (2026)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tasa de penetración real de la plantilla en últimos 6 meses (Mayo a Octubre).</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>% Real Cobrado</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-outline">
+<span class="w-2.5 h-0.5 bg-outline"></span>
+<span>Meta 15%</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Visualization: 6-month bars & trend line -->
+<div class="w-full h-56 relative flex items-end justify-between pt-6 pb-4 px-2">
+<!-- Reference line for 15% meta -->
+<div class="absolute left-0 right-0 top-20 border-b border-dashed border-outline-variant pointer-events-none flex justify-end pr-2">
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-lowest px-1 -mt-2">Meta 15%</span>
+</div>
+<!-- Month 1: Mayo (11.8%) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-on-surface-variant">11.8%</span>
+<div class="w-10 sm:w-14 bg-surface-container-high rounded-t-lg transition-all hover:bg-primary/50 relative group" style="height: 70px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                98 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">May</span>
+</div>
+<!-- Month 2: Junio (13.2%) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-on-surface-variant">13.2%</span>
+<div class="w-10 sm:w-14 bg-surface-container-high rounded-t-lg transition-all hover:bg-primary/50 relative group" style="height: 82px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                110 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Jun</span>
+</div>
+<!-- Month 3: Julio (12.4%) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-on-surface-variant">12.4%</span>
+<div class="w-10 sm:w-14 bg-surface-container-high rounded-t-lg transition-all hover:bg-primary/50 relative group" style="height: 76px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                104 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Jul</span>
+</div>
+<!-- Month 4: Agosto (14.5%) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-on-surface-variant">14.5%</span>
+<div class="w-10 sm:w-14 bg-surface-container-high rounded-t-lg transition-all hover:bg-primary/50 relative group" style="height: 94px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                121 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Ago</span>
+</div>
+<!-- Month 5: Septiembre (15.1%) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-primary font-bold">15.1%</span>
+<div class="w-10 sm:w-14 bg-primary-fixed-dim rounded-t-lg transition-all hover:bg-primary relative group" style="height: 104px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                127 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Sep</span>
+</div>
+<!-- Month 6: Octubre (16.9% ACTIVO) -->
+<div class="flex flex-col items-center gap-2 z-10 w-1/6">
+<span class="font-data-mono text-data-mono text-xs text-primary font-bold">16.9%</span>
+<div class="w-10 sm:w-14 bg-primary rounded-t-lg transition-all shadow-md relative group" style="height: 122px;">
+<div class="hidden group-hover:flex absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-0.5 rounded shadow">
+                142 empleados
+              </div>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">Oct *</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-xs mt-2">
+<span class="text-on-surface-variant">Crecimiento intermensual: <strong class="text-tertiary font-data-mono">+1.8% vs Septiembre</strong></span>
+<span class="font-label-sm text-label-sm text-outline-variant">Fuente: Caja Turno Polanco CDMX</span>
+</div>
+</div>
+<!-- Chart Right: Distribution by Dental Category (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Usos por Categoría</h3>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-primary font-bold">198 eventos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Servicios clínicos consumidos efectivamente por empleados titulares.</p>
+</div>
+<!-- Donut & Breakdown Layout -->
+<div class="flex flex-col sm:flex-row items-center gap-6 my-auto">
+<!-- Inline Donut SVG -->
+<div class="relative w-36 h-36 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Prevención (52%) - Primary -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="52, 100" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Operatoria (28%) - Secondary -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="28, 100" stroke-dashoffset="-52" stroke-width="4.5"></path>
+<!-- Endodoncia (12%) - Primary container -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="12, 100" stroke-dashoffset="-80" stroke-width="4.5"></path>
+<!-- Otros (8%) - Surface tint / outline -->
+<path class="text-outline-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="8, 100" stroke-dashoffset="-92" stroke-width="4.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-tight">52%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Preventivo</span>
+</div>
+</div>
+<!-- Category Legend List -->
+<div class="w-full space-y-2.5">
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Prevención &amp; Limpiezas</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">52% <span class="text-on-surface-variant font-normal">(103)</span></span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Operatoria &amp; Resinas</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">28% <span class="text-on-surface-variant font-normal">(55)</span></span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Endodoncia Especializada</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">12% <span class="text-on-surface-variant font-normal">(24)</span></span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Otros / Diagnóstico RX</span>
+</div>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">8% <span class="text-on-surface-variant font-normal">(16)</span></span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low p-2.5 rounded-lg flex items-center gap-2 text-xs">
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">
+            La alta adopción de <strong>Prevención</strong> reduce costos de siniestralidad mayor para la empresa.
+          </span>
+</div>
+</div>
+</div>
+<!-- Section 5: Comparative Table by Corporate Partner -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-surface-container">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Desglose de Utilización por Empresa Aliada</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detalle analítico con base en consumos reales procesados en caja durante Octubre 2026.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mostrando:</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container font-bold text-primary" id="companyCountBadge">3 Empresas Muestreadas</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="companiesTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-6 font-bold">Empresa Aliada</th>
+<th class="py-3.5 px-4 font-bold">Convenio Principal</th>
+<th class="py-3.5 px-4 font-bold text-right">Empleados Totales</th>
+<th class="py-3.5 px-4 font-bold text-right">Empleados Activos</th>
+<th class="py-3.5 px-4 font-bold text-right text-tertiary">Con Uso Consumido</th>
+<th class="py-3.5 px-4 font-bold text-right text-outline">Sin Uso</th>
+<th class="py-3.5 px-4 font-bold text-center">Tasa Utilización</th>
+<th class="py-3.5 px-4 font-bold text-center">Estado Convenio</th>
+<th class="py-3.5 px-6 font-bold text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Bimbo -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-company-id="bimbo">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold text-sm">
+                    GB
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">Grupo Bimbo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Planta Santa María &amp; Corporativo</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Dental Plan Corporativo Plus</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">420</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">405</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono font-bold text-tertiary">
+                78
+                <span class="text-[10px] text-on-surface-variant block font-normal">112 citas cobradas</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono text-on-surface-variant">327</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-data-mono text-data-mono font-bold text-primary">19.3%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full mt-1 overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 19.3%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-bold shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary hover:text-primary-container transition-all" title="Ver detalle de usos">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" title="Exportar reporte específico">
+<span class="material-symbols-outlined text-lg">file_download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: BBVA -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-company-id="bbva">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-variant flex items-center justify-center text-primary-container font-bold text-sm">
+                    BB
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">BBVA México</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sede Paseo de la Reforma</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Convenio Cobertura Premier</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">380</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">360</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono font-bold text-tertiary">
+                51
+                <span class="text-[10px] text-on-surface-variant block font-normal">68 citas cobradas</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono text-on-surface-variant">309</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-data-mono text-data-mono font-bold text-secondary">14.2%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full mt-1 overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 14.2%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-bold shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary hover:text-primary-container transition-all" title="Ver detalle de usos">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" title="Exportar reporte específico">
+<span class="material-symbols-outlined text-lg">file_download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Softtek -->
+<tr class="hover:bg-surface-container-low/50 transition-colors" data-company-id="softtek">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant font-bold text-sm">
+                    SK
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">Softtek</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tech Hub CDMX</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Convenio Piloto Prevención</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">90</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono">75</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono font-bold text-tertiary">
+                13
+                <span class="text-[10px] text-on-surface-variant block font-normal">18 citas cobradas</span>
+</td>
+<td class="py-4 px-4 text-right font-data-mono text-data-mono text-on-surface-variant">62</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-data-mono text-data-mono font-bold text-primary">17.3%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full mt-1 overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 17.3%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Prospecto / Piloto
+                </span>
+</td>
+<td class="py-4 px-6 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary hover:text-primary-container transition-all" title="Ver detalle de usos">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" title="Exportar reporte específico">
+<span class="material-symbols-outlined text-lg">file_download</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer Table Summary Row -->
+<div class="p-4 bg-surface-container-low flex flex-wrap items-center justify-between gap-4 font-label-md text-label-md">
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span>Total Muestra: <strong class="text-on-surface font-data-mono">890 Titulares</strong></span>
+<span class="text-outline-variant">•</span>
+<span>Activos: <strong class="text-on-surface font-data-mono">840</strong></span>
+<span class="text-outline-variant">•</span>
+<span>Cobrados: <strong class="text-tertiary font-data-mono">142 Empleados</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant">Tasa Ponderada Muestra:</span>
+<span class="font-data-mono text-data-mono text-primary font-bold text-base">16.9%</span>
+</div>
+</div>
+</div>
+<!-- Section 6: Auxiliary UI States (Empty State Variant & System Sync Confirmation) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+<!-- Auxiliary State 1: Filter Empty State (Interactive preview) -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hidden flex-col items-center justify-center text-center" id="emptyStateBox">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-2xl">search_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Sin Consumo Registrado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-4">
+          No hay datos de consumo registrado para los filtros seleccionados dentro de la ventana de Caja Turno.
+        </p>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all" onclick="resetFilters()">
+          Restablecer Filtros
+        </button>
+</div>
+<!-- Auxiliary State 2: System Sync / Data Update Feedback Box -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between gap-4 md:col-span-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">database</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Base de Datos de Facturación Clínico-Laboral Sincronizada</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-bold">11:42 AM CDMX</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Integración nativa con módulo de <strong>Caja Turno</strong> y <strong>Google Calendar</strong>. Los consumos procesados hoy se reflejan en tiempo real.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" onclick="showEmptyStateDemo()">
+            Probar Estado Vacío
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleDataReload() {
+    const icon = document.getElementById('refreshIcon');
+    icon.classList.add('animate-spin');
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      alert('Datos de utilización actualizados exitosamente con Caja Turno Polanco.');
+    }, 800);
+  }
+
+  function simulateExportCSV() {
+    alert('Generando exportación de informe CSV de utilización corporativa (Periodo: Octubre 2026). Descarga iniciada.');
+  }
+
+  function filterCompanyData(val) {
+    const rows = document.querySelectorAll('#companiesTable tbody tr');
+    const badge = document.getElementById('companyCountBadge');
+    const emptyBox = document.getElementById('emptyStateBox');
+    
+    let visibleCount = 0;
+    rows.forEach(row => {
+      const companyId = row.getAttribute('data-company-id');
+      if (val === 'all' || val === companyId) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    if (val === 'femsa') {
+      emptyBox.classList.remove('hidden');
+      emptyBox.classList.add('flex');
+    } else {
+      emptyBox.classList.add('hidden');
+      emptyBox.classList.remove('flex');
+    }
+
+    badge.innerText = `${visibleCount} Empresa(s) Filtrada(s)`;
+  }
+
+  function showEmptyStateDemo() {
+    const emptyBox = document.getElementById('emptyStateBox');
+    emptyBox.classList.toggle('hidden');
+    emptyBox.classList.toggle('flex');
+  }
+
+  function resetFilters() {
+    const select = document.getElementById('empresaFilter');
+    select.value = 'all';
+    filterCompanyData('all');
+  }
+</script></main></div>
+
+</body></html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#ffffff",
+          "on-secondary-fixed": "#00201d",
+          "secondary": "#006a61",
+          "on-error": "#ffffff",
+          "primary-container": "#007bb9",
+          "on-tertiary-fixed": "#002109",
+          "secondary-container": "#86f2e4",
+          "surface-container-high": "#e2e7ff",
+          "background": "#faf8ff",
+          "on-tertiary-fixed-variant": "#005320",
+          "on-surface-variant": "#3f4850",
+          "tertiary-fixed-dim": "#62df7d",
+          "on-primary-fixed": "#001d31",
+          "on-primary-container": "#fdfcff",
+          "tertiary-fixed": "#7ffc97",
+          "on-surface": "#131b2e",
+          "error-container": "#ffdad6",
+          "on-secondary-container": "#006f66",
+          "on-secondary-fixed-variant": "#005049",
+          "on-error-container": "#93000a",
+          "outline": "#707881",
+          "surface-container-highest": "#dae2fd",
+          "surface-container-lowest": "#ffffff",
+          "surface-bright": "#faf8ff",
+          "surface-tint": "#006398",
+          "inverse-primary": "#93ccff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "on-tertiary": "#ffffff",
+          "inverse-on-surface": "#eef0ff",
+          "primary-fixed": "#cce5ff",
+          "surface-container-low": "#f2f3ff",
+          "surface-container": "#eaedff",
+          "surface-dim": "#d2d9f4",
+          "on-secondary": "#ffffff",
+          "primary-fixed-dim": "#93ccff",
+          "error": "#ba1a1a",
+          "primary": "#006194",
+          "surface-variant": "#dae2fd",
+          "tertiary-container": "#00873a",
+          "surface": "#faf8ff",
+          "inverse-surface": "#283044",
+          "on-background": "#131b2e",
+          "outline-variant": "#bfc7d2",
+          "secondary-fixed": "#89f5e7",
+          "on-primary-fixed-variant": "#004b73",
+          "on-tertiary-container": "#f7fff2",
+          "tertiary": "#006b2c"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "space-sm": "0.5rem",
+          "margin-tablet": "1.5rem",
+          "margin": "1rem",
+          "margin-desktop": "2rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Outfit"
+          ],
+          "body-md": [
+            "Manrope"
+          ],
+          "label-lg": [
+            "Manrope"
+          ],
+          "label-sm": [
+            "Manrope"
+          ],
+          "headline-sm": [
+            "Outfit"
+          ],
+          "headline-xl-mobile": [
+            "Outfit"
+          ],
+          "headline-lg-mobile": [
+            "Outfit"
+          ],
+          "data-mono": [
+            "Manrope"
+          ],
+          "headline-lg": [
+            "Outfit"
+          ],
+          "label-md": [
+            "Manrope"
+          ],
+          "headline-xl": [
+            "Outfit"
+          ],
+          "body-sm": [
+            "Manrope"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "data-mono": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">dentistry</span></div><div><span class="font-headline-sm text-headline-sm text-primary tracking-tight block leading-none">Sr. Diente</span><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase block mt-0.5">Clinical OS</span></div></div><div class="hidden md:flex items-center gap-space-xs pl-space-md bg-surface-container-low px-space-sm py-1 rounded-lg text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span class="font-label-md text-label-md font-semibold text-on-surface">Sede CDMX</span><span class="text-outline-variant font-body-sm">•</span><span class="font-data-mono text-data-mono text-on-surface-variant">10:45 AM</span></div></div><div class="flex-1 max-w-xs md:max-w-md mx-2"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" placeholder="Buscar por Expediente, Folio o Paciente..." type="text"></div></div><div class="flex items-center gap-space-sm lg:gap-space-md"><div class="hidden sm:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/40 text-on-secondary-container"><span class="material-symbols-outlined text-[16px] text-tertiary">sync_saved_locally</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Google Sync OK</span></div><div class="flex items-center bg-surface-container-low p-0.5 rounded-lg"><div class="flex items-center gap-1 px-space-sm py-1 bg-surface-container-lowest rounded shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] text-primary"><span class="material-symbols-outlined text-[16px]">support_agent</span><span class="font-label-md text-label-md hidden lg:inline">Recepción</span></div><button class="flex items-center gap-1 px-space-sm py-1 text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[16px] text-secondary">stethoscope</span><span class="font-label-md text-label-md hidden lg:inline">Doctor</span></button><button class="flex items-center gap-1 px-space-sm py-1 text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary">shield_person</span><span class="font-label-md text-label-md hidden lg:inline">Dueño</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex-1"><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Operación Clínica</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Dashboard</a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="agenda-3-sillones" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Agenda 3 Sillones</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="directorio-de-pacientes" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span>Directorio de Pacientes</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span>Caja Turno (MXN)</a></nav><div class="px-space-md flex flex-col gap-2"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-md text-label-md text-on-surface">Sillón 1 (Principal)</span></div><span class="font-label-sm text-label-sm text-tertiary font-bold">DISP</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-md text-label-md text-on-surface">Sillón 2 (Endo)</span></div><span class="font-label-sm text-label-sm text-primary font-bold">EN USO</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-outline"></span><span class="font-label-md text-label-md text-on-surface">Sillón 3 (Higiene)</span></div><span class="font-label-sm text-label-sm text-outline font-bold">ASEO</span></div></div></div><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">security</span><div><div class="font-label-sm text-label-sm font-bold text-on-surface">NOM-004-SSA3</div><div class="font-body-sm text-body-sm text-on-surface-variant">Expediente Seguro</div></div></div><span class="material-symbols-outlined text-[16px] text-tertiary">verified</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky High-Priority Notification Banner (Tablet Optimized) -->
+<div class="px-margin-tablet py-2 bg-error-container text-on-error-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-error text-[20px] animate-pulse">warning</span>
+<p class="font-label-md text-label-md truncate">
+<span class="font-bold">Alerta Médica Activa:</span> Paciente en Sillón 1 (Lucía Garza) presenta <span class="underline decoration-error font-bold">Alergia Severa a Penicilina</span>.
+      </p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+
+<button class="h-8 px-3 rounded-lg bg-error text-on-error font-label-sm text-label-sm font-semibold hover:opacity-90 flex items-center gap-1 shadow-sm" onclick="openPatientModal('lucia')">
+        Ver Ficha
+      </button>
+</div>
+</div>
+<!-- Primary Agenda Sub-Header / Control Bar -->
+<div class="px-margin-tablet py-space-sm bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Row: Date, View Modes, Sync Indicator -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Date Selector & Jump to Today -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-low rounded-xl p-1 shadow-sm">
+<button class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container transition-colors" title="Día Anterior">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="px-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<div class="leading-none">
+<span class="font-headline-sm text-headline-sm text-on-surface block">Jueves 24 Octubre 2024</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Sede CDMX · Operación Matutina</span>
+</div>
+</div>
+<button class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container transition-colors" title="Día Siguiente">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<button class="h-11 px-4 rounded-xl bg-surface-container text-primary font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">today</span>
+            Hoy
+          </button>
+</div>
+<!-- Right Side: Google Sync Pill + View Switcher -->
+<div class="flex items-center gap-space-sm">
+<!-- Interactive Google Calendar Sync Status Pill -->
+<div class="flex items-center gap-2 px-3 h-11 rounded-xl bg-surface-container-low transition-all" id="syncBadge">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary" id="syncIconWrap"></div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md text-on-surface leading-tight" id="syncStatusTitle">Google Sync OK</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="syncStatusSub">Sincronizado hace 4 min</span>
+</div>
+<button class="p-1 rounded-md hover:bg-surface-container text-on-surface-variant" onclick="cycleSyncState()" title="Forzar sincronización">
+<span class="material-symbols-outlined text-[18px]" id="syncRefreshIcon">sync</span>
+</button>
+</div>
+<!-- View Toggle (Día 3 Sillones / Semana) -->
+<div class="flex items-center p-1 rounded-xl bg-surface-container-low shadow-sm">
+<button class="h-9 px-4 rounded-lg bg-surface-container-lowest font-label-lg text-label-lg text-primary font-bold shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">view_column</span>
+              3 Sillones (Día)
+            </button>
+<button class="h-9 px-4 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">view_week</span>
+              Semanal
+            </button>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Multi-Doctor Selector & Status Filters -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-1">
+<!-- Doctor Filter Tabs (Tablet touch friendly >=44px) -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl overflow-x-auto max-w-full">
+<span class="font-label-sm text-label-sm text-outline px-2 uppercase tracking-wider shrink-0">Especialista:</span>
+<button class="h-11 px-3.5 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow-sm whitespace-nowrap flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Todos (3)
+          </button>
+
+<button class="h-11 px-3.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md whitespace-nowrap flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Dr. Carlos Ramos
+          </button>
+<button class="h-11 px-3.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md whitespace-nowrap flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Dr. Javier Arriaga
+          </button>
+</div>
+<!-- Appointment Status Pills Filter -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="h-11 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm">
+            Todos
+          </button>
+<button class="h-11 px-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md">
+            Confirmadas
+          </button>
+
+<button class="h-11 px-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md flex items-center gap-1">
+            En atención
+            <span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">P</span>
+</button>
+<button class="h-11 px-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md">
+            Finalizada
+          </button>
+</div>
+</div>
+<!-- Clinical Allocation Guideline Note -->
+<div class="p-2.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">medical_services</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Validación de Equipamiento &amp; Protocolo:</span> 
+            Sillón 1 (Operatoria Dental/Resinas) · Sillón 2 (Microscopio Endo / Rehab) · Sillón 3 (Esterilidad Cirugía &amp; Valoración). 
+            <span class="text-secondary font-semibold">Horarios y doctores verificados en tiempo real.</span>
+</p>
+</div>
+<div class="shrink-0 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span>
+            Propuesta Activa
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational 3-Chair Matrix Board Area -->
+<div class="px-margin-tablet py-space-md">
+<!-- Matrix Header: Chair Columns Specs -->
+<div class="grid grid-cols-12 gap-3 mb-3 sticky top-16 z-30 bg-background/95 backdrop-blur-md pt-2 pb-1">
+<!-- Time Axis Corner -->
+<div class="col-span-1 flex items-end justify-center pb-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Hora</span>
+</div>
+<!-- Sillón 1 Header Card -->
+<div class="col-span-3 lg:col-span-4 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Sillón 1</h2>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Unidad Kavo Primus · Luz Polimerizadora LED</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+            ACTIVO
+          </span>
+</div>
+<div class="mt-2 pt-2 bg-surface-container-low px-2 py-1 rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Titular: <strong class="text-on-surface">Dra. Elena Gómez</strong></span>
+<span class="text-tertiary font-bold">2 Pacientes Hoy</span>
+</div>
+</div>
+<!-- Sillón 2 Header Card -->
+<div class="col-span-4 lg:col-span-4 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Sillón 2</h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Microscopio Zeiss &amp; Motor Rotatorio</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">CONFIRMADA</span>
+</div>
+<div class="mt-2 pt-2 bg-surface-container-low px-2 py-1 rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Titular: <strong class="text-on-surface">Dr. Carlos Ramos</strong></span>
+<span class="text-primary font-bold">1 En Recepción</span>
+</div>
+</div>
+<!-- Sillón 3 Header Card -->
+<div class="col-span-4 lg:col-span-3 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Sillón 3</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Sensor RVG &amp; Motor Implantes</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+            AGENDADA
+          </span>
+</div>
+<div class="mt-2 pt-2 bg-surface-container-low px-2 py-1 rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Titular: <strong class="text-on-surface">Dr. Javier Arriaga</strong></span>
+<span class="text-secondary font-bold">Hueco 12:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Time Grid Canvas (08:00 to 14:00) with Smooth Scrolling -->
+<div class="relative bg-surface-container-lowest rounded-2xl shadow-sm p-3 overflow-y-auto max-h-[640px]">
+<!-- Current Time Indicator (10:45 AM) -->
+<div class="absolute left-14 right-3 top-[320px] z-20 flex items-center pointer-events-none">
+<div class="w-3 h-3 rounded-full bg-error -ml-1.5 shadow-sm"></div>
+<div class="flex-1 h-0.5 bg-error/70"></div>
+<span class="bg-error text-on-error px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-sm">10:45 AM (CDMX)</span>
+</div>
+<div class="grid grid-cols-12 gap-3 relative">
+<!-- Timeline Legend (Col 1) -->
+<div class="col-span-1 flex flex-col font-data-mono text-data-mono text-outline select-none">
+<div class="h-20 flex items-start justify-center pt-1">08:00</div>
+<div class="h-20 flex items-start justify-center pt-1">09:00</div>
+<div class="h-20 flex items-start justify-center pt-1">10:00</div>
+<div class="h-20 flex items-start justify-center pt-1">11:00</div>
+<div class="h-20 flex items-start justify-center pt-1">12:00</div>
+<div class="h-20 flex items-start justify-center pt-1">13:00</div>
+<div class="h-10 flex items-start justify-center pt-1">14:00</div>
+</div>
+<!-- SILLÓN 1 COLUMN: Operatoria (Col span 3 lg:col-span-4) -->
+<div class="col-span-3 lg:col-span-4 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-2 min-h-[480px]">
+<!-- Slot 08:00 - 09:00: Free / Cleaned -->
+
+<!-- Slot 09:00 - 09:45: Roberto Fuentes (Atención Finalizada, $950 MXN) -->
+<div class="h-20 rounded-xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between" onclick="openPatientModal('roberto')">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Roberto Fuentes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">09:00 - 09:45 (45 min) · Obturación Resina 3M</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+                Finalizada
+              </span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+                $950.00 MXN · Pagado en Caja
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Dra. Elena Gómez</span>
+</div>
+</div>
+<!-- 09:45 - 10:00: 15 min Turnaround Buffer -->
+<div class="h-5 rounded-lg bg-surface-container/60 flex items-center justify-center text-outline font-label-sm text-label-sm">
+            Recambio Instrumental (15 min)
+          </div>
+<!-- Slot 10:00 - 11:00: Lucía Garza Villalobos (En Atención, Alerta Médica Penicilina) -->
+<div class="h-28 rounded-xl bg-surface-container-lowest p-3 shadow-md ring-2 ring-primary hover:shadow-lg transition-all cursor-pointer flex flex-col justify-between relative overflow-hidden" onclick="openPatientModal('lucia')">
+<!-- Pulsing Active Glow -->
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between gap-1">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Lucía Garza Villalobos</span>
+<!-- Improvement Badge -->
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[12px]">auto_awesome</span>
+                      En atención
+                    </span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Expediente: SD-2024-0891 · 10:00 - 11:00</span>
+</div>
+<span class="px-2 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">emergency</span>
+                  Alergia a Penicilina
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold mt-1">
+                Reconstrucción Molar 46 + Poste Fibra · Dra. Elena Gómez
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Sillón Bloqueado: 45 min transcurridos</span>
+</div>
+<button class="h-9 px-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+                Terminar &amp; Caja
+              </button>
+</div>
+</div>
+<!-- 11:00 - 14:00 Free Afternoon Capacity -->
+<div class="flex-1 min-h-[140px] rounded-xl bg-surface-container-low/40 p-3 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-bold">11:00 - 14:00 Turno Libre</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary font-bold">Disponible</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sillón habilitado para Operatoria Dental con Dra. Gómez.</p>
+<button class="h-10 w-full rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+              Agendar en Sillón 1
+            </button>
+</div>
+</div>
+<!-- SILLÓN 2 COLUMN: Endo / Rehab (Col span 4) -->
+<div class="col-span-4 lg:col-span-4 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-2 min-h-[480px]">
+<!-- 08:00 - 10:30 Mantenimiento / Hueco -->
+<div class="h-32 rounded-xl bg-surface-container-low/60 p-3 flex flex-col justify-between text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold">08:00 - 10:30</span>
+<span class="font-label-sm text-label-sm text-outline">Calibración Microscopio</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bloque libre para urgencias de endodoncia.</p>
+<div class="flex items-center justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Equipo Listo</span>
+</div>
+</div>
+<!-- Slot 10:30 - 11:30: Mariana Morales (Llegó - En espera, Dr. Carlos Ramos) -->
+<div class="h-36 rounded-xl bg-surface-container-lowest p-3 shadow-md hover:shadow-lg transition-all cursor-pointer flex flex-col justify-between" onclick="openPatientModal('mariana')">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Mariana Morales</span>
+<!-- Improvement Badge 'Llegó' -->
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-0.5 shadow-sm"><span class="material-symbols-outlined text-[12px]">check_circle</span>Confirmada</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">10:30 - 11:30 (60 min) · Conductometría Molar 16</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold">
+                  Dr. Carlos Ramos
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+                Paciente en sala con consentimiento firmado. Listo para anestesia infiltrativa.
+              </p>
+</div>
+<!-- Clear Action Touch Targets >= 44px -->
+<div class="flex items-center gap-2 pt-2">
+<button class="h-11 flex-1 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-all shadow-sm flex items-center justify-center gap-1.5 active:scale-95" onclick="event.stopPropagation(); alert('Iniciando atención en Sillón 2 con Dr. Carlos Ramos');">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+                Iniciar atención
+              </button>
+<button class="h-11 px-3 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1 shadow-sm" onclick="event.stopPropagation(); openReassignModal();" title="Reasignar a otro sillón con equipamiento compatible">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+                Reasignar
+              </button>
+</div>
+</div>
+<!-- 11:30 - 14:00 Capacity -->
+<div class="flex-1 min-h-[120px] rounded-xl bg-surface-container-low/40 p-3 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-bold">11:30 - 14:00 Libre</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary font-bold">Sillón Disponible</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Disponible para tratamientos de Rehabilitación Oral o Endodoncia.</p>
+<button class="h-10 w-full rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+              Agendar en Sillón 2
+            </button>
+</div>
+</div>
+<!-- SILLÓN 3 COLUMN: Cirugía / Gral (Col span 4 lg:col-span-3) -->
+<div class="col-span-4 lg:col-span-3 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-2 min-h-[480px]">
+<!-- 08:00 - 11:00 Pre-Cirugía Prep -->
+<div class="h-36 rounded-xl bg-surface-container-low/60 p-3 flex flex-col justify-between text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold">08:00 - 11:00</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Esterilizado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protocolo quirúrgico cerrado para Dr. Javier Arriaga.</p>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Sensor RVG Activo</span>
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+<!-- Slot 11:00 - 12:30: Fernando Soto Ortiz (Agendada, Confirmar Asistencia) -->
+<div class="h-36 rounded-xl bg-surface-container-lowest p-3 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between" onclick="openPatientModal('fernando')">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Fernando Soto Ortiz</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant block">11:00 - 12:30 (90 min)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+                  Agendada
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold mt-1">
+                Extracción Quirúrgica Tercer Molar (38) · Dr. Arriaga
+              </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="h-11 flex-1 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm flex items-center justify-center gap-1.5 active:scale-95" onclick="event.stopPropagation(); alert('Asistencia confirmada vía WhatsApp para Fernando Soto');">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                Confirmar Asistencia
+              </button>
+</div>
+</div>
+<!-- Slot 12:30 - 13:00 Hueco Libre con Validación Condicional -->
+<div class="h-28 rounded-xl bg-surface-container-lowest p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">12:30 - 13:00 (30 min)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">LIBRE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Disponible según última consulta; <span class="font-semibold text-secondary">se validará al guardar</span> compatibilidad de doctor.
+            </p>
+<button class="h-11 w-full rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-sm flex items-center justify-center gap-1 active:scale-95" onclick="openBookingModal('Sillón 3', '12:30')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+              + Agendar aquí
+            </button>
+</div>
+<!-- 13:00 - 14:00 Hueco -->
+<div class="h-16 rounded-xl bg-surface-container-low/40 p-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>13:00 - 14:00 Cierre Matutino</span>
+<span class="material-symbols-outlined text-[16px] text-outline">lock_clock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Architectural & Roadmap Annotations (Existing vs Improvement Proposals) -->
+<div class="mt-space-md grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Existing Architecture Note -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Arquitectura Base</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Asignación estricta de sillones con validación de especialidad quirúrgica, endodóntica y operatoria. Integración continua con <span class="font-bold text-on-surface">Google Calendar Sync</span> y registro de caja en pesos mexicanos (MXN).
+        </p>
+</div>
+<!-- Improvement Proposals Note -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Propuesta de Mejora</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Nuevos estados clínicos intermedios: <span class="font-bold text-secondary">"Llegó - En espera"</span> y <span class="font-bold text-primary">"En atención"</span>. El botón táctil se renombró a <em>"Iniciar atención"</em> disociándolo de la reasignación física de sillón para evitar errores de inventario estéril.
+        </p>
+</div>
+<!-- Roadmap Note: Odontogram planned feature -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-7 h-7 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Hoja de Ruta (Futuro)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Odontograma 3D Interactivo:</strong> Es una función futura planificada en la fase v2.2. En esta versión de tablet se prioriza el ritmo de flujo de sillones, control de impagos y alertas críticas de salud NOM-004.
+        </p>
+</div>
+</div>
+<!-- EXTERNAL DEV TESTING / SANDBOX TOOLBAR (Footer) -->
+
+</div>
+<!-- RETRACTABLE CLINICAL APPOINTMENT DETAILS PANEL / MODAL (Slide-over for Tablet 768px-1024px) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex justify-end transition-opacity" id="appointmentDrawer">
+<div class="w-full max-w-md bg-surface-container-lowest h-full shadow-2xl flex flex-col justify-between overflow-y-auto">
+<!-- Drawer Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">patient_list</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="drawerPatientName">Detalle de Cita Médica</h3>
+<span class="font-data-mono text-data-mono text-secondary font-bold" id="drawerExpediente">Folio: SD-2024-0891</span>
+</div>
+</div>
+<button class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Body Content -->
+<div class="p-space-md flex flex-col gap-space-md flex-1">
+<!-- Emergency Alert Banner inside Patient File -->
+<div class="p-3 rounded-xl bg-error-container text-on-error-container flex items-start gap-2 shadow-sm" id="drawerAlertBox">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">medical_information</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block">Alerta Médica: Alergia a Penicilina</span>
+<p class="font-body-sm text-body-sm mt-0.5">NOM-004: Prohibido administrar Amoxicilina o derivados betalactámicos. Alternativa aprobada: Clindamicina 300mg.</p>
+</div>
+</div>
+<!-- Appointment Context Specs -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline">Sillón Asignado:</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface" id="drawerChair">Sillón 1 (Operatoria)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline">Especialista:</span>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="drawerDoctor">Dra. Elena Gómez</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline">Horario Cita:</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold" id="drawerTime">10:00 - 11:00 AM (60 min)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline">Estado Actual:</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold" id="drawerStatusPill">
+              En atención [Propuesta de mejora]
+            </span>
+</div>
+</div>
+<!-- Role Switching Context: Recepción vs Doctor View Actions -->
+<div class="bg-surface-container p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2 font-bold">Acciones Operativas según Rol</span>
+<div class="grid grid-cols-2 gap-2 mb-3">
+<button class="h-10 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+              Rol Recepción
+            </button>
+<button class="h-10 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">stethoscope</span>
+              Rol Doctor
+            </button>
+</div>
+<!-- Touch-Friendly (min 44px) Action Buttons -->
+<div class="flex flex-col gap-2">
+<!-- Action: Registrar llegada -->
+<button class="h-11 px-4 rounded-xl bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold shadow-sm flex items-center justify-between" onclick="alert('Llegada registrada exitosamente. Paciente pasado a sala de espera.'); closeDrawer();">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">how_to_reg</span>
+                Registrar Llegada de Paciente
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">SALA ESPERA</span>
+</button>
+<!-- Action: Iniciar atención -->
+<button class="h-11 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container shadow-sm flex items-center justify-between" onclick="alert('Atención médica iniciada en sillón.'); closeDrawer();">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+                Iniciar Atención Odontológica
+              </span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<!-- Action: Finalizar y derivar a caja -->
+<button class="h-11 px-4 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold hover:opacity-95 shadow-sm flex items-center justify-between" onclick="alert('Tratamiento cerrado. Enviado a Caja Turno (MXN).'); closeDrawer();">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+                Finalizar y Derivar a Caja (MXN)
+              </span>
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</button>
+<!-- Action: Reprogramar cita -->
+<button class="h-11 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-bright shadow-sm flex items-center justify-between" onclick="alert('Abriendo selector de fecha para reprogramación...');">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">update</span>
+                Reprogramar Cita
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Horarios</span>
+</button>
+<!-- Action: Cancelar con motivo -->
+<button class="h-11 px-4 rounded-xl bg-surface-container-lowest text-error font-label-lg text-label-lg font-semibold hover:bg-error-container shadow-sm flex items-center justify-between" onclick="promptCancellation()">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+                Cancelar con Motivo
+              </span>
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Drawer Footer with Close Action -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Sr. Diente Clinical OS v2.1</span>
+<button class="h-11 px-6 rounded-xl bg-surface-container-highest text-on-surface font-label-lg text-label-lg font-semibold" onclick="closeDrawer()">
+          Cerrar Panel
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  // Patient details state mapping
+  const patientsDB = {
+    lucia: {
+      name: "Lucía Garza Villalobos",
+      expediente: "SD-2024-0891",
+      chair: "Sillón 1 · Operatoria Dental",
+      doctor: "Dra. Elena Gómez",
+      time: "10:00 - 11:00 AM (60 min)",
+      statusText: "En atención [Propuesta de mejora]",
+      alertTitle: "Alerta Médica: Alergia a Penicilina",
+      alertDesc: "NOM-004: Prohibido administrar Amoxicilina o derivados betalactámicos. Alternativa aprobada: Clindamicina 300mg."
+    },
+    mariana: {
+      name: "Mariana Morales",
+      expediente: "SD-2024-0742",
+      chair: "Sillón 2 · Endo / Rehab",
+      doctor: "Dr. Carlos Ramos",
+      time: "10:30 - 11:30 AM (60 min)",
+      statusText: "Llegó · En espera [Propuesta de mejora]",
+      alertTitle: "Sin Alergias Críticas Declaradas",
+      alertDesc: "Presión arterial normal (118/76 mmHg tomada en recepción a las 10:25 AM)."
+    },
+    roberto: {
+      name: "Roberto Fuentes",
+      expediente: "SD-2024-0619",
+      chair: "Sillón 1 · Operatoria Dental",
+      doctor: "Dra. Elena Gómez",
+      time: "09:00 - 09:45 AM (45 min)",
+      statusText: "Atención Finalizada",
+      alertTitle: "Tratamiento Concluido",
+      alertDesc: "Obturación de resina foto-curada en pieza 47. Cobro liquidado de $950.00 MXN."
+    },
+    fernando: {
+      name: "Fernando Soto Ortiz",
+      expediente: "SD-2024-0994",
+      chair: "Sillón 3 · Cirugía & General",
+      doctor: "Dr. Javier Arriaga",
+      time: "11:00 - 12:30 PM (90 min)",
+      statusText: "Agendada · Pendiente Asistencia",
+      alertTitle: "Procedimiento Quirúrgico Mayor",
+      alertDesc: "Extracción quirúrgica de tercer molar incluido (38). Requiere consentimiento firmado previo a sedación local."
+    }
+  };
+
+  function openPatientModal(key) {
+    const data = patientsDB[key] || patientsDB['lucia'];
+    document.getElementById('drawerPatientName').textContent = data.name;
+    document.getElementById('drawerExpediente').textContent = 'Expediente: ' + data.expediente;
+    document.getElementById('drawerChair').textContent = data.chair;
+    document.getElementById('drawerDoctor').textContent = data.doctor;
+    document.getElementById('drawerTime').textContent = data.time;
+    document.getElementById('drawerStatusPill').textContent = data.statusText;
+    
+    const alertBox = document.getElementById('drawerAlertBox');
+    alertBox.querySelector('span.font-label-lg').textContent = data.alertTitle;
+    alertBox.querySelector('p').textContent = data.alertDesc;
+
+    document.getElementById('appointmentDrawer').classList.remove('hidden');
+  }
+
+  function closeDrawer() {
+    document.getElementById('appointmentDrawer').classList.add('hidden');
+  }
+
+  function openReassignModal() {
+    alert("Validando equipamiento de sillones alternativos:\n- Sillón 1: Incompatible (Dra. Gómez en tratamiento).\n- Sillón 3: Compatible pero asignado a Cirugía a las 11:00 AM.\nAcción: Mantener en Sillón 2.");
+  }
+
+  function openBookingModal(chair, time) {
+    alert(`Abriendo modal de nueva cita:\n${chair} a las ${time}\nSe validará automáticamente la habilitación del especialista y disponibilidad de instrumental esterilizado.`);
+  }
+
+  function promptCancellation() {
+    const reason = prompt("Ingrese el motivo de cancelación de la cita médica:", "Incompatibilidad de horario del paciente");
+    if (reason) {
+      alert(`Cita cancelada correctamente con motivo: "${reason}". Notificación de Google Calendar actualizada.`);
+      closeDrawer();
+    }
+  }
+
+  // Google Calendar Sync Cycler
+  let syncIndex = 0;
+  const syncStates = [
+    { name: "Google Sync OK", sub: "Sincronizado hace 4 min", color: "bg-tertiary", icon: "sync" },
+    { name: "Sincronizando...", sub: "Verificando Google API", color: "bg-primary animate-ping", icon: "sync" },
+    { name: "Reconectar Google", sub: "Token expirado", color: "bg-error", icon: "error" }
+  ];
+
+  function cycleSyncState() {
+    syncIndex = (syncIndex + 1) % syncStates.length;
+    applySync(syncStates[syncIndex]);
+  }
+
+  function applySync(state) {
+    document.getElementById('syncStatusTitle').textContent = state.name;
+    document.getElementById('syncStatusSub').textContent = state.sub;
+    const dot = document.getElementById('syncIconWrap');
+    dot.className = `w-2.5 h-2.5 rounded-full ${state.color}`;
+  }
+
+  // Dev Sandbox State Machine
+  function setTestState(stateKey) {
+    const banner = document.getElementById('sandboxFeedback');
+    if (stateKey === 'normal') {
+      applySync(syncStates[0]);
+      banner.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          <span><strong>Estado Normal:</strong> Conexión fluida con Google Calendar, 3 sillones sincronizados y alertas médicas activas.</span>
+        </div>
+        <span class="font-data-mono text-data-mono text-outline">HTTP 200 · Sin fallos</span>
+      `;
+    } else if (stateKey === 'conflict') {
+      banner.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-error"></span>
+          <span class="text-error font-bold">Conflicto al Guardar:</span>
+          <span>El Sillón 2 no puede ser ocupado simultáneamente por dos tratamientos de endodoncia con microscopio.</span>
+        </div>
+        <span class="font-data-mono text-data-mono text-error font-bold">ERROR 409 CONFLICT</span>
+      `;
+    } else if (stateKey === 'sync_fail') {
+      applySync(syncStates[2]);
+      banner.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+          <span class="text-error font-bold">Fallo de Conexión:</span>
+          <span>Google Workspace CDMX desconectado. Los cambios locales se guardarán en caché del navegador.</span>
+        </div>
+        <span class="font-data-mono text-data-mono text-error">OFFLINE MODE</span>
+      `;
+    } else if (stateKey === 'success') {
+      applySync(syncStates[0]);
+      banner.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          <span class="text-tertiary font-bold">Guardado Exitoso:</span>
+          <span>Cita asignada y validada contra la NOM-004. Recordatorio WhatsApp enviado al paciente.</span>
+        </div>
+        <span class="font-data-mono text-data-mono text-tertiary font-bold">HTTP 201 CREATED</span>
+      `;
+    }
+  }
+</script></main></div>
+
+</body></html>

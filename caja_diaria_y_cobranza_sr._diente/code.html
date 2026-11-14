@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#faf8ff","tertiary-container":"#00873a","on-secondary-container":"#006f66","on-primary":"#ffffff","tertiary-fixed-dim":"#62df7d","on-secondary":"#ffffff","secondary":"#006a61","inverse-on-surface":"#eef0ff","secondary-fixed-dim":"#6bd8cb","on-surface":"#131b2e","surface-dim":"#d2d9f4","on-error":"#ffffff","tertiary-fixed":"#7ffc97","surface":"#faf8ff","on-primary-fixed-variant":"#004b73","surface-container":"#eaedff","on-primary-container":"#fdfcff","on-primary-fixed":"#001d31","surface-container-lowest":"#ffffff","primary":"#006194","outline-variant":"#bfc7d2","outline":"#707881","secondary-fixed":"#89f5e7","surface-variant":"#dae2fd","secondary-container":"#86f2e4","surface-container-low":"#f2f3ff","surface-tint":"#006398","surface-container-highest":"#dae2fd","on-tertiary-container":"#f7fff2","on-secondary-fixed":"#00201d","primary-container":"#007bb9","on-background":"#131b2e","error":"#ba1a1a","on-tertiary-fixed-variant":"#005320","error-container":"#ffdad6","on-error-container":"#93000a","on-secondary-fixed-variant":"#005049","primary-fixed":"#cce5ff","on-tertiary":"#ffffff","primary-fixed-dim":"#93ccff","surface-bright":"#faf8ff","on-surface-variant":"#3f4850","inverse-surface":"#283044","surface-container-high":"#e2e7ff","inverse-primary":"#93ccff","on-tertiary-fixed":"#002109","tertiary":"#006b2c"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-tablet":"1.5rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","space-xs":"0.25rem","space-md":"1rem","margin-desktop":"2rem"},fontFamily:{"headline-sm":["Outfit"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-xl":["Outfit"],"headline-lg-mobile":["Outfit"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"body-md":["Manrope"],"label-lg":["Manrope"],"label-md":["Manrope"],"label-sm":["Manrope"],"headline-xl-mobile":["Outfit"],"data-mono":["Manrope"]},fontSize:{"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-md py-space-md bg-surface-container-low"><img alt="Mascota Sr. Diente Caballero" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTyEk_bL0sKNwoW1gEXIGipFSbDf4o-SvNFKzP114MymABVVfeLMhmFmA7fLqTpP8FzvLBiVlrwk64SMBMnXk_tyPjZEMXjto5oVKwLltZKyJtXHIrjy91kp9jrVKNmtp6-xmTZa2tBjxv7GjE44jLVl5Tutub5hPNhdvqa2OdXd8-TJHhig8RI3NViEJ8ZQ73XOeu1pIwkjNy3Cjv6IpiRlry-jrqVnbtVaD1zQJ6Uu_J2SzUEKCG"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clínica Dental</span></div></div><div class="p-space-sm bg-surface-container-low"><div class="p-space-xs bg-surface-container-high rounded-lg flex items-center justify-between text-on-surface-variant"><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all bg-surface-container-lowest text-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button">Recepción</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Doctor</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Dueño</button></div></div><nav class="flex flex-col gap-1 px-space-sm py-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda (3 Sillones)</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">dentistry</span><span>Servicios</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">percent</span><span>Comisiones</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2 transition-all bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="caja-diaria" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Google Calendar</span></div><span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Sync OK</span></div><p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Última sinc: hace 4 min (CDMX)</p><p class="font-label-sm text-label-sm text-outline mt-0.5">Asíncrono · No tiempo real</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="hover:text-primary cursor-pointer">Clínica CDMX</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-semibold">Recepción Operativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span><span>Jueves 24 Octubre 2024 · CDMX</span></div></div><div class="flex items-center gap-space-sm"><div class="relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Buscar paciente (Nombre, cel o cédula)..." type="text"></div><div class="flex items-center gap-1.5"><button class="flex items-center gap-1 px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm hover:bg-primary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Nueva Cita</span></button><button class="flex items-center gap-1 px-3 py-1.5 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm hover:bg-on-secondary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">payments</span><span>Cobro Rápido</span></button></div><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSn2aF3HO3MtPhsCk4DK2FNmym7Nv_Fknuvx94AjeQ91-wO4NIxMMMvUR4r0g0DrM8bthPhyEOkKMJCUTo-NkkV3bDNtMx9PdidibyHQ7z0ajWFssZjjjrOVMXj2KdMzcvMVkXDNO_o47KCi8j6oGBZ6Eg2oW4xMQbo2efaU3a6287d5LEc6ZMTvwG7306UKZNHTeJ9Y9gZN4GRIyws06fh49KM-6WS-jK3rgJfs"><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Sofía Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Recepción</span></div><button class="p-1.5 text-on-surface-variant hover:text-error rounded-lg" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive State Controller Bar (Technical & Operational Modes) -->
+<div class="px-space-md py-2.5 bg-surface-container-high flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Simulador de Estados de Operación:</span>
+<div class="inline-flex rounded-lg bg-surface-container p-0.5">
+<button class="px-3 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm" id="btn-state-normal" onclick="setScreenState('normal')">Operativo Normal</button>
+<button class="px-3 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-closed" onclick="setScreenState('closed')">Caja Cerrada / Arqueo</button>
+<button class="px-3 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-error" onclick="setScreenState('error')">Fallo Conexión Terminal</button>
+<button class="px-3 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-loading" onclick="setScreenState('loading')">Cargando Datos</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+        Turno Matutino: Abierto por Sofía Mendoza (08:00 AM)
+      </span>
+<span class="font-data-mono text-body-sm text-on-surface-variant">Folio Sig: REC-2024-0519</span>
+</div>
+</div>
+<!-- Operational Header Notice Banner (Strict Separation from Monthly Accounting) -->
+<div class="mx-space-md mt-space-md p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="p-1 rounded-lg bg-primary-fixed text-on-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">
+<strong class="font-bold text-primary">Caja Diaria del Turno (Operación del 24 Octubre 2024):</strong> Registro operativo de cobros, arqueo y corte de caja física y terminales. Es independiente de los informes de Finanzas Mensuales consolidados y de la facturación fiscal global SAT.
+      </p>
+<div class="flex flex-wrap items-center gap-space-md mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span> Corte Z programado: 20:00 hrs
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">point_of_sale</span> Terminal BBVA Pos #02 Vinculada
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync_alt</span> Conciliación SPEI en tiempo real
+        </span>
+</div>
+</div>
+</div>
+<!-- State Views Container -->
+<div class="p-space-md">
+<!-- LOADING STATE -->
+<div class="hidden py-24 flex-col items-center justify-center text-center" id="state-loading-view">
+<div class="relative w-16 h-16 mb-space-md">
+<div class="w-16 h-16 rounded-full border-4 border-surface-container-high border-t-primary animate-spin"></div>
+<span class="material-symbols-outlined absolute inset-0 m-auto text-primary text-[24px]">point_of_sale</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Consultando libro de caja y terminales bancarias...</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Sincronizando transacciones CDMX con pasarela Clip/BBVA.</p>
+</div>
+<!-- ERROR STATE -->
+<div class="hidden p-space-xl rounded-2xl bg-error-container text-on-error-container flex flex-col items-center justify-center text-center max-w-2xl mx-auto shadow-md" id="state-error-view">
+<span class="material-symbols-outlined text-[48px] text-error mb-2">signal_wifi_connected_no_internet_4</span>
+<h2 class="font-headline-md text-headline-md text-error font-bold">Interrupción de Conexión con Terminal Bancaria</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-lg">
+        No se pudo autenticar el webhook de la Terminal BBVA Pos #02 ni la sincronización bancaria SPEI. Para salvaguardar los registros, se habilitó la contingencia de cobro en Efectivo con folios manuales de respaldo.
+      </p>
+<div class="flex items-center gap-space-sm mt-space-lg">
+<button class="px-space-md py-2 bg-error text-on-error rounded-lg font-label-md text-label-md shadow-sm hover:opacity-90 transition-all" onclick="setScreenState('normal')">Reintentar Conexión</button>
+<button class="px-space-md py-2 bg-surface-container-lowest text-on-surface rounded-lg font-label-md text-label-md shadow-sm">Modo Contingencia Offline</button>
+</div>
+</div>
+<!-- CLOSED STATE (ARQUEO / CIERRE) -->
+<div class="hidden flex-col gap-space-md max-w-4xl mx-auto" id="state-closed-view">
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">lock</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Arqueo y Cierre de Turno Matutino</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Turno iniciado: 24/10/2024 08:00 AM · Cajera: Sofía Mendoza</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Listo para Balance</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Efectivo Físico Contado</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-2">$6,200.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Cuadre Exacto con Libro
+            </span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Terminales Bancarias</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-2">$8,650.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">11 Lotes Procesados</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Turno a Depositar</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-2">$16,500.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Fondo de $2,000 MXN retenido</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="setScreenState('normal')">Volver a Operación</button>
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span> Imprimir Corte Z y Entregar Turno
+          </button>
+</div>
+</div>
+</div>
+<!-- MAIN OPERATIONAL VIEW (GRID: 1. RESUMEN ARQUEO + 2. MODAL COBRO ACTIVO) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md" id="state-normal-view">
+<!-- LEFT COLUMN: Resumen de Turno de Caja (Arqueo en Vivo) (Cols 1-4) -->
+<section class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Live Cash Balance Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance_wallet</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Arqueo en Vivo</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Turno 1 / Activo</span>
+</div>
+<!-- Total Expected in Cash Box Highlight -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary shadow-sm flex flex-col relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Total Esperado en Caja</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl font-bold tracking-tight text-white">$16,500.00</span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">MXN</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Incluye base de apertura + recaudado neto
+            </p>
+</div>
+<!-- Detailed Ledger Flow Breakdown -->
+<div class="flex flex-col gap-2">
+<!-- Opening Base -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">lock_open</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Fondo Inicial de Apertura</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monedas y billetes base</span>
+</div>
+</div>
+<span class="font-data-mono font-bold text-on-surface">$2,000.00</span>
+</div>
+<!-- Total Day Collections with breakdown -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">add_circle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Cobros Registrados Hoy</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 pacientes atendidos</span>
+</div>
+</div>
+<span class="font-data-mono font-bold text-tertiary">+$14,850.00</span>
+</div>
+<!-- Sub-breakdown channels -->
+<div class="pl-6 flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Efectivo Físico
+                  </span>
+<span class="font-data-mono text-on-surface">$4,200.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Terminal Bancaria (Tarjetas)
+                  </span>
+<span class="font-data-mono text-on-surface">$8,650.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Transferencias SPEI (BBVA)
+                  </span>
+<span class="font-data-mono text-on-surface">$2,000.00</span>
+</div>
+</div>
+</div>
+<!-- Petty Cash Outflow -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">remove_circle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Salidas de Caja Chica</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agua purificada y mensajería urgente</span>
+</div>
+</div>
+<span class="font-data-mono font-bold text-error">-$350.00</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-all shadow-sm" onclick="setScreenState('closed')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Cierre y Arqueo de Turno</span>
+</button>
+<button class="w-full py-2 px-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-primary font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Registrar Gasto de Caja Chica</span>
+</button>
+</div>
+</div>
+<!-- Operatory Chairs Activity Snapshot -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Estado de los 3 Sillones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11:25 AM</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Sillón 1 -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Sillón 1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lucía Garza (En Recepción para Pago)</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-semibold">Cobro</span>
+</div>
+<!-- Sillón 2 -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Sillón 2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Carlos R. (Profilaxis con Dr. Ríos)</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">En sillón</span>
+</div>
+<!-- Sillón 3 -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Sillón 3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Desinfección / Libre</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Disponible</span>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Modal / Panel Central de Cobro Activo (Cols 5-12) -->
+<section class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Active Patient Billing Workbench Card -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<!-- Top Patient Identity & Immediate Clinical Context -->
+<div class="flex flex-wrap items-start justify-between gap-space-md pb-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold shadow-sm">
+                LG
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Lucía Garza Villalobos</h1>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-data-mono text-label-sm">Exp. #SD-2024-0891</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">loyalty</span> Club Sonrisas Nivel Platino
+                  </span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span> Cita terminada hoy: 11:20 AM
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">stethoscope</span> Dra. Elena Gómez (Odontología Integral)
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">chair</span> Sillón 1
+                  </span>
+</div>
+</div>
+</div>
+<!-- Medical Alert Badge -->
+<div class="px-3 py-2 rounded-xl bg-error-container text-on-error-container flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-error text-[20px] animate-pulse">crisis_alert</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error">Alerta Médica</span>
+<span class="font-body-sm text-body-sm font-semibold">Alérgica a Penicilina</span>
+</div>
+</div>
+</div>
+<!-- Treatment Breakdown & Club Sonrisas Discount -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Concepto Aplicado en Consulta</span>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">dentistry</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Restauración Resina Fotocurable Pieza 3.6</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Operado por Dra. Elena Gómez · Superficie Oclusal-Mesial · Incluye ionómero de vidrio base</p>
+<span class="inline-flex items-center gap-1 mt-1 text-label-sm font-label-sm text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> Garantía clínica de 12 meses
+                  </span>
+</div>
+</div>
+<!-- Price breakdown math -->
+<div class="flex flex-col items-end shrink-0 pl-space-md">
+<div class="flex items-center gap-3">
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">$1,200.00</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">-15% Club</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">$1,020.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">MXN</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">Ahorro: -$180.00 MXN</span>
+</div>
+</div>
+</div>
+<!-- Financial Impact Ledger: Saldo Anterior vs Saldo Resultante -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">analytics</span>
+                Impacto en la Cuenta Corriente del Paciente
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Moneda oficial: Pesos Mexicanos (MXN)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-1">
+<!-- Saldo Anterior -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Saldo Anterior Lucía</span>
+<span class="font-headline-sm text-headline-sm font-bold text-error mt-1">$2,400.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Saldo pendiente por corona provisional 4.5</span>
+</div>
+<!-- Importe Recibido Hoy -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Importe Recibido Hoy</span>
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary mt-1">-$1,020.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold mt-0.5">Pago íntegro del tratamiento actual</span>
+</div>
+<!-- Saldo Resultante -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Saldo Resultante Posterior</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">$1,380.00 <span class="text-label-sm font-normal text-on-surface-variant">MXN</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Deuda remanente que se traslada al expediente</span>
+</div>
+</div>
+</div>
+<!-- Payment Method Selector -->
+<div class="flex flex-col gap-space-sm pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Seleccionar Método de Pago</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monto a liquidar: <strong>$1,020.00 MXN</strong></span>
+</div>
+<!-- Segmented Method Tabs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<button class="p-space-sm rounded-xl bg-surface-container-low text-left flex items-center justify-between hover:bg-surface-container-high transition-all" id="tab-efectivo" onclick="selectPaymentMode('efectivo')" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">payments</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Efectivo</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ingreso a cajón físico</span>
+</div>
+</div>
+<span class="w-3 h-3 rounded-full bg-outline-variant" id="dot-efectivo"></span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-lowest text-left flex items-center justify-between ring-2 ring-primary shadow-sm transition-all" id="tab-tarjeta" onclick="selectPaymentMode('tarjeta')" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">credit_card</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Tarjeta Débito/Crédito</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Terminal BBVA Pos #02</span>
+</div>
+</div>
+<span class="w-3 h-3 rounded-full bg-primary" id="dot-tarjeta"></span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low text-left flex items-center justify-between hover:bg-surface-container-high transition-all" id="tab-spei" onclick="selectPaymentMode('spei')" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[24px]">account_balance</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Transferencia SPEI</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validación con CLABE</span>
+</div>
+</div>
+<span class="w-3 h-3 rounded-full bg-outline-variant" id="dot-spei"></span>
+</button>
+</div>
+<!-- Dynamic Input Panels according to method -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm" id="method-panel-tarjeta">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Terminal de Procesamiento</label>
+<div class="px-3 py-2 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface flex items-center justify-between shadow-sm">
+<span>Terminal Integrada BBVA (Caja Recepción)</span>
+<span class="text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Lista
+                    </span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Últimos 4 dígitos tarjeta (opcional para recibo)</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm" maxlength="4" placeholder="Ej. 1234" type="text" value="8421">
+</div>
+</div>
+</div>
+<div class="hidden p-space-md rounded-xl bg-surface-container-low flex-col gap-space-sm" id="method-panel-efectivo">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Monto recibido del paciente</label>
+<div class="relative">
+<span class="absolute left-3 top-2 font-data-mono text-on-surface-variant">$</span>
+<input class="w-full pl-7 pr-3 py-2 rounded-lg bg-surface-container-lowest font-data-mono text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm" type="text" value="1,100.00">
+</div>
+</div>
+<div class="flex flex-col justify-end">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cambio a entregar:</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">$80.00 MXN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden p-space-md rounded-xl bg-surface-container-low flex-col gap-space-sm" id="method-panel-spei">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">CLABE Interbancaria BBVA: 012 180 0154982341 99</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Beneficiario: Clínica Dental Sr. Diente S.A. de C.V.</p>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Webhook Activo</span>
+</div>
+</div>
+<!-- SPECIAL CAPABILITY: Pago Mixto con Propuesta de Mejora -->
+<div class="mt-2 p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary/30" id="check-pago-mixto" onchange="togglePagoMixto(this)" type="checkbox">
+<span class="font-label-md text-label-md text-on-surface font-bold">Habilitar Pago Mixto (Combinar dos o más métodos)</span>
+</label>
+<!-- Required Badge: Propuesta de Mejora -->
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">science</span>
+                  Propuesta de mejora / Capacidad por validar técnicamente
+                </span>
+</div>
+<!-- Subform for mixed split -->
+<div class="hidden grid-cols-1 md:grid-cols-2 gap-space-md pt-2" id="box-pago-mixto">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Método 1: Efectivo Físico</span>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-on-surface-variant">$</span>
+<input class="w-full py-1 px-2 font-data-mono text-body-md text-on-surface bg-surface-container-low rounded focus:outline-none" type="text" value="500.00">
+<span class="text-body-sm text-on-surface-variant">MXN</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Método 2: Tarjeta Terminal Pos #02</span>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-on-surface-variant">$</span>
+<input class="w-full py-1 px-2 font-data-mono text-body-md text-on-surface bg-surface-container-low rounded focus:outline-none" type="text" value="520.00">
+<span class="text-body-sm text-on-surface-variant">MXN</span>
+</div>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="font-body-sm text-body-sm text-secondary font-semibold">Suma combinada: $500.00 + $520.00 = $1,020.00 MXN (100% cubierto)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons: Execute Payment -->
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span>Cobro encriptado y foliado automáticamente en base de datos clínica</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" type="button">
+                Poner en Pausa
+              </button>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md flex items-center gap-2 transition-all active:scale-[0.99]" onclick="openReceiptModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span>Confirmar Cobro y Emitir Recibo ($1,020.00 MXN)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- POPUP MODAL: Recibo Emitido en Pantalla / Modal de Éxito Digital -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/50 backdrop-blur-sm" id="modal-receipt-container">
+<div class="relative w-full max-w-xl rounded-2xl bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="flex items-start justify-between pb-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cobro Completado con Éxito</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comprobante Digital Foliado Oficial</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="closeReceiptModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Digital Thermal Receipt Card Canvas -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm font-data-mono">
+<!-- Clinic Head -->
+<div class="text-center pb-2">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">CLÍNICA DENTAL SR. DIENTE</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sucursal Insurgentes Sur 1420, Col. Actipan, Benito Juárez, CDMX</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">RFC: DNT-210419-8M2 · Cédula Reg: 1209384</p>
+<p class="font-body-sm text-body-sm text-primary font-bold mt-1">COMPROBANTE DE PAGO DIGITAL #REC-2024-0519</p>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm text-on-surface flex flex-col gap-1">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Fecha y Hora:</span>
+<span class="font-bold">24/10/2024 · 11:25 AM (CDMX)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Paciente:</span>
+<span class="font-bold">Lucía Garza Villalobos (Exp. #SD-2024-0891)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Médico Tratante:</span>
+<span>Dra. Elena Gómez (Céd. Prof. 8493120)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Atendió Recepción:</span>
+<span>Sofía Mendoza (Turno 1)</span>
+</div>
+</div>
+<!-- Line Item Detail -->
+<div class="flex flex-col gap-1.5 py-1 text-body-sm">
+<div class="flex justify-between font-bold text-on-surface">
+<span>Descripción del Tratamiento</span>
+<span>Importe</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="truncate max-w-[280px]">Restauración Resina Fotocurable Pieza 3.6</span>
+<span>$1,200.00</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Descuento Club Sonrisas (-15%)</span>
+<span>-$180.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant text-body-sm">
+<span>IVA Trasladado (Servicio Médico Clínico Exento Art. 15 LIVA)</span>
+<span>$0.00</span>
+</div>
+</div>
+<!-- Totals & Balances -->
+<div class="p-2.5 rounded bg-surface-container-lowest shadow-sm flex flex-col gap-1 text-body-sm">
+<div class="flex justify-between font-bold text-on-surface text-base">
+<span>TOTAL PAGADO HOY:</span>
+<span class="text-primary font-headline-sm text-headline-sm">$1,020.00 MXN</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Forma de Pago:</span>
+<span>Tarjeta Débito (BBVA Auth: 049182)</span>
+</div>
+<div class="flex justify-between text-error font-semibold pt-1">
+<span>Saldo Remanente Paciente en Ficha:</span>
+<span>$1,380.00 MXN</span>
+</div>
+</div>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Este recibo acredita el pago operativo del tratamiento. Si requiere factura fiscal (CFDI 4.0 con uso D07 Gastos Dentales), solicítela dentro del mes en curso en recepción.
+        </p>
+</div>
+<!-- Modal Action Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<button class="px-3 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-sm" onclick="simulateReceiptAction('imprimiendo')">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Térmico 80mm</span>
+</button>
+<button class="px-3 py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-sm" onclick="simulateReceiptAction('whatsapp')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp (55 4123 9876)</span>
+</button>
+<button class="px-3 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-sm" onclick="simulateReceiptAction('pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar PDF</span>
+</button>
+</div>
+<div class="hidden text-center p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm" id="receipt-feedback">
+        Acción ejecutada correctamente.
+      </div>
+</div>
+</div>
+</div>
+<script>
+  // UI State Switcher logic
+  function setScreenState(state) {
+    const normalView = document.getElementById('state-normal-view');
+    const closedView = document.getElementById('state-closed-view');
+    const errorView = document.getElementById('state-error-view');
+    const loadingView = document.getElementById('state-loading-view');
+
+    // Reset buttons
+    ['normal', 'closed', 'error', 'loading'].forEach(s => {
+      const btn = document.getElementById('btn-state-' + s);
+      if (btn) {
+        btn.className = 'px-3 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all';
+      }
+    });
+
+    const activeBtn = document.getElementById('btn-state-' + state);
+    if (activeBtn) {
+      activeBtn.className = 'px-3 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm';
+    }
+
+    normalView.classList.add('hidden');
+    closedView.classList.add('hidden');
+    errorView.classList.add('hidden');
+    loadingView.classList.add('hidden');
+
+    if (state === 'normal') normalView.classList.remove('hidden');
+    if (state === 'closed') closedView.classList.remove('hidden');
+    if (state === 'error') errorView.classList.remove('hidden');
+    if (state === 'loading') loadingView.classList.remove('hidden');
+  }
+
+  // Payment Mode Selector Tabs
+  function selectPaymentMode(mode) {
+    const modes = ['efectivo', 'tarjeta', 'spei'];
+    modes.forEach(m => {
+      const tab = document.getElementById('tab-' + m);
+      const dot = document.getElementById('dot-' + m);
+      const panel = document.getElementById('method-panel-' + m);
+
+      tab.className = 'p-space-sm rounded-xl bg-surface-container-low text-left flex items-center justify-between hover:bg-surface-container-high transition-all';
+      dot.className = 'w-3 h-3 rounded-full bg-outline-variant';
+      panel.classList.add('hidden');
+      panel.classList.remove('flex');
+    });
+
+    const activeTab = document.getElementById('tab-' + mode);
+    const activeDot = document.getElementById('dot-' + mode);
+    const activePanel = document.getElementById('method-panel-' + mode);
+
+    activeTab.className = 'p-space-sm rounded-xl bg-surface-container-lowest text-left flex items-center justify-between ring-2 ring-primary shadow-sm transition-all';
+    activeDot.className = 'w-3 h-3 rounded-full bg-primary';
+    activePanel.classList.remove('hidden');
+    activePanel.classList.add('flex');
+  }
+
+  // Toggle Pago Mixto capability
+  function togglePagoMixto(checkbox) {
+    const box = document.getElementById('box-pago-mixto');
+    if (checkbox.checked) {
+      box.classList.remove('hidden');
+      box.classList.add('grid');
+    } else {
+      box.classList.add('hidden');
+      box.classList.remove('grid');
+    }
+  }
+
+  // Receipt Modal actions
+  function openReceiptModal() {
+    const modal = document.getElementById('modal-receipt-container');
+    modal.classList.remove('hidden');
+  }
+
+  function closeReceiptModal() {
+    const modal = document.getElementById('modal-receipt-container');
+    modal.classList.add('hidden');
+    const feedback = document.getElementById('receipt-feedback');
+    feedback.classList.add('hidden');
+  }
+
+  function simulateReceiptAction(action) {
+    const feedback = document.getElementById('receipt-feedback');
+    feedback.classList.remove('hidden');
+    if (action === 'imprimiendo') feedback.textContent = 'Enviando comando ESC/POS a impresora térmica 80mm de recepción...';
+    if (action === 'whatsapp') feedback.textContent = 'Mensaje de WhatsApp con enlace al recibo enviado a Lucía Garza (+52 55 4123 9876)';
+    if (action === 'pdf') feedback.textContent = 'Generando archivo REC-2024-0519.pdf firmado digitalmente...';
+  }
+</script></main></div>
+
+</body></html>

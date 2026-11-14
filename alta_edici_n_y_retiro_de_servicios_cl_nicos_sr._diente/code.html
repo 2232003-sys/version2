@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#faf8ff","tertiary-container":"#00873a","on-secondary-container":"#006f66","on-primary":"#ffffff","tertiary-fixed-dim":"#62df7d","on-secondary":"#ffffff","secondary":"#006a61","inverse-on-surface":"#eef0ff","secondary-fixed-dim":"#6bd8cb","on-surface":"#131b2e","surface-dim":"#d2d9f4","on-error":"#ffffff","tertiary-fixed":"#7ffc97","surface":"#faf8ff","on-primary-fixed-variant":"#004b73","surface-container":"#eaedff","on-primary-container":"#fdfcff","on-primary-fixed":"#001d31","surface-container-lowest":"#ffffff","primary":"#006194","outline-variant":"#bfc7d2","outline":"#707881","secondary-fixed":"#89f5e7","surface-variant":"#dae2fd","secondary-container":"#86f2e4","surface-container-low":"#f2f3ff","surface-tint":"#006398","surface-container-highest":"#dae2fd","on-tertiary-container":"#f7fff2","on-secondary-fixed":"#00201d","primary-container":"#007bb9","on-background":"#131b2e","error":"#ba1a1a","on-tertiary-fixed-variant":"#005320","error-container":"#ffdad6","on-error-container":"#93000a","on-secondary-fixed-variant":"#005049","primary-fixed":"#cce5ff","on-tertiary":"#ffffff","primary-fixed-dim":"#93ccff","surface-bright":"#faf8ff","on-surface-variant":"#3f4850","inverse-surface":"#283044","surface-container-high":"#e2e7ff","inverse-primary":"#93ccff","on-tertiary-fixed":"#002109","tertiary":"#006b2c"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-tablet":"1.5rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","space-xs":"0.25rem","space-md":"1rem","margin-desktop":"2rem"},fontFamily:{"headline-sm":["Outfit"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-xl":["Outfit"],"headline-lg-mobile":["Outfit"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"body-md":["Manrope"],"label-lg":["Manrope"],"label-md":["Manrope"],"label-sm":["Manrope"],"headline-xl-mobile":["Outfit"],"data-mono":["Manrope"]},fontSize:{"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-md py-space-md bg-surface-container-low"><img alt="Sr. Diente Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCoSgum-Mv22fpPpUJNmh5aERe3JI0gue4qsMGH3U4bf77iqQf3_KAdp3QdhWP5HsQMdSosZmKpcOGhea4taCbp7eR1Ne-qfvF03Xrf7XHdGzxNUEOLF2_yy6HbcWeGQFc1_ERahnCHoBcg7wTv3ZPkXBFu8TsNQtegq2v321IG3Oh1IiE6qX-oyU1D9kr1N_R_h790_W6MW1-jihtSWtlKf10q4eEU7JR4nXJfnxU9"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clínica Dental</span></div></div><div class="p-space-sm bg-surface-container-low"><div class="p-space-xs bg-surface-container-high rounded-lg flex items-center justify-between text-on-surface-variant"><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all bg-surface-container-lowest text-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button">Recepción</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Doctor</button><button class="flex-1 py-1 px-2 text-center rounded-lg font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" type="button">Dueño</button></div></div><nav class="flex flex-col gap-1 px-space-sm py-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda (3 Sillones)</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">dentistry</span><span>Servicios</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">percent</span><span>Comisiones</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-diaria" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-lowest"><div class="p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Google Calendar</span></div><span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Sync OK</span></div><p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Última sinc: hace 4 min (CDMX)</p><p class="font-label-sm text-label-sm text-outline mt-0.5">Asíncrono · No tiempo real</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="hover:text-primary cursor-pointer">Clínica CDMX</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-semibold">Recepción Operativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span><span>Sábado 24 Octubre 2026 · CDMX</span></div></div><div class="flex items-center gap-space-sm"><div class="relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Buscar paciente (Nombre, cel o cédula)..." type="text"/></div><div class="flex items-center gap-1.5"><button class="flex items-center gap-1 px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm hover:bg-primary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Nueva Cita</span></button><button class="flex items-center gap-1 px-3 py-1.5 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm hover:bg-on-secondary-container transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">payments</span><span>Cobro Rápido</span></button></div><div class="relative"><button class="p-2 text-on-surface-variant hover:text-primary rounded-lg hover:bg-surface-container-low relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSn2aF3HO3MtPhsCk4DK2FNmym7Nv_Fknuvx94AjeQ91-wO4NIxMMMvUR4r0g0DrM8bthPhyEOkKMJCUTo-NkkV3bDNtMx9PdidibyHQ7z0ajWFssZjjjrOVMXj2KdMzcvMVkXDNO_o47KCi8j6oGBZ6Eg2oW4xMQbo2efaU3a6287d5LEc6ZMTvwG7306UKZNHTeJ9Y9gZN4GRIyws06fh49KM-6WS-jK3rgJfs"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Sofía Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Recepción</span></div><button class="p-1.5 text-on-surface-variant hover:text-error rounded-lg" title="Cerrar sesión" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Persistent Medical & System Alert Bar -->
+<div class="w-full bg-error-container text-on-error-container px-space-md py-space-xs flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-error">shield_with_heart</span>
+<div class="flex items-center gap-2">
+<span class="font-label-sm uppercase tracking-wider text-error font-bold">Protocolo Clínico &amp; Normativo COFEPRIS</span>
+<span class="text-on-error-container/40">|</span>
+<span class="font-body-sm text-body-sm">Catálogo Maestro de Aranceles: Toda modificación impacta presupuestos abiertos y liquidaciones médicas en CDMX.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Modos de Auditoría Activa
+      </span>
+</div>
+</div>
+<div class="p-space-lg max-w-[1520px] mx-auto w-full space-y-space-lg">
+<!-- Top Bar: Back Action & Screen Identity -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<button class="group flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span class="font-label-md text-label-md">Regresar al Catálogo de Servicios</span>
+</button>
+<div class="h-6 w-px bg-surface-container-high hidden md:block"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Edición de Procedimiento</span>
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">SRV-OD-042</span>
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">Versión 2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configuración paramétrica de tiempos de sillón, aranceles MXN y matriz Club Sonrisas</p>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-error hover:bg-error-container hover:text-on-error-container transition-all font-label-md text-label-md" onclick="document.getElementById('modal-status-decision').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">toggle_off</span>
+<span>Desactivar / Suprimir</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">history</span>
+<span>Bitácora de Precios</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar Cambios</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Bento: 2 Column Layout (65% Clinical / 35% Club Sonrisas & Summary) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Core Clinical Form (8 cols) -->
+<div class="xl:col-span-8 space-y-space-lg">
+<!-- Clinical Definition Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">dentistry</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ficha Clínica del Procedimiento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Especificaciones nomencladas para odontograma y expedientes electrónicos</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Validado por Dirección Médica</span>
+</div>
+</div>
+<!-- Form Fields Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Procedure Name -->
+<div class="md:col-span-2 space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant">Nombre del Procedimiento Odontológico <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm placeholder:text-outline" placeholder="Ej. Endodoncia Unirradicular" type="text" value="Resina Fotocurable Clase II (Nanohíbrida 3M)"/>
+<span class="absolute right-3 top-2.5 material-symbols-outlined text-[18px] text-primary">edit</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nombre comercial y técnico legible para pacientes en presupuestos oficiales.</span>
+</div>
+<!-- Category -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant">Especialidad / Categoría <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm appearance-none cursor-pointer">
+<option value="preventiva">Odontología Preventiva</option>
+<option selected="" value="restauradora">Odontología Restauradora &amp; Estética</option>
+<option value="endodoncia">Endodoncia Microquirúrgica</option>
+<option value="periodoncia">Periodoncia &amp; Salud Gingival</option>
+<option value="ortodoncia">Ortodoncia &amp; Alineadores</option>
+<option value="cirugia">Cirugía Oral &amp; Implantes</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[20px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Status Selector -->
+<div class="space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant">Estado Operativo en Clínica <span class="text-error">*</span></label>
+<div class="flex items-center gap-2 h-10 bg-surface-container-low p-1 rounded-lg">
+<button class="flex-1 h-full rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 bg-surface-container-lowest text-tertiary shadow-sm transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Activo</span>
+</button>
+<button class="flex-1 h-full rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface transition-all" onclick="document.getElementById('modal-status-decision').classList.remove('hidden')" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Inactivo</span>
+</button>
+</div>
+</div>
+<!-- Clinical Description -->
+<div class="md:col-span-2 space-y-1">
+<label class="block font-label-md text-label-md text-on-surface-variant">Descripción Clínica del Tratamiento</label>
+<textarea class="w-full p-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-sm placeholder:text-outline" placeholder="Indicar detalles del procedimiento, aislamiento requerido, materiales utilizados..." rows="3">Restauración directa en caras proximales u oclusales con técnica de estratificación estética por capas. Incluye grabado ácido total, adhesivo de 5ta generación y pulido con discos abrasivos diamantados. Requiere aislamiento absoluto con dique de hule.</textarea>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Visibilidad: Visible para doctores en nota clínica y recepción en confirmaciones.</span>
+<span class="font-data-mono text-data-mono">248 / 600 caracteres</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Resource & Chair Impact (Duration + Base Price) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Operatoria &amp; Arancel Base</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ocupación estimada de sillón y tarifa general sin subsidio de club</p>
+</div>
+</div>
+<!-- Propuesta de Mejora Badge -->
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Propuesta: Intervalo flexible dinámico</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Chair Duration (Free numeric editable) -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Duración Estimada de Sillón</label>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Bloque de Agenda</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative flex-1">
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded-lg focus:outline-none shadow-sm" max="360" min="5" placeholder="45" step="5" type="number" value="45"/>
+<span class="absolute right-3 top-3 font-label-md text-label-md text-on-surface-variant">minutos</span>
+</div>
+<div class="flex flex-col gap-1">
+<button class="px-2 py-0.5 bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded" onclick="const i=this.parentElement.previousElementSibling.querySelector('input'); i.value=parseInt(i.value||0)+15;" type="button">+15m</button>
+<button class="px-2 py-0.5 bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded" onclick="const i=this.parentElement.previousElementSibling.querySelector('input'); if(parseInt(i.value)&gt;15) i.value=parseInt(i.value)-15;" type="button">-15m</button>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Compatible con ritmo operativo de 15 min en Sillones 1, 2 y 3.</span>
+</div>
+</div>
+<!-- Base Price MXN -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Precio Base al Público (MXN)</label>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Sin Convenio</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-3 font-headline-sm text-headline-sm text-on-surface-variant">$</span>
+<input class="w-full h-12 pl-8 pr-16 bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded-lg focus:outline-none shadow-sm font-data-mono" type="text" value="1,350.00"/>
+<span class="absolute right-3 top-3.5 font-label-md text-label-md text-outline">MXN</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span>Honorario médico sugerido: 40%</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">$540.00 MXN</span>
+</div>
+</div>
+</div>
+<!-- Chair Resource Footprint Breakdown -->
+<div class="p-space-sm bg-surface-container-high/40 rounded-lg flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">event_seat</span>
+<span>Impacto en sillón: <strong>3 turnos de 15 min</strong> en la grilla diaria sincronizada con Google Calendar.</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface">Aislamiento Absoluto Incluido</span>
+</div>
+</div>
+<!-- Section: Club Sonrisas Reglas por Convenio -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">loyalty</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Reglas de Club Sonrisas por Convenio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estructura jerárquica de tarifas corporativas vs precio estándar en ventanilla</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed font-label-sm text-label-sm transition-all self-start md:self-auto" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>Asociar Nuevo Convenio</span>
+</button>
+</div>
+<!-- Hierarchy Explanation Callout -->
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary mt-0.5">account_tree</span>
+<div class="space-y-0.5 font-body-sm text-body-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Resolución Automática de Precios en Liquidación:</span>
+<p>El motor de cobro prioriza en cascada: <strong class="text-primary">1. Convenio Específico Paciente</strong> → <strong class="text-secondary">2. Empresa Afiliada</strong> → <strong class="text-tertiary">3. Membresía Global Club</strong> → <strong class="text-outline">4. Tarifa Base Público</strong>. Las excepciones prevalecen sobre descuentos globales.</p>
+</div>
+</div>
+<!-- Matrix Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">Jerarquía &amp; Entidad</th>
+<th class="py-3 px-4">Tipo de Regla</th>
+<th class="py-3 px-4">Cálculo Aplicado</th>
+<th class="py-3 px-4 text-right">Tarifa Paciente</th>
+<th class="py-3 px-4 text-right">Ahorro Paciente</th>
+<th class="py-3 px-4 text-center">Acciones</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Level 1: Specific Corporate Deal -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px]">1</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-bold">TechSolutions México</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Convenio Corporativo VIP · 340 colaboradores</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Porcentaje Pactado</span>
+</td>
+<td class="py-3 px-4 font-data-mono text-data-mono text-primary font-semibold">15% de Descuento</td>
+<td class="py-3 px-4 text-right font-headline-sm text-headline-sm text-on-surface font-data-mono">$1,147.50 <span class="font-label-sm text-label-sm text-outline">MXN</span></td>
+<td class="py-3 px-4 text-right text-tertiary font-data-mono text-data-mono">-$202.50 MXN</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</td>
+</tr>
+<!-- Level 2: Specific Company Deal -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold text-[11px]">2</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-bold">Grupo Financiero Reforma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Empresa Adscrita Plan Dental Anual</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Tarifa Fija Cerrada</span>
+</td>
+<td class="py-3 px-4 font-data-mono text-data-mono text-secondary font-semibold">Precio Fijo Pactado</td>
+<td class="py-3 px-4 text-right font-headline-sm text-headline-sm text-on-surface font-data-mono">$1,090.00 <span class="font-label-sm text-label-sm text-outline">MXN</span></td>
+<td class="py-3 px-4 text-right text-tertiary font-data-mono text-data-mono">-$260.00 MXN</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</td>
+</tr>
+<!-- Level 3: Global Club Membership -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center font-bold text-[11px]">3</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-bold">Club Sonrisas Individual / Familiar</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Membresía Directa Anual Sr. Diente</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Tarifa Preferencial Club</span>
+</td>
+<td class="py-3 px-4 font-data-mono text-data-mono text-tertiary font-semibold">10% de Descuento</td>
+<td class="py-3 px-4 text-right font-headline-sm text-headline-sm text-on-surface font-data-mono">$1,215.00 <span class="font-label-sm text-label-sm text-outline">MXN</span></td>
+<td class="py-3 px-4 text-right text-tertiary font-data-mono text-data-mono">-$135.00 MXN</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+</td>
+</tr>
+<!-- Level 4: Standard Public / No Convenio -->
+<tr class="bg-surface-container-high/30">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-[11px]">4</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-bold">Sin Convenio (Público General)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Arancel de ventanilla ordinario</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Precio Estándar Base</span>
+</td>
+<td class="py-3 px-4 font-data-mono text-data-mono text-on-surface-variant">0% Margen Bonificado</td>
+<td class="py-3 px-4 text-right font-headline-sm text-headline-sm text-on-surface font-data-mono">$1,350.00 <span class="font-label-sm text-label-sm text-outline">MXN</span></td>
+<td class="py-3 px-4 text-right text-outline font-data-mono text-data-mono">$0.00 MXN</td>
+<td class="py-3 px-4 text-center">
+<span class="material-symbols-outlined text-[18px] text-outline">lock</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Summary & Operational Impact Ledger (4 cols) -->
+<div class="xl:col-span-4 space-y-space-lg">
+<!-- Live Arancel Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Resumen de Parámetros</span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<!-- Big Price MXN Display -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Arancel Base Registrado</span>
+<div class="flex items-baseline justify-between">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">$1,350.00</div>
+<span class="font-label-md text-label-md text-primary font-bold">MXN</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span>Tiempo de Sillón asignado:</span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">45 min</span>
+</div>
+</div>
+<!-- Doctor & Clinic Yield Sparkline (SVG Chart) -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Distribución de Liquidación</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">60% Clínica / 40% Dr.</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 60%"></div>
+<div class="h-full bg-secondary" style="width: 40%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Clínica: $810.00 MXN</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Dr: $540.00 MXN</span>
+</div>
+</div>
+<!-- Mini Performance Donut -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center gap-space-md">
+<div class="relative w-16 h-16 flex-shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-container-high" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-tertiary" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="88 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-data-mono text-label-sm font-bold text-on-surface">88%</span>
+</div>
+</div>
+<div class="space-y-0.5">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Demanda en CDMX</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Segundo procedimiento más cotizado en sucursal Condesa durante 2026.</p>
+</div>
+</div>
+<!-- Google Sync Operational Badge -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sync</span>
+<span>Sync Agenda Automático</span>
+</div>
+<span class="text-tertiary font-bold">Google Calendar OK</span>
+</div>
+</div>
+<!-- Clinical Pre-requisites & Consumables Check -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">inventory_2</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Consumibles Vinculados</h4>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">Kardex Auto</span>
+</div>
+<div class="space-y-2 font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">colorize</span>
+<span class="text-on-surface">Jeringa Filtek Supreme 3M (0.3g)</span>
+</div>
+<span class="font-data-mono text-data-mono text-tertiary font-bold">1 unid</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">layers</span>
+<span class="text-on-surface">Banda Matriz Seccional Garrison</span>
+</div>
+<span class="font-data-mono text-data-mono text-tertiary font-bold">1 unid</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">cleaning_services</span>
+<span class="text-on-surface">Dique de Goma Nic Tone + Clamps</span>
+</div>
+<span class="font-data-mono text-data-mono text-tertiary font-bold">1 set</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<button class="w-full py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Editar Descuento de Inventario</span>
+</button>
+</div>
+</div>
+<!-- Clinical Protocols & Consent Info -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-xs">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">draw</span>
+<span>Consentimiento Informado Requerido</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Al asignarse este servicio en recepción o consultorio, la tablet de firma solicitará automáticamente la firma digital del anexo <em>«CI-08 Restauraciones Adhesivas»</em>.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL / DIÁLOGO INTERACTIVO: DESACTIVACIÓN VS. ELIMINACIÓN PERMANENTE -->
+<!-- Controlled via hidden utility on parent modal backdrop -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/60 backdrop-blur-sm hidden" id="modal-status-decision" role="dialog">
+<div class="relative w-full max-w-4xl bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden flex flex-col max-h-[942px]">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gestión de Ciclo de Vida del Procedimiento</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Selecciona el nivel de afectación sobre el catálogo, presupuestos y auditoría clínica</p>
+</div>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" onclick="document.getElementById('modal-status-decision').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Explicit Warning Banner: Clinical Integrity Protection -->
+<div class="px-space-lg py-space-sm bg-error-container/60 text-on-error-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-error flex-shrink-0 mt-0.5">policy</span>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-error font-bold">Protección de Historial Clínico y Trazabilidad (Propuesta en Revisión)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-label-sm text-label-sm text-error font-semibold">COFEPRIS NOM-004</span>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed">
+            Si el servicio ya ha sido aplicado a expedientes de pacientes, odontogramas históricos o cotizado en presupuestos emitidos, <strong>se sugiere estrictamente desactivarlo en lugar de borrarlo</strong> para evitar incoherencias graves en el historial financiero y legal de la clínica.
+          </p>
+</div>
+</div>
+<!-- Comparative Two-Option Workbench -->
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- OPTION A: Desactivar Servicio (Recommended) -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high/40 transition-all shadow-sm">
+<!-- Recommended Badge -->
+<div class="absolute -top-3 right-4 px-3 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">recommend</span>
+<span>Acción Recomendada</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">toggle_off</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Desactivar Servicio</h3>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Estado Inactivo / Archivado</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Oculta el procedimiento de nuevas citas, agendas de sillón y nuevas cotizaciones de recepción, preservando todos los datos existentes.
+              </p>
+<!-- Positive Impact Checklist -->
+<div class="space-y-2 pt-space-xs font-body-sm text-body-sm">
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0">check</span>
+<span>Preserva presupuestos previos aprobados o pendientes.</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0">check</span>
+<span>Mantiene registros de citas históricas y liquidaciones a doctores.</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0">check</span>
+<span>Reactiva el servicio en 1 solo clic en el momento deseado.</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-high/40 -mx-space-md -mb-space-md p-space-md rounded-b-xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Impacto en Auditoría: Nulo</span>
+<button class="px-4 py-2 bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md rounded-lg shadow-sm transition-all flex items-center gap-1.5" onclick="document.getElementById('modal-status-decision').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+<span>Confirmar Desactivación</span>
+</button>
+</div>
+</div>
+<!-- OPTION B: Eliminar Procedimiento (Permanent Deletion) -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">delete_forever</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-error">Eliminar Procedimiento</h3>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase">Supresión Permanente</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Remueve por completo el arancel y todas sus parametrizaciones de la base de datos de Sr. Diente. Esta operación no se puede deshacer.
+              </p>
+<!-- Warning Points -->
+<div class="space-y-2 pt-space-xs font-body-sm text-body-sm">
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">error</span>
+<span>No permitido si el servicio tiene <strong>1 o más registros vinculados</strong> en el expediente.</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">block</span>
+<span>Rompe vínculos en estadísticas de Club Sonrisas previas.</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">lock</span>
+<span>Exige confirmación de contraseña de Administrador / Dueño.</span>
+</div>
+</div>
+</div>
+<!-- Blocked / Warning Action Footnote -->
+<div class="pt-space-md mt-space-md bg-error-container/30 -mx-space-md -mb-space-md p-space-md rounded-b-xl flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-error">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+<span>Requiere Privilegios de Dueño</span>
+</div>
+<button class="px-4 py-2 bg-error text-on-error hover:bg-on-error-container font-label-md text-label-md rounded-lg shadow-sm transition-all flex items-center gap-1.5" onclick="alert('Acción bloqueada: El procedimiento cuenta con 142 tratamientos ejecutados en el último semestre. Debe utilizar Desactivar Servicio.');" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Eliminar Definitivo</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Summary Note -->
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">help_center</span>
+<span>¿Tienes dudas? El equipo de soporte de Sr. Diente puede fusionar este procedimiento con uno existente sin perder historial.</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline" onclick="document.getElementById('modal-status-decision').classList.add('hidden')" type="button">
+            Cancelar y volver al formulario
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div>
+</body></html>

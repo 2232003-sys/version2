@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "outline": "#707881", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "primary-container": "#007bb9", "tertiary-fixed-dim": "#62df7d", "on-tertiary-container": "#f7fff2", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "on-secondary-container": "#006f66", "on-secondary-fixed-variant": "#005049", "on-primary-container": "#fdfcff", "secondary-fixed": "#89f5e7", "primary": "#006194", "primary-fixed": "#cce5ff", "on-error": "#ffffff", "outline-variant": "#bfc7d2", "on-primary-fixed-variant": "#004b73", "surface-dim": "#d2d9f4", "secondary-container": "#86f2e4", "background": "#faf8ff", "error-container": "#ffdad6", "inverse-primary": "#93ccff", "surface-tint": "#006398", "on-error-container": "#93000a", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed-variant": "#005320", "tertiary": "#006b2c", "on-secondary-fixed": "#00201d", "secondary": "#006a61", "on-primary-fixed": "#001d31", "on-surface-variant": "#3f4850", "tertiary-fixed": "#7ffc97", "surface-container-low": "#f2f3ff", "on-secondary": "#ffffff", "surface": "#faf8ff", "primary-fixed-dim": "#93ccff", "inverse-surface": "#283044", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873a", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-container": "#eaedff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-lg": ["Manrope"], "body-md": ["Manrope"], "data-mono": ["Manrope"], "label-sm": ["Manrope"], "headline-lg": ["Outfit"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Outfit"], "label-lg": ["Manrope"], "headline-sm": ["Outfit"], "headline-xl": ["Outfit"], "headline-xl-mobile": ["Outfit"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Sr. Diente Clinical OS" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Sr. Diente</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical OS</span></div></div><nav class="flex-1 px-space-sm py-space-sm space-y-space-xs overflow-y-auto" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operación Clínica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Agenda</span></div><span class="material-symbols-outlined text-[16px] text-outline">tune</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Doctores</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">medical_services</span><span>Servicios</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Finanzas &amp; Facturación</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Comisiones</span></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestión Médica</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Inventario</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="laboratorio" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span>Laboratorio</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="infraestructura-sillones" href="#"><span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span><span>Infraestructura / Sillones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low m-space-sm rounded-xl"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div class="flex flex-col leading-tight"><span class="font-label-md text-label-md text-on-surface font-bold">Cédula COFEPRIS</span><span class="font-label-sm text-label-sm text-on-surface-variant">Vigente 2024-CDMX</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shadow-sm cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">apartment</span><span class="font-label-md text-label-md text-on-surface font-semibold">Polanco CDMX</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="material-symbols-outlined text-tertiary text-[16px]">cloud_done</span><span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Sync OK (Google CDMX)</span></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm cursor-pointer"><div class="flex flex-col text-right leading-none"><span class="font-label-md text-label-md text-on-surface font-bold">Dra. Jimena Alarcón</span><span class="font-label-sm text-label-sm text-secondary font-medium">Ortodoncista Titular</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjOq_BHDjv90McU-Qte00nR0QLevht3Tn47Hna3VAeE1l15whFTPBvzwD6rICM5WrEU8W7ZoxSvJPCQC5xXGpoN_PWqUHUSYWbv_8RR7cSNf09vdfedKs8BrgJZkpSonneiFD9qRbr5MBKubzwkUgv0AvAhkI9QU5ZZGW1luFedPOwhMZFCZ21KlPwCoFD-LC_zV6xXL6e7l0C7K3jHA7qvejyNeiLkCSM2jRhF82EbwMEnQumMFs"/></div></div></header><main class="relative pt-16 bg-surface w-full min-h-screen"><div class="flex flex-col w-full relative">
+<!-- SECONDARY PLANE / CAJA BACKGROUND SCREEN (Translucent Backdrop) -->
+<div class="w-full px-margin-desktop py-space-lg select-none opacity-40 pointer-events-none filter blur-[1.5px]">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Caja Turno Matutino</span>
+<span class="text-outline text-label-md">/</span>
+<span class="font-label-md text-label-md text-primary font-bold">Liquidación de Cobro</span>
+<span class="ml-space-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Turno #04 · Caja Central</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span class="font-label-md text-label-md">Sede Plaza Cantil, Coyoacán</span>
+</div>
+</div>
+<!-- Background Confirmation Card -->
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-xl shadow-sm p-space-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-tertiary-container/15 flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">¡Cobro Registrado con Éxito!</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+        El pago en ventanilla ha sido asentado en el corte de caja vigente de Plaza Cantil. Saldo pendiente liquidado a cero.
+      </p>
+<div class="w-full grid grid-cols-3 gap-space-md bg-surface-container-low rounded-xl p-space-md mb-space-xl">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Paciente</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Lucía Garza Ramos</span>
+<span class="font-body-sm text-body-sm text-outline">#PAC-0842 · lucia.garza@gmail.com</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Folio Fiscal Interno</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">#REC-2026-0520</span>
+<span class="font-body-sm text-body-sm text-outline">Efectivo $1,215.00 MXN</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Saldo Restante</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">$0.00 MXN</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Cuenta al corriente</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full justify-center">
+<button class="px-space-lg py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">print</span> Imprimir Ticket Térmico
+        </button>
+<button class="px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">send</span> Enviar por Correo
+        </button>
+<button class="px-space-lg py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span> Volver a Agenda
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP OVERLAY -->
+<div class="fixed inset-0 bg-on-background/45 backdrop-blur-md z-50 flex items-center justify-center p-space-md overflow-y-auto">
+<!-- MAIN INTERACTIVE MODAL CONTAINER -->
+<div class="relative w-full max-w-5xl bg-surface-container-lowest rounded-xl shadow-xl flex flex-col my-auto overflow-hidden animate-fadeIn">
+<!-- Top Accent Functional Bar -->
+<div class="bg-surface-container-low px-space-xl py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm tracking-wider uppercase flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> Capacidad [N] · Pendiente Backend
+          </span>
+<span class="text-outline text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            Sede: Plaza Cantil · Av. Aztecas 270, Coyoacán, CDMX
+          </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded text-tertiary bg-tertiary-container/10 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Cobro Firme
+          </span>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:bg-surface-container-high hover:text-on-surface transition-colors" id="btn-close-modal" title="Cerrar modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Modal Header -->
+<div class="px-space-xl pt-space-md pb-space-sm flex items-start justify-between">
+<div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">forward_to_inbox</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Enviar Recibo por Correo Electrónico</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Envío digital de comprobante simplificado de pago para control interno del paciente.</p>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Recibo Emitido</span>
+<span class="font-data-mono text-data-mono text-primary font-bold text-base">#REC-2026-0520</span>
+</div>
+</div>
+<!-- Immutable Rule Banner Notice -->
+<div class="mx-space-xl my-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span><strong class="text-on-surface">Regla inmutable de caja:</strong> Reenviar un recibo existente <strong>no genera un nuevo cobro</strong>, no duplica cargos en caja y conserva inalterable el folio <strong>#REC-2026-0520</strong>.</span>
+</div>
+<!-- Modal Body Split: 55% Form / 45% Live Preview -->
+<div class="p-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Form & Privacy Rules (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Recipient Primary Email -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="recipient-email">
+<span class="font-semibold text-on-surface">Correo electrónico del destinatario <span class="text-primary">*</span></span>
+<span class="font-label-sm text-label-sm text-outline">Expediente #PAC-0842</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">alternate_email</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface transition-all" id="recipient-email" placeholder="correo@ejemplo.com" type="email" value="lucia.garza@gmail.com"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-outline mt-0.5">info</span>
+<span>Cambiar este correo sólo aplica para este envío y no modifica el correo registrado en el expediente del paciente.</span>
+</p>
+</div>
+<!-- Secondary CC Email (Optional) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="cc-email">
+<span>Correo adicional en copia (CC) <span class="text-outline font-normal">(Opcional)</span></span>
+<span class="font-label-sm text-label-sm text-outline">Familiar / Contabilidad</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">content_copy</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface transition-all" id="cc-email" placeholder="e.g. contabilidad@familiar.com" type="email"/>
+</div>
+</div>
+<!-- PDF Attachment Option & Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" id="checkbox-pdf" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Adjuntar archivo PDF del recibo formal</span>
+</label>
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px]">picture_as_pdf</span>
+<div class="flex flex-col leading-tight">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Recibo_REC-2026-0520_SrDiente.pdf</span>
+<span class="font-label-sm text-label-sm text-outline">148 KB · Generado al liquidar</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase">Firmado Digitalmente</span>
+</div>
+</div>
+<!-- Medical Privacy Notice (NOM-004-SSA3) -->
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Aviso de Privacidad Médica y Confidencialidad</span>
+<p class="font-body-sm text-body-sm mt-0.5 text-on-surface-variant">
+                El correo contiene exclusivamente conceptos contables y montos del pago. Por confidencialidad (<strong class="text-on-surface font-semibold">NOM-004-SSA3 del Expediente Clínico</strong>), no incluye diagnósticos, alergias ni notas de evolución clínica.
+              </p>
+</div>
+</div>
+<!-- Interactive State Feedback Banner (Toggled by selector) -->
+<div class="w-full" id="state-feedback-area">
+<!-- Dynamic State Containers rendered below -->
+</div>
+<!-- Primary Actions inside Form -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="flex-1 h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm transition-all active:scale-[0.98]" id="btn-action-primary" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span id="btn-action-text">Enviar recibo por correo</span>
+</button>
+<button class="px-space-lg h-12 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg transition-colors" id="btn-action-cancel" type="button">
+              Cancelar
+            </button>
+</div>
+</div>
+<!-- Right Column: Live Email Preview Box (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Vista Previa del Correo
+            </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Plantilla HTML Responsiva</span>
+</div>
+<!-- Simulated Email Client Window -->
+<div class="rounded-xl shadow-md overflow-hidden bg-surface-container-low">
+<!-- Email App Bar -->
+<div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="ml-2 font-label-sm text-label-sm font-semibold truncate max-w-[170px]" id="preview-email-tag">lucia.garza@gmail.com</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Sr. Diente Mailer</span>
+</div>
+<!-- Email Body Content -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col gap-space-sm text-on-surface text-left">
+<!-- Email Header: Clinic Logo & Mascot -->
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs">
+<div class="flex flex-col leading-none">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Sr. Diente</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Clínica Odontológica</span>
+</div>
+</div>
+<!-- Mascot Diente Caballero -->
+<div class="relative w-12 h-12 flex-shrink-0 bg-surface-container-low rounded-full overflow-hidden p-1 shadow-sm">
+<img alt="Mascota Sr. Diente Caballero con Monóculo" class="w-full h-full object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw4xWihma86wbmmtRfc3iYwYlfCHq3yzTCW1AiDQ7x3bVJrdZswluMM-OvRaeWY58L5OJpdklLiwLgaY_ZoEzl1vlzPTCy33GkOAaaKhk4iKsODaKPd-xXiOfv7Mae4tcs9C7jMjBSiB4XNxJ2sEHW-fLRKQzLWAwT2WdhV_PEcV3t-8kdm4cLfyUyCLkMFNCQNOZF4elnGkUjoGhRhoizyEajeWswpMGpNSx_G9GcM65r9qiOc1WZ"/>
+</div>
+</div>
+<!-- Greeting -->
+<div class="mt-space-xs">
+<p class="font-body-md text-body-md text-on-surface font-semibold">Hola Lucía Garza Ramos,</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                  Confirmamos la recepción de tu pago correspondiente a tu cita de hoy en la clínica dental Sr. Diente. Tu saldo se encuentra al corriente.
+                </p>
+</div>
+<!-- Receipt Snapshot Ticket -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-space-xs text-left">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Comprobante Simplificado</span>
+<span class="font-data-mono text-label-sm font-bold text-primary">#REC-2026-0520</span>
+</div>
+<div class="space-y-1 py-1 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Mensualidad Ortodoncia (Abono)</span>
+<span class="font-data-mono font-medium">$1,200.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Elásticos Intermaxilares 3/16"</span>
+<span class="font-data-mono font-medium">$150.00</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Beneficio Club Sonrisas (-10%)</span>
+<span class="font-data-mono font-semibold">-$135.00</span>
+</div>
+</div>
+<div class="pt-1.5 flex items-baseline justify-between bg-surface-container-high/60 px-2 py-1.5 rounded">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold block">Total Liquidado</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Efectivo en Caja</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface text-right">$1,215.00 <span class="text-label-sm text-on-surface-variant font-normal">MXN</span></span>
+</div>
+</div>
+<!-- Simulated Action in Email -->
+<div class="text-center py-space-xs">
+<div class="inline-flex items-center justify-center gap-1.5 w-full py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold shadow-sm cursor-default">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                  Descargar Recibo en PDF (148 KB)
+                </div>
+</div>
+<!-- Email Footer Notice -->
+<div class="pt-space-xs text-center leading-tight">
+<p class="font-label-sm text-label-sm text-outline">
+                  Sede Plaza Cantil · Av. Aztecas 270, Los Reyes, Coyoacán, CDMX.
+                </p>
+<p class="font-label-sm text-label-sm text-outline mt-0.5">
+                  Este comprobante digital no sustituye una CFDI. Si requieres factura con validez fiscal SAT, solicítala en recepción con tu constancia de situación fiscal.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- State Simulator Bar (Demonstrating all required states requested) -->
+<div class="bg-surface-container px-space-xl py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold">Simular Estados del Envío:</span>
+<span class="text-outline text-label-sm">|</span>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm hover:bg-surface-container-high transition-colors" id="sim-state-1" type="button">
+            1. Formulario Listo
+          </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" id="sim-state-2" type="button">
+            2. Enviando (Spinner)
+          </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" id="sim-state-3" type="button">
+            3. Enviado Éxito
+          </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" id="sim-state-4" type="button">
+            4. Error SMTP (Reintento)
+          </button>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>SMTP Google Workspace CDMX Conectado</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initModalBehavior() {
+    const recipientInput = document.getElementById('recipient-email');
+    const previewEmailTag = document.getElementById('preview-email-tag');
+    const feedbackArea = document.getElementById('state-feedback-area');
+    const btnPrimary = document.getElementById('btn-action-primary');
+    const btnText = document.getElementById('btn-action-text');
+    const btnCancel = document.getElementById('btn-action-cancel');
+    const btnCloseModal = document.getElementById('btn-close-modal');
+
+    const sim1 = document.getElementById('sim-state-1');
+    const sim2 = document.getElementById('sim-state-2');
+    const sim3 = document.getElementById('sim-state-3');
+    const sim4 = document.getElementById('sim-state-4');
+
+    // Live update recipient tag in preview
+    recipientInput.addEventListener('input', (e) => {
+      previewEmailTag.textContent = e.target.value.trim() || 'sin-correo@destinatario.com';
+    });
+
+    // Close button feedback
+    function handleDismiss() {
+      alert('Modal cerrado. Regresando a la pantalla de confirmación de caja.');
+    }
+    btnCancel.addEventListener('click', handleDismiss);
+    btnCloseModal.addEventListener('click', handleDismiss);
+
+    // State 1: Default
+    function renderState1() {
+      feedbackArea.innerHTML = '';
+      btnPrimary.disabled = false;
+      btnPrimary.className = "flex-1 h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm transition-all active:scale-[0.98]";
+      btnPrimary.innerHTML = '<span class="material-symbols-outlined text-[20px]">send</span><span>Enviar recibo por correo</span>';
+      
+      updateSimulatorButtons(sim1);
+    }
+
+    // State 2: Sending (Spinner)
+    function renderState2() {
+      const email = recipientInput.value || 'lucia.garza@gmail.com';
+      feedbackArea.innerHTML = `
+        <div class="p-space-sm rounded-lg bg-surface-container-high flex items-center gap-space-sm text-on-surface animate-pulse">
+          <svg class="animate-spin h-5 w-5 text-primary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+          </svg>
+          <span class="font-label-md text-label-md">Conectando con el servidor de correo Sr. Diente y despachando recibo...</span>
+        </div>
+      `;
+      btnPrimary.disabled = true;
+      btnPrimary.className = "flex-1 h-12 rounded-lg bg-surface-variant text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center gap-space-xs cursor-not-allowed opacity-80";
+      btnPrimary.innerHTML = `
+        <svg class="animate-spin h-5 w-5 text-on-surface-variant" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+        </svg>
+        <span>Enviando recibo a ${email}...</span>
+      `;
+      updateSimulatorButtons(sim2);
+    }
+
+    // State 3: Success
+    function renderState3() {
+      const email = recipientInput.value || 'lucia.garza@gmail.com';
+      feedbackArea.innerHTML = `
+        <div class="p-space-md rounded-xl bg-tertiary-container/15 text-on-surface flex items-start gap-space-sm animate-fadeIn">
+          <span class="material-symbols-outlined text-tertiary text-[22px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          <div class="flex flex-col">
+            <span class="font-label-md text-label-md font-bold text-tertiary">Recibo enviado exitosamente</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Recibo enviado exitosamente a <strong>${email}</strong> el 24/Oct/2026 a las 11:45 hrs. Puedes reenviarlo en cualquier momento sin generar un nuevo cobro ni alterar el folio <strong>#REC-2026-0520</strong>.
+            </p>
+          </div>
+        </div>
+      `;
+      btnPrimary.disabled = false;
+      btnPrimary.className = "flex-1 h-12 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors";
+      btnPrimary.innerHTML = '<span class="material-symbols-outlined text-[20px]">mark_email_read</span><span>Reenviar copia adicional</span>';
+      updateSimulatorButtons(sim3);
+    }
+
+    // State 4: Error with retry
+    function renderState4() {
+      const email = recipientInput.value || 'lucia.garza@gmail.com';
+      feedbackArea.innerHTML = `
+        <div class="p-space-md rounded-xl bg-error-container/40 text-on-error-container flex items-start gap-space-sm animate-fadeIn">
+          <span class="material-symbols-outlined text-error text-[22px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">error</span>
+          <div class="flex flex-col flex-1">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md font-bold text-error">No se pudo entregar el correo al servidor SMTP (Reintento disponible)</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Se conservó el destinatario <strong>${email}</strong> sin afectar el pago ni el corte de caja. Por favor, verifica la conectividad o reintenta.
+            </p>
+            <div class="mt-space-xs">
+              <button id="inline-retry-btn" type="button" class="px-space-md py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold hover:opacity-95 transition-opacity inline-flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px]">sync</span> Reintentar envío ahora
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+      btnPrimary.disabled = false;
+      btnPrimary.className = "flex-1 h-12 rounded-lg bg-error hover:opacity-90 text-on-error font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all";
+      btnPrimary.innerHTML = '<span class="material-symbols-outlined text-[20px]">refresh</span><span>Reintentar envío</span>';
+      
+      const retryBtn = document.getElementById('inline-retry-btn');
+      if (retryBtn) {
+        retryBtn.addEventListener('click', () => {
+          renderState2();
+          setTimeout(renderState3, 1400);
+        });
+      }
+      updateSimulatorButtons(sim4);
+    }
+
+    function updateSimulatorButtons(activeBtn) {
+      [sim1, sim2, sim3, sim4].forEach(b => {
+        b.className = "px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors";
+      });
+      activeBtn.className = "px-space-xs py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-sm";
+    }
+
+    // Attach simulator controls
+    sim1.addEventListener('click', renderState1);
+    sim2.addEventListener('click', renderState2);
+    sim3.addEventListener('click', renderState3);
+    sim4.addEventListener('click', renderState4);
+
+    // Initial state trigger from form button
+    btnPrimary.addEventListener('click', () => {
+      renderState2();
+      setTimeout(renderState3, 1600);
+    });
+
+    // Default setup
+    renderState1();
+  })();
+</script></main></div></body></html>

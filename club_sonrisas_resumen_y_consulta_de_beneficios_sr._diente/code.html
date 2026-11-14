@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#62df7d", "on-surface-variant": "#3f4850", "surface-container": "#eaedff", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "on-primary-fixed": "#001d31", "secondary-container": "#86f2e4", "primary-fixed-dim": "#93ccff", "on-primary": "#ffffff", "on-secondary-fixed": "#00201d", "background": "#faf8ff", "on-tertiary-fixed-variant": "#005320", "secondary": "#006a61", "on-error-container": "#93000a", "on-error": "#ffffff", "surface": "#faf8ff", "on-surface": "#131b2e", "primary": "#006194", "error-container": "#ffdad6", "primary-fixed": "#cce5ff", "on-secondary": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "inverse-on-surface": "#eef0ff", "error": "#ba1a1a", "on-secondary-container": "#006f66", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002109", "primary-container": "#007bb9", "tertiary": "#006b2c", "on-tertiary-container": "#f7fff2", "surface-tint": "#006398", "inverse-primary": "#93ccff", "on-secondary-fixed-variant": "#005049", "outline": "#707881", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#004b73", "tertiary-fixed": "#7ffc97", "surface-container-high": "#e2e7ff", "on-primary-container": "#fdfcff", "surface-variant": "#dae2fd", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "tertiary-container": "#00873a", "inverse-surface": "#283044", "outline-variant": "#bfc7d2", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin-desktop": "2rem" }, "fontFamily": { "label-sm": ["Manrope"], "label-lg": ["Manrope"], "headline-xl": ["Outfit"], "headline-lg-mobile": ["Outfit"], "headline-lg": ["Outfit"], "headline-xl-mobile": ["Outfit"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "headline-md": ["Outfit"], "label-md": ["Manrope"], "body-sm": ["Manrope"], "data-mono": ["Manrope"], "headline-sm": ["Outfit"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-headline-sm">dentistry</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Sr. Diente</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-space-xs">Clinical OS MX</span></div></div><nav class="flex flex-col gap-space-xs p-space-sm overflow-y-auto max-h-[calc(100vh-140px)]" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="agenda" href="#"><span class="material-symbols-outlined text-headline-sm">calendar_month</span><span class="font-label-lg text-label-lg">Agenda</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-360" href="#"><span class="material-symbols-outlined text-headline-sm">clinical_notes</span><span class="font-label-lg text-label-lg">Pacientes 360</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doctores" href="#"><span class="material-symbols-outlined text-headline-sm">stethoscope</span><span class="font-label-lg text-label-lg">Doctores</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-headline-sm">medical_services</span><span class="font-label-lg text-label-lg">Servicios</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="presupuestos" href="#"><span class="material-symbols-outlined text-headline-sm">receipt_long</span><span class="font-label-lg text-label-lg">Presupuestos</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="caja-turno" href="#"><span class="material-symbols-outlined text-headline-sm">point_of_sale</span><span class="font-label-lg text-label-lg">Caja Turno</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="finanzas-mxn" href="#"><span class="material-symbols-outlined text-headline-sm">payments</span><span class="font-label-lg text-label-lg">Finanzas MXN</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="comisiones" href="#"><span class="material-symbols-outlined text-headline-sm">percent</span><span class="font-label-lg text-label-lg">Comisiones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventario" href="#"><span class="material-symbols-outlined text-headline-sm">inventory_2</span><span class="font-label-lg text-label-lg">Inventario</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-sm" data-path="club-sonrisas" href="#"><span class="material-symbols-outlined text-headline-sm">loyalty</span><span class="font-label-lg text-label-lg">Club Sonrisas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-headline-sm">manage_accounts</span><span class="font-label-lg text-label-lg">Usuarios</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-surface-container-lowest shadow-sm"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Google Sync CDMX</span></div><span class="material-symbols-outlined text-tertiary text-body-md">cloud_done</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface"><span class="material-symbols-outlined text-primary text-body-lg">location_on</span><span class="font-label-lg text-label-lg font-bold">Polanco CDMX</span><span class="material-symbols-outlined text-on-surface-variant text-body-sm">expand_more</span></div><div class="h-5 w-px bg-outline-variant/40 hidden md:block"></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-body-md">calendar_today</span><span>Jueves, 24 Octubre 2024</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/30 text-on-secondary-container"><span class="material-symbols-outlined text-body-md text-secondary">chair</span><span class="font-label-sm text-label-sm font-semibold">Sillones: 3/4 Activos</span></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Dra. Sofía Mendoza</span><span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Especialista Ortodoncia</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/ALJJyrD3btN9dbEHiJZfCmsyXEnP8U6J-YTDgXnuWOR08_rIaWVNa-j3rBmQgivPsxsKmpW0naRgA_KQNDnzkWSABTa2YXl2dpWex2ZLwb7RQRYw7xkFKRqijhOpRQNsFgUwrew2mTt9qDnDSGti6joMFVCTPS94KSX4_4M18bWm9E-GJ4Gqtnsep45KeSiXZigu0I1uK4LSvKoRIdxL20vveGQV9W4i1n4k9Ipwf3_srkcjvVe_AQpT7DJgUA"/></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background px-gutter-desktop py-space-md"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- PERSISTENT MEDICAL & PROGRAM ALERT BANNER -->
+<div class="w-full bg-error-container/60 text-on-error-container rounded-xl p-space-sm px-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error animate-pulse text-headline-sm">warning</span>
+<div class="flex flex-col sm:flex-row sm:items-center gap-x-space-sm">
+<span class="font-label-lg text-label-lg font-bold text-on-error-container">Protocolo de Identidad y Elegibilidad:</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Validar credencial empresarial física o digital antes de autorizar copagos preferenciales y coberturas del Club.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-auto">
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/80 text-on-surface px-2.5 py-1 rounded-full font-bold">NOM-004-SSA3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CDMX V3.2</span>
+</div>
+</div>
+<!-- MODULE HEADER & BRAND PRESENTATION -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative w-20 h-20 shrink-0 bg-surface-container-low rounded-2xl flex items-center justify-center p-1.5 shadow-inner">
+<img alt="Mascota Sr. Diente Caballero con Monóculo" class="w-full h-full object-contain filter drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ng5bGHlssL-MD3QJ-I5VeN_87x2mCBfiwAzOtFWmTm6JPTKi6YZVYRFkOfp65uoWzc97Pg9Z6UZw7CmurU4ofQx9znNj2X5jzrN6EZoKgtfzxskMjz49g7qAzYV6EKGyrsgy0464JJR8N5HTKI2FY7hVNWy-M52E4dHPfg_9KPbo2CpOQIQ363V1jZ4lxLVJArwmNg172k3O47nOfOGRwvVpnD3T_2KBsLL0dnHpGWvHm0Y8jE8c"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary w-6 h-6 rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Club Sonrisas</h1>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider">Convenios Corporativos</span>
+<span class="bg-surface-container-high text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Padrón Activo MXN
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+          Gestión integral de convenios B2B, membresías dentales corporativas y tarifas preferenciales para colaboradores y beneficiarios en Clínicas Polanco.
+        </p>
+</div>
+</div>
+<!-- ROLE ACTIONS BAR -->
+<div class="flex flex-wrap items-center gap-space-xs self-stretch lg:self-auto justify-end">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-headline-sm text-primary">domain_add</span>
+<span>+ Registrar Empresa</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-headline-sm text-secondary">handshake</span>
+<span>+ Nuevo Convenio</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-headline-sm text-on-surface-variant">person_add</span>
+<span>+ Afiliar Colaborador</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all shadow-sm font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-headline-sm">how_to_reg</span>
+<span>Validar y Cotizar</span>
+</button>
+</div>
+</div>
+<!-- NAVIGATION TABS -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-xs shadow-sm flex items-center gap-space-xs overflow-x-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm text-label-lg shadow-sm whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">dashboard</span>
+<span>Resumen</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">business</span>
+<span>Empresas</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-label-sm text-label-sm ml-1">18</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">assignment_turned_in</span>
+<span>Convenios</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-label-sm text-label-sm ml-1">24</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">badge</span>
+<span>Afiliados</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-label-sm text-label-sm ml-1">1,420</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">sell</span>
+<span>Tarifas &amp; Beneficios</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg whitespace-nowrap">
+<span class="material-symbols-outlined text-body-lg">monitoring</span>
+<span>Analítica</span>
+<span class="bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full ml-1">Oct 2024</span>
+</button>
+</div>
+<!-- DIRECT LIVE SEARCH & VERIFICATION BAR -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm w-full md:w-2/3">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-headline-sm">search</span>
+<input class="w-full pl-10 pr-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Búsqueda rápida de afiliado por CURP, No. de empleado corporativo o Nombre completo..." type="text" value="HERRERA LOPEZ CARLOS - EMP-8841 (BBVA Bancomer)"/>
+</div>
+<button class="px-space-md py-2 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container shrink-0 shadow-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">verified</span>
+<span>Verificar</span>
+</button>
+</div>
+<!-- Verification Pill Result -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-2 rounded-lg shadow-sm w-full md:w-auto justify-between md:justify-end">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-label-lg text-label-lg text-on-surface">Membresía Activa</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Convenio Premium A+</span>
+<span class="font-data-mono text-data-mono text-primary text-xs">Vence: 31/Dic/2025</span>
+</div>
+</div>
+<!-- KPI SUMMARY CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Empresas Aliadas</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">corporate_fare</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">corporativos activos</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Polanco &amp; Santa Fe CDMX</span>
+<span class="text-tertiary flex items-center"><span class="material-symbols-outlined text-xs">arrow_upward</span> +2 este mes</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Convenios Vigentes</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-sm">policy</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">planes contractuales</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>100% renovados en 2024</span>
+<span class="text-primary font-semibold">Sin adeudos B2B</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Padrón de Afiliados</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">groups</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">1,420</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">titulares + familiares</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>890 Titulares directos</span>
+<span>530 Beneficiarios</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Usos del Mes en Clínica</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-headline-sm">dentistry</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">184</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">tratamientos c/descuento</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>En 4 sillones Polanco</span>
+<span class="text-tertiary font-bold">$186,420 MXN caja</span>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE SECTION: SIMULATOR & WORKBENCH -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: ELIGIBILITY CHECK & QUOTE CALCULATOR (5 COLS) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">calculate</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Simulador de Beneficio Inmediato</h2>
+</div>
+<span class="bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+          Modo Caja &amp; Mostrador
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Seleccione el servicio presupuestado para desglosar la tarifa oficial de Polanco versus la cobertura pactada por convenio corporativo.
+      </p>
+<!-- Search Input in Simulator -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Afiliado validado en recepción</label>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-body-lg">account_circle</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Carlos Herrera López</span>
+<span class="font-label-sm text-label-sm text-secondary">Grupo Bimbo S.A.B. • Nómina #41029</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-body-lg">check_circle</span>
+</div>
+</div>
+<!-- Service Selector dropdown -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant">Servicio Odontológico Requerido</label>
+<div class="relative">
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="serviceSelector" onchange="updateQuote()">
+<option data-base="1350" data-discount="15" selected="" value="limpieza">Profilaxis Ultrasonido &amp; Pulido Dental ($1,350 MXN)</option>
+<option data-base="1850" data-discount="20" value="resina">Resina Fotocurable 3M Clase II ($1,850 MXN)</option>
+<option data-base="4200" data-discount="15" value="blanqueamiento">Blanqueamiento Láser Operatorio ($4,200 MXN)</option>
+<option data-base="4800" data-discount="10" value="endodoncia">Endodoncia Molar Unirradicular ($4,800 MXN)</option>
+<option data-base="2400" data-discount="25" value="guarda">Guarda Oclusal Nocturna Rígida ($2,400 MXN)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-body-md">expand_more</span>
+</div>
+</div>
+<!-- Visual Breakdown Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm mt-1">
+<div class="flex items-center justify-between text-body-md">
+<span class="font-label-lg text-label-lg text-on-surface-variant">Tarifa Base Estándar:</span>
+<span class="font-data-mono text-data-mono text-on-surface line-through text-outline" id="basePriceDisplay">$1,350.00 MXN</span>
+</div>
+<div class="flex items-center justify-between text-body-md">
+<span class="font-label-lg text-label-lg text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">sell</span>
+<span>Beneficio Convenio Bimbo:</span>
+</span>
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold" id="discountTagDisplay">
+            -15% Descuento Corp
+          </span>
+</div>
+<div class="flex items-center justify-between text-body-md">
+<span class="font-label-lg text-label-lg text-tertiary">Ahorro Directo Paciente:</span>
+<span class="font-data-mono text-data-mono text-tertiary font-bold" id="savingsDisplay">-$202.50 MXN</span>
+</div>
+<div class="h-px bg-outline-variant/30 my-1"></div>
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block">Total a Cobrar en Caja</span>
+<span class="font-label-sm text-label-sm text-secondary">Aplica Efectivo, TPV o Transferencia</span>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight" id="finalPriceDisplay">$1,147.50</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1 font-bold">MXN</span>
+</div>
+</div>
+</div>
+<!-- Legal & Operational Notice -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-start gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-body-md shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="font-semibold text-on-surface">Aviso de Operación:</strong> Consultar precio no consume el beneficio ni afecta el saldo anual de cortesías del colaborador hasta emitir el recibo en Caja Turno.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-on-secondary-container transition-all text-center flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-body-md">point_of_sale</span>
+<span>Cargar a Estado de Cuenta</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all text-center">
+<span class="material-symbols-outlined text-body-md">print</span>
+</button>
+</div>
+</div>
+<!-- RIGHT PANEL: CORPORATE PARTNERS MATRIX & MONTHLY CONSUMPTION LOG (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Top mini-strip of corporate groups -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">apartment</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Principales Convenios en Polanco</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center" href="#">
+            Ver todas las 18 empresas <span class="material-symbols-outlined text-xs">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-1">
+<!-- Mini corp 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Grupo Bimbo</span>
+<span class="bg-surface-container text-primary font-data-mono text-label-sm px-1.5 py-0.5 rounded">420 colab</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Plan Familiar Sonrisas A+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Descuento lineal 15% + 1 Limpieza</span>
+</div>
+<!-- Mini corp 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">BBVA México</span>
+<span class="bg-surface-container text-primary font-data-mono text-label-sm px-1.5 py-0.5 rounded">380 colab</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Convenio Corporativo Torre</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Descuento lineal 20% en operatoria</span>
+</div>
+<!-- Mini corp 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Kavak CDMX</span>
+<span class="bg-surface-container text-primary font-data-mono text-label-sm px-1.5 py-0.5 rounded">240 colab</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Plan Preventivo Start</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico HD $0 + 10% Especialidades</span>
+</div>
+</div>
+</div>
+<!-- RECENT ACTIVITY USAGE LOG TABLE -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-headline-sm">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historial Reciente de Beneficios Aplicados</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">download</span> Exportar SAT/MXN
+            </button>
+</div>
+</div>
+<!-- Dense Tabular Data Layout -->
+<div class="overflow-x-auto mt-space-xs">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-2.5 px-space-sm rounded-l-lg">Fecha / Hora</th>
+<th class="py-2.5 px-space-sm">Afiliado &amp; Empresa</th>
+<th class="py-2.5 px-space-sm">Tratamiento Clínico</th>
+<th class="py-2.5 px-space-sm text-right">Tarifa Base</th>
+<th class="py-2.5 px-space-sm text-center">Beneficio</th>
+<th class="py-2.5 px-space-sm text-right rounded-r-lg">Cobrado en Caja</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-2.5 px-space-sm whitespace-nowrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Hoy, 10:15 am</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sillón 2 • Dra. Sofía</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface block">Mariana Orozco</span>
+<span class="font-label-sm text-label-sm text-secondary">BBVA México (Titular)</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-body-md text-body-md text-on-surface block">Resina 3M OD Molar 46</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operatoria Estética</span>
+</td>
+<td class="py-2.5 px-space-sm text-right font-data-mono text-data-mono text-outline line-through">
+                  $1,850.00
+                </td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold">
+                    -20% Corp
+                  </span>
+</td>
+<td class="py-2.5 px-space-sm text-right whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-primary font-bold block">$1,480.00 MXN</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ahorro: $370.00</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-2.5 px-space-sm whitespace-nowrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Hoy, 09:30 am</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sillón 1 • Dr. Morales</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface block">Santiago Peña (Hijo)</span>
+<span class="font-label-sm text-label-sm text-secondary">Grupo Bimbo (Beneficiario)</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-body-md text-body-md text-on-surface block">Profilaxis + Selladores</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Odontopediatría Prev.</span>
+</td>
+<td class="py-2.5 px-space-sm text-right font-data-mono text-data-mono text-outline line-through">
+                  $1,350.00
+                </td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="bg-tertiary/10 text-tertiary px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold">
+                    Cortesía Anual (100%)
+                  </span>
+</td>
+<td class="py-2.5 px-space-sm text-right whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-tertiary font-bold block">$0.00 MXN</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ahorro: $1,350.00</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-2.5 px-space-sm whitespace-nowrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Ayer, 05:40 pm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sillón 4 • Dra. Sofía</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface block">Elena Casillas</span>
+<span class="font-label-sm text-label-sm text-secondary">Kavak México (Titular)</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-body-md text-body-md text-on-surface block">Endodoncia Molar 26</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Especialidad Endodóntica</span>
+</td>
+<td class="py-2.5 px-space-sm text-right font-data-mono text-data-mono text-outline line-through">
+                  $4,800.00
+                </td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold">
+                    -10% Espec.
+                  </span>
+</td>
+<td class="py-2.5 px-space-sm text-right whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-primary font-bold block">$4,320.00 MXN</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ahorro: $480.00</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-2.5 px-space-sm whitespace-nowrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Ayer, 03:10 pm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sillón 3 • Dr. Morales</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface block">Rodrigo Garza</span>
+<span class="font-label-sm text-label-sm text-secondary">Aeroméxico Premier (Titular)</span>
+</td>
+<td class="py-2.5 px-space-sm">
+<span class="font-body-md text-body-md text-on-surface block">Guarda Oclusal de Miorrelajación</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ATM &amp; Bruxismo</span>
+</td>
+<td class="py-2.5 px-space-sm text-right font-data-mono text-data-mono text-outline line-through">
+                  $2,400.00
+                </td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold">
+                    -25% Corp
+                  </span>
+</td>
+<td class="py-2.5 px-space-sm text-right whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-primary font-bold block">$1,800.00 MXN</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ahorro: $600.00</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table footer summary strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Mostrando 4 de 184 consumos registrados este mes en sucursal Polanco</span>
+<div class="flex items-center gap-space-xs mt-1 sm:mt-0">
+<span class="font-semibold text-on-surface">Ahorro global otorgado en octubre:</span>
+<span class="font-data-mono text-tertiary font-bold">$38,240.00 MXN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM SECTION: QUICK VERIFICATION & B2B RULES ACCORDION -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-headline-md">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Emisión de Factura Fiscal CFDI 4.0 con Descuento Desglosado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">El sistema genera automáticamente el comprobante con la clave de producto odontológico SAT (85122000) descontando la bonificación de convenio.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="bg-surface-container-lowest text-on-surface px-space-sm py-1.5 rounded-lg font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-tertiary">verified_user</span> SAT Timbrado Activo
+      </span>
+<button class="px-space-md py-2 bg-surface-container-highest text-on-primary-fixed hover:bg-surface-container-high transition-all rounded-lg font-label-lg text-label-lg">
+        Manual de Convenios
+      </button>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Real-time Price Simulation -->
+<script>
+  function updateQuote() {
+    const selector = document.getElementById('serviceSelector');
+    const selectedOption = selector.options[selector.selectedIndex];
+    
+    const base = parseFloat(selectedOption.getAttribute('data-base'));
+    const discountPercent = parseFloat(selectedOption.getAttribute('data-discount'));
+    
+    const savings = base * (discountPercent / 100);
+    const finalPrice = base - savings;
+
+    document.getElementById('basePriceDisplay').textContent = '$' + base.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' MXN';
+    document.getElementById('discountTagDisplay').textContent = '-' + discountPercent + '% Descuento Corp';
+    document.getElementById('savingsDisplay').textContent = '-$' + savings.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' MXN';
+    document.getElementById('finalPriceDisplay').textContent = '$' + finalPrice.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+</script></main></div></body></html>
